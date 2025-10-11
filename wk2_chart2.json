@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Export Price Index (End Use): Nonmonetary Gold",
+  "data": {"url": "https://raw.githubusercontent.com/ZhuolinLi-Jolin/ZhuolinLi-Jolin.github.io/refs/heads/main/IQ12260.csv"},
+  "title": {"text": "Export Price Index (End Use): Nonmonetary Gold", "subtitle": "Source: FRED"},
+  "width": 400,
+  "height": 300,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "observation_date", "type": "temporal"},
+    "y": {"field": "IQ12260", "type": "quantitative"}
+  }
+}

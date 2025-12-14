@@ -1,0 +1,7 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Placeholder CC2-2",
+  "data": {"values": [{"x":1,"y":10},{"x":2,"y":15}]},
+  "mark": "line",
+  "encoding": {"x": {"field": "x","type": "quantitative"},"y": {"field": "y","type": "quantitative"}}
+}

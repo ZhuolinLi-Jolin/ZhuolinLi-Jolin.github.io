@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "South Korea's Total Fertility Rate",
+  "data": {
+    "url": "https://api.worldbank.org/v2/country/kor;prk/indicator/SP.DYN.TFRT.IN?format=json&date=1960:2025&per_page=160",
+    "format":{
+      "property": "[1]"
+    }
+  },
+  "title": {"text": "South Korea's Total Fertility Rate", "subtitle": "Source:UN Population Division via World Bank"},
+  "width": 400,
+  "height": 300,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "color":{"field":"countryiso3code","title": "country"},
+    "y": {"field": "value", "type": "quantitative","axis":{}}
+  }
+}

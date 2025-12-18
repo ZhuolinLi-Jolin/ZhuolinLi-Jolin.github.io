@@ -1,0 +1,21 @@
+{
+  "data": [
+    {
+      "x": [10, 20, 30, 40, 50],
+      "y": [50000, 70000, 65000, 90000, 120000],
+      "mode": "markers+text",
+      "type": "scatter",
+      "name": "High Exposure",
+      "text": ["Tech", "Finance", "Legal", "Design", "Dev"],
+      "textposition": "top center",
+      "marker": { "size": 12, "color": "rgb(31, 119, 180)" }
+    }
+  ],
+  "layout": {
+    "title": "Test: AI Exposure vs Wage",
+    "xaxis": { "title": "AI Exposure Score (AIOE)" },
+    "yaxis": { "title": "Annual Mean Wage", "type": "log" },
+    "autosize": true,
+    "margin": { "l": 50, "r": 50, "b": 50, "t": 80 }
+  }
+}

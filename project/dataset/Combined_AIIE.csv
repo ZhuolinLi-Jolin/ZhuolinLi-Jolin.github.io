@@ -1,0 +1,501 @@
+NAICS,NAICS Description,Image Generation AIIE,Language Modeling AIIE
+113300,Logging,-0.0750081,
+115100,Support Activities for Crop Production,-2.262607,
+115200,Support Activities for Animal Production,-1.162119,
+211100,Oil and Gas Extraction,1.114644,
+212100,Coal Mining,-0.257535,
+212200,Metal Ore Mining,-0.0988843,
+212300,Nonmetallic Mineral Mining and Quarrying,-0.385228,
+213100,Support Activities for Mining,-0.5005459,
+221100,"Electric Power Generation, Transmission and Distribution",0.704051,
+221200,Natural Gas Distribution,0.7333205,
+221300,"Water, Sewage and Other Systems",0.1092118,
+236100,Residential Building Construction,-0.55898,
+236200,Nonresidential Building Construction,-0.2269581,
+237100,Utility System Construction,-0.708504,
+237200,Land Subdivision,0.8166966,
+237300,"Highway, Street, and Bridge Construction",-0.7802371,
+237900,Other Heavy and Civil Engineering Construction,-0.5977363,
+238100,"Foundation, Structure, and Building Exterior Contractors",-1.602655,
+238200,Building Equipment Contractors,-0.2382211,
+238300,Building Finishing Contractors,-1.490199,
+238900,Other Specialty Trade Contractors,-0.92169,
+311100,Animal Food Manufacturing,-0.5855823,
+311200,Grain and Oilseed Milling,-0.5628731,
+311300,Sugar and Confectionery Product Manufacturing,-0.9476967,
+311400,Fruit and Vegetable Preserving and Specialty Food Manufacturing,-0.9590802,
+311500,Dairy Product Manufacturing,-0.7278039,
+311600,Animal Slaughtering and Processing,-1.930399,
+311700,Seafood Product Preparation and Packaging,-1.418681,
+311800,Bakeries and Tortilla Manufacturing,-0.8721417,
+311900,Other Food Manufacturing,-0.8650484,
+312100,Beverage Manufacturing,-0.7857221,
+312200,Tobacco Manufacturing,-0.5900809,
+313100,"Fiber, Yarn, and Thread Mills",-1.462242,
+313200,Fabric Mills,-1.090743,
+313300,Textile and Fabric Finishing and Fabric Coating Mills,-0.2630878,
+314100,Textile Furnishings Mills,-0.6485577,
+314900,Other Textile Product Mills,0.0540214,
+315100,Apparel Knitting Mills,-1.344601,
+315200,Cut and Sew Apparel Manufacturing,0.0828368,
+315900,Apparel Accessories and Other Apparel Manufacturing,-0.0603035,
+316100,Leather and Hide Tanning and Finishing,-1.005178,
+316200,Footwear Manufacturing,-0.3678209,
+316900,Other Leather and Allied Product Manufacturing,-0.3059072,
+321100,Sawmills and Wood Preservation,-1.016212,
+321200,"Veneer, Plywood, and Engineered Wood Product Manufacturing",-0.8070484,
+321900,Other Wood Product Manufacturing,-0.8864087,
+322100,"Pulp, Paper, and Paperboard Mills",-0.6130537,
+322200,Converted Paper Product Manufacturing,-0.6015435,
+323100,Printing and Related Support Activities,0.250964,
+324100,Petroleum and Coal Products Manufacturing,0.4192117,
+325400,Pharmaceutical and Medicine Manufacturing,0.8204141,
+326100,Plastics Product Manufacturing,-0.6659414,
+326200,Rubber Product Manufacturing,-0.8993759,
+327000,Nonmetallic Mineral Product Manufacturing,-0.4583566,
+331100,Iron and Steel Mills and Ferroalloy Manufacturing,-0.5029725,
+331200,Steel Product Manufacturing from Purchased Steel,-0.5273881,
+331300,Alumina and Aluminum Production and Processing,-0.648177,
+331400,Nonferrous Metal (except Aluminum) Production and Processing,-0.3394341,
+331500,Foundries,-0.7487636,
+332700,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",-0.2372404,
+332800,"Coating, Engraving, Heat Treating, and Allied Activities",-0.6446335,
+333300,Commercial and Service Industry Machinery Manufacturing,0.7582814,
+333500,Metalworking Machinery Manufacturing,0.1118279,
+333600,"Engine, Turbine, and Power Transmission Equipment Manufacturing",0.6865003,
+334100,Computer and Peripheral Equipment Manufacturing,2.041082,
+334200,Communications Equipment Manufacturing,1.607978,
+334300,Audio and Video Equipment Manufacturing,1.496343,
+334400,Semiconductor and Other Electronic Component Manufacturing,1.309517,
+334500,"Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",1.671551,
+334600,Manufacturing and Reproducing Magnetic and Optical Media,0.2384267,
+335100,Electric Lighting Equipment Manufacturing,0.7916799,
+335200,Household Appliance Manufacturing,0.4128804,
+335300,Electrical Equipment Manufacturing,0.805355,
+335900,Other Electrical Equipment and Component Manufacturing,0.2998135,
+336100,Motor Vehicle Manufacturing,0.2444118,
+336200,Motor Vehicle Body and Trailer Manufacturing,-0.3770952,
+336300,Motor Vehicle Parts Manufacturing,-0.108322,
+336400,Aerospace Product and Parts Manufacturing,1.190376,
+336500,Railroad Rolling Stock Manufacturing,-0.1504968,
+336600,Ship and Boat Building,-0.0544223,
+336900,Other Transportation Equipment Manufacturing,0.2530909,
+337900,Other Furniture Related Product Manufacturing,-0.2421737,
+339100,Medical Equipment and Supplies Manufacturing,0.7815458,
+339900,Other Miscellaneous Manufacturing,0.27896,
+423100,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,-0.1881213,
+423400,Professional and Commercial Equipment and Supplies Merchant Wholesalers,1.035819,
+423800,"Machinery, Equipment, and Supplies Merchant Wholesalers",0.2045736,
+424300,"Apparel, Piece Goods, and Notions Merchant Wholesalers",0.4999831,
+424500,Farm Product Raw Material Merchant Wholesalers,-0.6547234,
+425100,Wholesale Electronic Markets and Agents and Brokers,0.6943218,
+441100,Automobile Dealers,-0.4832686,
+441200,Other Motor Vehicle Dealers,-0.5658475,
+441300,"Automotive Parts, Accessories, and Tire Stores",-0.8744745,
+442100,Furniture Stores,-0.5852913,
+442200,Home Furnishings Stores,-0.7690282,
+443100,Electronics and Appliance Stores,-0.2814265,
+444100,Building Material and Supplies Dealers,-0.7177699,
+444200,Lawn and Garden Equipment and Supplies Stores,-1.037935,
+445300,"Beer, Wine, and Liquor Stores",-1.003907,
+446100,Health and Personal Care Stores,-0.1652908,
+447100,Gasoline Stations,-1.192534,
+448100,Clothing Stores,-0.9071275,
+448200,Shoe Stores,-0.917662,
+448300,"Jewelry, Luggage, and Leather Goods Stores",-0.3845854,
+451100,"Sporting Goods, Hobby, and Musical Instrument Stores",-0.793805,
+451200,Book Stores and News Dealers,-0.8769288,
+452000,General Merchandise Stores,-0.9830824,
+453100,Florists,0.1097455,
+453900,Other Miscellaneous Store Retailers,-0.8707432,
+454100,Electronic Shopping and Mail-Order Houses,0.3519204,
+454200,Vending Machine Operators,-0.441919,
+454300,Direct Selling Establishments,-0.0146821,
+481100,Scheduled Air Transportation,-0.7673068,
+481200,Nonscheduled Air Transportation,1.001061,
+482100,Rail Transportation,0.1319768,
+483100,"Deep Sea, Coastal, and Great Lakes Water Transportation",0.3393089,
+483200,Inland Water Transportation,0.3678075,
+484000,Truck Transportation,-0.2795052,
+485100,Urban Transit Systems,-0.0474788,
+485200,Interurban and Rural Bus Transportation,-0.3684659,
+485300,Taxi and Limousine Service,1.189306,
+485400,School and Employee Bus Transportation,0.0095714,
+485500,Charter Bus Industry,-0.0475239,
+485900,Other Transit and Ground Passenger Transportation,0.8260122,
+486100,Pipeline Transportation of Crude Oil,0.4298265,
+486200,Pipeline Transportation of Natural Gas,0.5647721,
+486900,Other Pipeline Transportation,0.7215898,
+487100,"Scenic and Sightseeing Transportation, Land",-0.1135522,
+487200,"Scenic and Sightseeing Transportation, Water",-0.5679266,
+487900,"Scenic and Sightseeing Transportation, Other",0.7396292,
+488100,Support Activities for Air Transportation,-0.199038,
+488200,Support Activities for Rail Transportation,-0.9985542,
+488300,Support Activities for Water Transportation,-0.9518039,
+488400,Support Activities for Road Transportation,-0.161153,
+488500,Freight Transportation Arrangement,1.1144,
+488900,Other Support Activities for Transportation,-1.389063,
+491100,Postal Service (federal government),-1.707862,
+492100,Couriers and Express Delivery Services,-0.4125384,
+492200,Local Messengers and Local Delivery,-0.6294212,
+493100,Warehousing and Storage,-1.388839,
+511100,"Newspaper, Periodical, Book, and Directory Publishers",1.670902,
+511200,Software Publishers,2.104993,
+512100,Motion Picture and Video Industries,0.6410178,
+512200,Sound Recording Industries,1.506789,
+515100,Radio and Television Broadcasting,1.74528,
+515200,Cable and Other Subscription Programming,1.426635,
+517000,Telecommunications,0.5876417,
+518200,"Data Processing, Hosting, and Related Services",1.697047,
+519100,Other Information Services,1.736799,
+521100,Monetary Authorities-Central Bank,1.739363,
+522200,Nondepository Credit Intermediation,1.542892,
+523000,"Securities, Commodity Contracts, and Other Financial Investments and Related Activities",1.84915,
+524100,Insurance Carriers,1.785158,
+524200,"Agencies, Brokerages, and Other Insurance Related Activities",1.624219,
+525100,Insurance and Employee Benefit Funds,1.91053,
+525900,Other Investment Pools and Funds,1.777566,
+531000,Real Estate,0.5016412,
+532100,Automotive Equipment Rental and Leasing,-0.3436396,
+533100,Lessors of Nonfinancial Intangible Assets (except Copyrighted Works),1.770789,
+541100,Legal Services,1.888971,
+541200,"Accounting, Tax Preparation, Bookkeeping, and Payroll Services",2.259651,
+541300,"Architectural, Engineering, and Related Services",2.653947,
+541400,Specialized Design Services,2.632364,
+541500,Computer Systems Design and Related Services,1.985779,
+541600,"Management, Scientific, and Technical Consulting Services",1.801551,
+541700,Scientific Research and Development Services,2.124732,
+541800,"Advertising, Public Relations, and Related Services",1.548875,
+541900,"Other Professional, Scientific, and Technical Services",0.2021578,
+551100,Management of Companies and Enterprises,1.667971,
+561100,Office Administrative Services,1.471178,
+561200,Facilities Support Services,-1.328263,
+561300,Employment Services,-0.923879,
+561400,Business Support Services,0.7439456,
+561500,Travel Arrangement and Reservation Services,0.9495972,
+561600,Investigation and Security Services,-0.1635042,
+561700,Services to Buildings and Dwellings,-2.346561,
+561900,Other Support Services,-0.6175775,
+562100,Waste Collection,-0.671859,
+562200,Waste Treatment and Disposal,-0.1993774,
+562900,Remediation and Other Waste Management Services,-0.3977331,
+611100,Elementary and Secondary Schools,0.9473249,
+611200,Junior Colleges,0.8002225,
+611300,"Colleges, Universities, and Professional Schools",0.9011006,
+611400,Business Schools and Computer and Management Training,1.433135,
+611500,Technical and Trade Schools,0.5127386,
+611600,Other Schools and Instruction,0.0284855,
+611700,Educational Support Services,1.257967,
+621100,Offices of Physicians,0.4757231,
+621200,Offices of Dentists,-0.0837209,
+621300,Offices of Other Health Practitioners,0.0416583,
+621400,Outpatient Care Centers,0.4870936,
+621500,Medical and Diagnostic Laboratories,0.5187253,
+621600,Home Health Care Services,0.1316011,
+621900,Other Ambulatory Health Care Services,0.6135603,
+622100,General Medical and Surgical Hospitals,0.1197169,
+622200,Psychiatric and Substance Abuse Hospitals,-0.0032196,
+622300,Specialty (except Psychiatric and Substance Abuse) Hospitals,0.1488474,
+623100,Nursing Care Facilities (Skilled Nursing Facilities),-0.9349618,
+623200,"Residential Intellectual and Developmental Disability, Mental Health, and Substance Abuse Facilities",0.2505063,
+623300,Continuing Care Retirement Communities and Assisted Living Facilities for the Elderly,-1.191505,
+623900,Other Residential Care Facilities,0.1491291,
+624100,Individual and Family Services,0.6038074,
+624200,"Community Food and Housing, and Emergency and Other Relief Services",0.4201206,
+624300,Vocational Rehabilitation Services,-0.2846168,
+624400,Child Day Care Services,-0.4636118,
+711100,Performing Arts Companies,-0.5094018,
+711200,Spectator Sports,-0.7208813,
+711300,"Promoters of Performing Arts, Sports, and Similar Events",-0.5204668,
+711400,"Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures",1.229819,
+711500,"Independent Artists, Writers, and Performers",0.882796,
+712100,"Museums, Historical Sites, and Similar Institutions",0.091942,
+713100,Amusement Parks and Arcades,-1.473279,
+713200,Gambling Industries,-0.6089278,
+713900,Other Amusement and Recreation Industries,-2.137343,
+721100,Traveler Accommodation,-1.725918,
+721200,RV (Recreational Vehicle) Parks and Recreational Camps,-0.8106813,
+721300,Rooming and Boarding Houses,-1.886529,
+722300,Special Food Services,-1.837594,
+722400,Drinking Places (Alcoholic Beverages),-1.863788,
+722500,Restaurants and Other Eating Places,-2.165248,
+811100,Automotive Repair and Maintenance,-0.8438273,
+811200,Electronic and Precision Equipment Repair and Maintenance,0.720921,
+811300,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,-0.428551,
+811400,Personal and Household Goods Repair and Maintenance,-0.4742584,
+812100,Personal Care Services,-0.494239,
+812200,Death Care Services,-0.9344434,
+812300,Drycleaning and Laundry Services,-1.479294,
+812900,Other Personal Services,-1.068318,
+813100,Religious Organizations,0.3472685,
+813200,Grantmaking and Giving Services,1.336999,
+813300,Social Advocacy Organizations,0.7719934,
+813400,Civic and Social Organizations,-1.17505,
+813900,"Business, Professional, Labor, Political, and Similar Organizations",1.091347,
+999100,Federal Executive Branch (OES Designation),1.282827,
+999200,"State Government, excluding schools and hospitals (OES Designation)",0.4812283,
+999300,"Local Government, excluding schools and hospitals (OES Designation)",-0.0987837,
+3250A1,"Chemical Manufacturing (3251, 3252, 3253, and 3259 only)",0.3567747,
+3250A2,Chemical Manufacturing (3255 and 3256 only),-0.0504505,
+3320A1,"Fabricated Metal Product Manufacturing (3321, 3322, 3325, 3326, and 3329 only)",-0.1199392,
+3320A2,Fabricated Metal Product Manufacturing (3323 and 3324 only),-0.3157008,
+3330A1,"Machinery Manufacturing (3331, 3332, 3334, and 3339 only)",0.3794195,
+3370A1,Furniture and Related Product Manufacturing (3371 and 3372 only),-0.616636,
+4230A1,"Merchant Wholesalers, Durable Goods (4232, 4233, 4235, 4236, 4237, and 4239 only)",0.1572312,
+4240A1,"Merchant Wholesalers, Nondurable Goods (4244 and 4248 only)",-0.3408445,
+4240A2,"Merchant Wholesalers, Nondurable Goods (4242 and 4246 only)",0.578935,
+4240A3,"Merchant Wholesalers, Nondurable Goods (4241, 4247, and 4249 only)",-0.0258865,
+4450A1,Food and Beverage Stores (4451 and 4452 only),-1.159638,
+4530A1,Miscellaneous Store Retailers (4532 and 4533 only),-0.8085796,
+5220A1,Credit Intermediation and Related Activities (5221 And 5223 only),1.343522,
+5320A1,"Rental and Leasing Services (5322, 5323, and 5324 only)",-0.281806,
+611100,Elementary and Secondary Schools,,1.44894
+551100,Management of Companies and Enterprises,,1.592071
+445300,"Beer, Wine, and Liquor Stores",,0.2288
+444100,Building Material and Supplies Dealers,,0.3544964
+312200,Tobacco Manufacturing,,-0.9705914
+221200,Natural Gas Distribution,,0.2033846
+334200,Communications Equipment Manufacturing,,0.991125
+451100,"Sporting Goods, Hobby, and Musical Instrument Stores",,0.513244
+621900,Other Ambulatory Health Care Services,,0.7634743
+811200,Electronic and Precision Equipment Repair and Maintenance,,-0.0773292
+311900,Other Food Manufacturing,,-0.8497112
+425100,Wholesale Electronic Markets and Agents and Brokers,,1.062347
+337900,Other Furniture Related Product Manufacturing,,-0.6635574
+322200,Converted Paper Product Manufacturing,,-0.885119
+611200,Junior Colleges,,1.759217
+3250A1,"Chemical Manufacturing (3251, 3252, 3253, and 3259 only)",,-0.3177066
+711200,Spectator Sports,,-0.0540171
+334400,Semiconductor and Other Electronic Component Manufacturing,,0.4500771
+4240A2,"Merchant Wholesalers, Nondurable Goods (4242 and 4246 only)",,0.6972101
+813100,Religious Organizations,,1.155523
+561900,Other Support Services,,-0.4006903
+624400,Child Day Care Services,,0.4045842
+999100,Federal Executive Branch (OES Designation),,0.9446542
+488200,Support Activities for Rail Transportation,,-1.530069
+441100,Automobile Dealers,,-0.0857672
+812100,Personal Care Services,,-0.3100892
+331500,Foundries,,-1.168177
+322100,"Pulp, Paper, and Paperboard Mills",,-1.054775
+335900,Other Electrical Equipment and Component Manufacturing,,-0.1593534
+311400,Fruit and Vegetable Preserving and Specialty Food Manufacturing,,-0.9997897
+454300,Direct Selling Establishments,,-0.0607612
+336200,Motor Vehicle Body and Trailer Manufacturing,,-0.89675
+453900,Other Miscellaneous Store Retailers,,0.2850367
+237200,Land Subdivision,,0.4659384
+324100,Petroleum and Coal Products Manufacturing,,-0.4347589
+813300,Social Advocacy Organizations,,1.302326
+492100,Couriers and Express Delivery Services,,-1.299443
+999300,"Local Government, excluding schools and hospitals (OES Designation)",,0.0238635
+481200,Nonscheduled Air Transportation,,-0.2209606
+813200,Grantmaking and Giving Services,,1.779492
+486200,Pipeline Transportation of Natural Gas,,-0.357459
+335300,Electrical Equipment Manufacturing,,0.1497846
+518200,"Data Processing, Hosting, and Related Services",,1.654264
+442100,Furniture Stores,,0.1916725
+561200,Facilities Support Services,,-0.7835189
+441300,"Automotive Parts, Accessories, and Tire Stores",,-0.5935317
+611300,"Colleges, Universities, and Professional Schools",,1.625725
+561300,Employment Services,,-0.5981276
+562200,Waste Treatment and Disposal,,-0.9307135
+424300,"Apparel, Piece Goods, and Notions Merchant Wholesalers",,0.7209005
+483100,"Deep Sea, Coastal, and Great Lakes Water Transportation",,-0.5228274
+622300,Specialty (except Psychiatric and Substance Abuse) Hospitals,,0.6808028
+611400,Business Schools and Computer and Management Training,,1.816898
+4240A1,"Merchant Wholesalers, Nondurable Goods (4244 and 4248 only)",,-0.3049202
+115100,Support Activities for Crop Production,,-1.93639
+314900,Other Textile Product Mills,,-0.7875527
+493100,Warehousing and Storage,,-1.526172
+323100,Printing and Related Support Activities,,-0.3234247
+238200,Building Equipment Contractors,,-0.9264848
+313200,Fabric Mills,,-1.129803
+321900,Other Wood Product Manufacturing,,-1.183151
+311800,Bakeries and Tortilla Manufacturing,,-0.7666731
+312100,Beverage Manufacturing,,-0.5721259
+442200,Home Furnishings Stores,,0.295247
+515200,Cable and Other Subscription Programming,,1.007248
+339900,Other Miscellaneous Manufacturing,,-0.1698289
+525900,Other Investment Pools and Funds,,1.962175
+713200,Gambling Industries,,-0.0685389
+441200,Other Motor Vehicle Dealers,,-0.0086145
+561400,Business Support Services,,1.88074
+326200,Rubber Product Manufacturing,,-1.120887
+236100,Residential Building Construction,,-0.7263659
+561500,Travel Arrangement and Reservation Services,,1.778761
+486900,Other Pipeline Transportation,,-0.3630448
+522200,Nondepository Credit Intermediation,,2.051283
+443100,Electronics and Appliance Stores,,0.5540931
+488100,Support Activities for Air Transportation,,-0.361676
+236200,Nonresidential Building Construction,,-0.7161099
+4240A3,"Merchant Wholesalers, Nondurable Goods (4241, 4247, and 4249 only)",,0.0263692
+711100,Performing Arts Companies,,0.4520053
+334500,"Navigational, Measuring, Electromedical, and Control Instruments Manufacturing",,0.877932
+512200,Sound Recording Industries,,1.312842
+488400,Support Activities for Road Transportation,,-1.170591
+315200,Cut and Sew Apparel Manufacturing,,-0.8943688
+519100,Other Information Services,,1.719596
+621100,Offices of Physicians,,1.040829
+511100,"Newspaper, Periodical, Book, and Directory Publishers",,1.266109
+492200,Local Messengers and Local Delivery,,-1.270109
+812200,Death Care Services,,-0.0593705
+339100,Medical Equipment and Supplies Manufacturing,,0.013895
+621400,Outpatient Care Centers,,1.029444
+454100,Electronic Shopping and Mail-Order Houses,,0.6620128
+541500,Computer Systems Design and Related Services,,1.750889
+485400,School and Employee Bus Transportation,,0.0559563
+512100,Motion Picture and Video Industries,,0.413089
+531000,Real Estate,,0.4941004
+321100,Sawmills and Wood Preservation,,-1.499142
+326100,Plastics Product Manufacturing,,-0.911464
+444200,Lawn and Garden Equipment and Supplies Stores,,-0.2473165
+331300,Alumina and Aluminum Production and Processing,,-1.117275
+533100,Lessors of Nonfinancial Intangible Assets (except Copyrighted Works),,1.870846
+541100,Legal Services,,2.19893
+423400,Professional and Commercial Equipment and Supplies Merchant Wholesalers,,1.011622
+722300,Special Food Services,,-0.729668
+334300,Audio and Video Equipment Manufacturing,,0.9976608
+711300,"Promoters of Performing Arts, Sports, and Similar Events",,-0.0417869
+3320A1,"Fabricated Metal Product Manufacturing (3321, 3322, 3325, 3326, and 3329 only)",,-0.6248571
+4230A1,"Merchant Wholesalers, Durable Goods (4232, 4233, 4235, 4236, 4237, and 4239 only)",,0.279742
+811300,Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,,-0.879418
+999200,"State Government, excluding schools and hospitals (OES Designation)",,0.7959982
+336300,Motor Vehicle Parts Manufacturing,,-0.7298725
+336400,Aerospace Product and Parts Manufacturing,,0.2732446
+211100,Oil and Gas Extraction,,0.4488801
+4450A1,Food and Beverage Stores (4451 and 4452 only),,-0.187831
+238300,Building Finishing Contractors,,-1.44051
+332700,"Machine Shops; Turned Product; and Screw, Nut, and Bolt Manufacturing",,-0.7429362
+3370A1,Furniture and Related Product Manufacturing (3371 and 3372 only),,-1.048481
+485500,Charter Bus Industry,,-0.0039399
+562100,Waste Collection,,-1.430758
+488900,Other Support Activities for Transportation,,-0.9422619
+5320A1,"Rental and Leasing Services (5322, 5323, and 5324 only)",,-0.2708665
+213100,Support Activities for Mining,,-1.103578
+611600,Other Schools and Instruction,,1.037076
+5220A1,Credit Intermediation and Related Activities (5221 And 5223 only),,1.801161
+481100,Scheduled Air Transportation,,-0.3840335
+623900,Other Residential Care Facilities,,0.9229316
+523000,"Securities, Commodity Contracts, and Other Financial Investments and Related Activities",,2.10484
+3320A2,Fabricated Metal Product Manufacturing (3323 and 3324 only),,-0.8475876
+332800,"Coating, Engraving, Heat Treating, and Allied Activities",,-0.8038041
+622100,General Medical and Surgical Hospitals,,0.598083
+221100,"Electric Power Generation, Transmission and Distribution",,0.0499917
+311700,Seafood Product Preparation and Packaging,,-1.162078
+212300,Nonmetallic Mineral Mining and Quarrying,,-1.219409
+611700,Educational Support Services,,1.702967
+423100,Motor Vehicle and Motor Vehicle Parts and Supplies Merchant Wholesalers,,-0.1336922
+811400,Personal and Household Goods Repair and Maintenance,,-0.8000787
+482100,Rail Transportation,,-0.8212433
+331400,Nonferrous Metal (except Aluminum) Production and Processing,,-0.8714696
+721100,Traveler Accommodation,,-0.5285271
+541700,Scientific Research and Development Services,,1.405602
+325400,Pharmaceutical and Medicine Manufacturing,,0.309366
+541800,"Advertising, Public Relations, and Related Services",,1.281933
+4530A1,Miscellaneous Store Retailers (4532 and 4533 only),,0.4578613
+624100,Individual and Family Services,,1.303176
+333300,Commercial and Service Industry Machinery Manufacturing,,0.1626688
+712100,"Museums, Historical Sites, and Similar Institutions",,0.519238
+311500,Dairy Product Manufacturing,,-0.8946212
+311600,Animal Slaughtering and Processing,,-1.515035
+238100,"Foundation, Structure, and Building Exterior Contractors",,-1.621387
+327000,Nonmetallic Mineral Product Manufacturing,,-1.085041
+813400,Civic and Social Organizations,,0.0471964
+237900,Other Heavy and Civil Engineering Construction,,-1.16696
+517000,Telecommunications,,0.1724486
+623100,Nursing Care Facilities (Skilled Nursing Facilities),,0.0127003
+541300,"Architectural, Engineering, and Related Services",,1.066006
+711500,"Independent Artists, Writers, and Performers",,0.6763131
+562900,Remediation and Other Waste Management Services,,-0.8477126
+221300,"Water, Sewage and Other Systems",,-0.2695695
+484000,Truck Transportation,,-1.539235
+561600,Investigation and Security Services,,-0.4163583
+424500,Farm Product Raw Material Merchant Wholesalers,,-0.6865089
+321200,"Veneer, Plywood, and Engineered Wood Product Manufacturing",,-1.211077
+524100,Insurance Carriers,,1.976356
+624300,Vocational Rehabilitation Services,,0.522513
+541400,Specialized Design Services,,0.9959185
+713100,Amusement Parks and Arcades,,-0.2294791
+335100,Electric Lighting Equipment Manufacturing,,0.4803347
+561100,Office Administrative Services,,1.673938
+237300,"Highway, Street, and Bridge Construction",,-1.362089
+488500,Freight Transportation Arrangement,,0.8797804
+446100,Health and Personal Care Stores,,0.4043418
+813900,"Business, Professional, Labor, Political, and Similar Organizations",,1.402145
+623300,Continuing Care Retirement Communities and Assisted Living Facilities for the Elderly,,-0.196189
+561700,Services to Buildings and Dwellings,,-1.612025
+622200,Psychiatric and Substance Abuse Hospitals,,0.6696325
+621300,Offices of Other Health Practitioners,,0.8734526
+623200,"Residential Intellectual and Developmental Disability, Mental Health, and Substance Abuse Facilities",,1.030857
+336100,Motor Vehicle Manufacturing,,-0.4568835
+488300,Support Activities for Water Transportation,,-1.449808
+238900,Other Specialty Trade Contractors,,-1.392268
+237100,Utility System Construction,,-1.218836
+333600,"Engine, Turbine, and Power Transmission Equipment Manufacturing",,-0.0730968
+611500,Technical and Trade Schools,,1.095225
+311100,Animal Food Manufacturing,,-0.8605075
+811100,Automotive Repair and Maintenance,,-1.114094
+812300,Drycleaning and Laundry Services,,-0.9959455
+541200,"Accounting, Tax Preparation, Bookkeeping, and Payroll Services",,1.907619
+331200,Steel Product Manufacturing from Purchased Steel,,-1.026607
+485900,Other Transit and Ground Passenger Transportation,,0.899507
+3330A1,"Machinery Manufacturing (3331, 3332, 3334, and 3339 only)",,-0.2270722
+334100,Computer and Peripheral Equipment Manufacturing,,1.397711
+212100,Coal Mining,,-1.38403
+812900,Other Personal Services,,-0.5891773
+333500,Metalworking Machinery Manufacturing,,-0.5041936
+331100,Iron and Steel Mills and Ferroalloy Manufacturing,,-1.134565
+541900,"Other Professional, Scientific, and Technical Services",,0.6538497
+311300,Sugar and Confectionery Product Manufacturing,,-0.7428267
+713900,Other Amusement and Recreation Industries,,-0.5725563
+621600,Home Health Care Services,,0.8117862
+454200,Vending Machine Operators,,-0.6922235
+3250A2,Chemical Manufacturing (3255 and 3256 only),,-0.4082199
+311200,Grain and Oilseed Milling,,-0.7862635
+524200,"Agencies, Brokerages, and Other Insurance Related Activities",,2.087049
+423800,"Machinery, Equipment, and Supplies Merchant Wholesalers",,0.2634982
+621500,Medical and Diagnostic Laboratories,,0.6569087
+521100,Monetary Authorities-Central Bank,,1.643377
+541600,"Management, Scientific, and Technical Consulting Services",,1.722495
+621200,Offices of Dentists,,0.4777574
+511200,Software Publishers,,1.8772
+532100,Automotive Equipment Rental and Leasing,,-0.0950282
+722500,Restaurants and Other Eating Places,,-0.772517
+447100,Gasoline Stations,,-0.1060679
+721300,Rooming and Boarding Houses,,-0.6265475
+451200,Book Stores and News Dealers,,0.5822943
+115200,Support Activities for Animal Production,,-1.034116
+334600,Manufacturing and Reproducing Magnetic and Optical Media,,0.1217256
+113300,Logging,,-1.73983
+316900,Other Leather and Allied Product Manufacturing,,-0.8250354
+313100,"Fiber, Yarn, and Thread Mills",,-1.614728
+491100,Postal Service (federal government),,-1.121128
+315900,Apparel Accessories and Other Apparel Manufacturing,,-1.059133
+336500,Railroad Rolling Stock Manufacturing,,-0.792437
+483200,Inland Water Transportation,,-1.203537
+313300,Textile and Fabric Finishing and Fabric Coating Mills,,-0.5264533
+212200,Metal Ore Mining,,-1.112581
+487100,"Scenic and Sightseeing Transportation, Land",,0.5075915
+336600,Ship and Boat Building,,-0.7998238
+314100,Textile Furnishings Mills,,-1.210906
+315100,Apparel Knitting Mills,,-1.238002
+453100,Florists,,-0.2594246
+316200,Footwear Manufacturing,,-0.591018
+448300,"Jewelry, Luggage, and Leather Goods Stores",,0.5883098
+487900,"Scenic and Sightseeing Transportation, Other",,-0.0580567
+487200,"Scenic and Sightseeing Transportation, Water",,-0.6566207
+485300,Taxi and Limousine Service,,1.266258
+336900,Other Transportation Equipment Manufacturing,,-0.297176
+515100,Radio and Television Broadcasting,,1.330504
+525100,Insurance and Employee Benefit Funds,,2.052607
+452000,General Merchandise Stores,,0.270093
+485100,Urban Transit Systems,,-0.1658452
+486100,Pipeline Transportation of Crude Oil,,-0.3534026
+721200,RV (Recreational Vehicle) Parks and Recreational Camps,,-0.2026199
+624200,"Community Food and Housing, and Emergency and Other Relief Services",,0.9630393
+316100,Leather and Hide Tanning and Finishing,,-1.134037
+485200,Interurban and Rural Bus Transportation,,0.0313755
+711400,"Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures",,2.017241
+335200,Household Appliance Manufacturing,,-0.1022941
+448200,Shoe Stores,,0.6448641
+722400,Drinking Places (Alcoholic Beverages),,-0.651397
+448100,Clothing Stores,,0.5698005

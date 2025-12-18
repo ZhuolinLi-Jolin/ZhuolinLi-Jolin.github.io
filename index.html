@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,11 +32,11 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-label">Automated Data Visualisation for Policymaking</div>
-            <h1 class="hero-name">Your Name</h1>
+            <h1 class="hero-name">Zhuolin Li</h1>
             <p class="hero-bio">
-                Collection of data visualization projects completed during the Fall 2024 semester. 
+                Collection of data visualization projects completed during the Autumn 2025 semester. 
                 This portfolio showcases both weekly assignments exploring various chart types 
-                and techniques, as well as a comprehensive final project investigating [your research topic].
+                and techniques, as well as a comprehensive final project investigating AI and employment.
             </p>
             <div class="contact-links">
                 <div class="contact-item">
@@ -63,25 +64,24 @@
         
         <div class="project-container reveal-element">
             <div class="project-intro">
-                <h3 class="project-title">Climate Change Impact on Global Agriculture Production</h3>
+                <h3 class="project-title">Are AI Taking Our Jobs?</h3>
                 <p class="project-description">
-                    This project examines the relationship between rising global temperatures and 
-                    agricultural productivity across different regions from 1990-2023. Through a series 
-                    of interactive visualizations, we explore patterns, correlations, and potential 
-                    future implications for food security.
+                    This project investigates the widespread fear of automation through a data-driven lens, 
+                    analyzing the relationship between AI adoption and occupational stability.
+                    Unlike previous industrial shifts, Generative AI targets different roles. 
+                    Through a series of interactive visualizations integrating O*NET task data with BLS employment statistics, 
+                    we explore whether we are witnessing a simple replacement of labor, or a complex structural reorganization of the workforce.
                 </p>
                 <div class="research-question">
                     <div class="research-question-label">Research Question</div>
                     <p class="research-question-text">
-                        How have temperature increases over the past three decades affected crop yields 
-                        in major agricultural regions, and what patterns emerge when comparing developed 
-                        versus developing nations?
+                        How is AI driving a structural shift in the US labor market?
                     </p>
                 </div>
             </div>
 
             <div class="chart-grid">
-                <div class="chart-item">
+                <!-- <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 1</div>
                         <h4 class="chart-title">Global Temperature Trends (1990-2023)</h4>
@@ -90,21 +90,27 @@
                             with trend line and seasonal variations highlighted.
                         </p>
                     </div>
-                    <!-- <div class="chart-placeholder">
-                        [Interactive Line Chart Here]
-                    </div> -->
-
                         <div id="vis1" class="chart-placeholder"></div>
-                    <!-- </div> -->
+                </div> -->
+                <div class="chart-item">
+                    <div class="chart-header">
+                    <div class="chart-number">FIGURE 1</div>
+                    <h4 class="chart-title">AI Exposure vs. Wage: A Structural Shift</h4>
+                    <p class="chart-description">
+                        Interactive visualization analyzing the correlation between AI Exposure Scores (AIOE) 
+                        and Annual Mean Wages across different job sectors (Logarithmic Scale).
+                    </p>
                 </div>
+                    <div id="vis1" class="chart-placeholder" style="width: 100%; height: 750px;"></div>
+            </div>
 
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 2</div>
-                        <h4 class="chart-title">Regional Agricultural Output Changes</h4>
+                        <h4 class="chart-title">Relationship Between AI Exposure and Occupational Mix Change</h4>
                         <p class="chart-description">
-                            Comparative bar chart displaying percentage changes in crop production 
-                            across six major agricultural regions.
+                            Scattered distribution analysis of AI Exposure Index 
+                            and Occupational Mix Change Index of major industries in the United States.
                         </p>
                     </div>
                     <div id="vis2" class="chart-placeholder"></div>
@@ -113,52 +119,86 @@
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 3</div>
-                        <h4 class="chart-title">Temperature vs. Yield Correlation</h4>
+                        <h4 class="chart-title">Correlation Analysis of AI Exposure and Unemployment Trends</h4>
                         <p class="chart-description">
-                            Scatter plot revealing the relationship between temperature increase 
-                            and crop yield changes, segmented by crop type.
+                            This scatter plot illustrates the relationship between the AI Exposure Rate
+                            and the percentage point change in unemployment across various US labor sectors.
                         </p>
                     </div>
-                    <div class="chart-placeholder">
+                    <!-- <div class="chart-placeholder">
                         [Interactive Scatter Plot Here]
+                    </div> -->
+                    <div class="chart-placeholder">
+                        <img src="Figure3.png" alt="AI Exposure and Unemployment Trends" style="width: 100%; height: auto;">
                     </div>
                 </div>
 
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 4</div>
-                        <h4 class="chart-title">Geographic Distribution of Impact</h4>
+                        <h4 class="chart-title">Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants</h4>
                         <p class="chart-description">
-                            Choropleth map illustrating severity of agricultural impact across 
-                            countries with interactive hover details.
+                           This diagram illustrates the mapping of occupational categories into the four-quadrant framework of AI exposure and utilization, 
+                           highlighting how different labor sectors are structurally positioned relative to AI's technological impact and adoption.
                         </p>
                     </div>
-                    <div class="chart-placeholder">
+                    <!-- <div class="chart-placeholder">
                         [Interactive Map Here]
+                    </div> -->
+                    <div class="chart-placeholder">
+                        <img src="Figure4.png" alt="Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants" style="width: 100%; height: auto;">
                     </div>
                 </div>
 
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 5</div>
-                        <h4 class="chart-title">Seasonal Patterns Analysis</h4>
+                        <h4 class="chart-title">AI Adoption Gap by Occupational Category</h4>
                         <p class="chart-description">
-                            Heatmap showing how different seasons have been affected differently 
-                            across regions over the study period.
+                            Arrows illustrate the deviation of actual AI usage from technical expectations, 
+                            identifying sectors that are either leading in adoption (green) or under-utilizing their potential (red).
                         </p>
                     </div>
-                    <div id="vis5" class="chart-placeholder"></div>
+                    <!-- <div id="vis5" class="chart-placeholder"></div> -->
+                     <div class="chart-placeholder">
+                        <img src="Figure5.png" alt="Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants" style="width: 100%; height: auto;">
+                    </div>
                 </div>
+
+                <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">FIGURE 6</div>
+                        <h4 class="chart-title">Structural Intensity Heatmap: AI Exposure Shifts by Unemployment Duration</h4>
+                        <p class="chart-description">
+                            This visualization provides empirical evidence that the impact of AI on the labor market is both lagged and cumulative. The concentration of automation risk among the long-term unemployed suggests that AI is not merely causing frictional churn but is fundamentally altering the unemployment structure. 
+                            This slow but persistent re-composition of the labor force captures the very essence of a "Structural Shift" in the modern economy.
+                        </p>
+                    </div>
+                    <div class="chart-placeholder">
+                        <img src="Figure6.png" alt="Structural Intensity Heatmap: AI Exposure Shifts by Unemployment Duration" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+
+                <!-- <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">FIGURE 7</div>
+                        <h4 class="chart-title">Temporal Dynamics of AI Integration in the Labor Market</h4>
+                        <p class="chart-description">
+                            Time-series analysis tracking the evolution of AI adoption, employment changes, and wage adjustments 
+                            across occupational sectors from 2020 to present.
+                        </p>
+                    </div>
+                    <div class="chart-placeholder">
+                        <img src="Figure7.png" alt="Temporal Dynamics of AI Integration in the Labor Market" style="width: 100%; height: auto;">
+                    </div>
+                </div> -->
             </div>
 
             <div class="project-conclusion">
                 <div class="conclusion-label">Key Findings</div>
                 <p class="conclusion-text">
-                    The analysis reveals a clear negative correlation between temperature increases 
-                    and crop yields in tropical regions, while some temperate zones have experienced 
-                    modest productivity gains. Developing nations face disproportionate impacts, with 
-                    subsistence farming regions showing 23% average yield declines. These findings 
-                    underscore the urgent need for climate adaptation strategies in agriculture.
+                    The analysis reveals that AI adoption is driving a structural transformation in the labor market.
+                    Jobs with high AI exposure are not only facing wage stagnation but also significant shifts in occupational composition……
                 </p>
             </div>
         </div>

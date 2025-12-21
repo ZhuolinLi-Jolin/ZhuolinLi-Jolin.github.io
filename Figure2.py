@@ -5,31 +5,31 @@ import seaborn as sns
 import altair as alt
 
 # ==========================================
-# 1. 数据加载 (Data Loading)
+# 1. Data Loading
 # ==========================================
-# 加载数据源
-file_aiie = "project/Combined_AIIE.csv"  # 包含 Image Generation AIIE 和 Language Modeling AIIE 两列
+# Load data sources
+file_aiie = "project/Combined_AIIE.csv"  # Contains both Image Generation AIIE and Language Modeling AIIE columns
 file_f7 = "project/TBL_F7.csv"
 
-# 加载数据
-# Combined_AIIE.csv 包含两个 AIIE 列 (Image Generation AIIE 和 Language Modeling AIIE)
+# Load data
+# Combined_AIIE.csv contains two AIIE columns (Image Generation AIIE and Language Modeling AIIE)
 df_aiie = pd.read_csv(file_aiie)
-# F7 文件前 5 行是元数据，所以需要跳过 (skiprows=5)
+# F7 file has 5 rows of metadata at the beginning, so skip them (skiprows=5)
 df_f7 = pd.read_csv(file_f7, skiprows=5)
 
 # ==========================================
-# 2. 行业映射函数 (NAICS Mapping Logic)
+# 2. NAICS Mapping Logic
 # ==========================================
-# 将细分的 NAICS 代码映射到 F7 表格中的 10 大宽泛行业板块
+# Map detailed NAICS codes to 10 broad industry sectors from F7 table
 def map_naics_to_sector(naics_code):
     try:
-        # 提取前两位数字作为大类标识
+        # Extract first two digits as major category identifier
         code = str(naics_code)[:2]
         code_int = int(code)
     except:
         return None
     
-    # 映射规则
+    # Mapping rules
     if code_int in [11, 21]: return "Natural Resources and Mining"
     if code_int == 23: return "Construction"
     if 31 <= code_int <= 33: return "Manufacturing"
@@ -43,48 +43,48 @@ def map_naics_to_sector(naics_code):
     return None
 
 # ==========================================
-# 3. 数据处理与聚合 (Data Processing)
+# 3. Data Processing & Aggregation
 # ==========================================
 
-# --- 处理图像生成 (IG) 数据 ---
+# --- Process Image Generation (IG) data ---
 df_aiie['Broad_Sector'] = df_aiie['NAICS'].apply(map_naics_to_sector)
-# 按大板块计算平均暴露度
+# Calculate average exposure by broad sector
 df_ig_agg = df_aiie.dropna(subset=['Image Generation AIIE']).groupby('Broad_Sector')['Image Generation AIIE'].mean().reset_index()
 df_ig_agg.rename(columns={'Image Generation AIIE': 'IG_Exposure'}, inplace=True)
 
-# --- 处理语言模型 (LM) 数据 ---
-# 按大板块计算平均暴露度
+# --- Process Language Modeling (LM) data ---
+# Calculate average exposure by broad sector
 df_lm_agg = df_aiie.dropna(subset=['Language Modeling AIIE']).groupby('Broad_Sector')['Language Modeling AIIE'].mean().reset_index()
 df_lm_agg.rename(columns={'Language Modeling AIIE': 'LM_Exposure'}, inplace=True)
 
-# --- 处理结构变动 (Structural Change - F7) 数据 ---
-# F7 表格包含随时间变化的异质性指数。
-# 我们取最近 12 个月（最后 12 行）的平均值，代表该行业当前的“变动程度”。
-industry_columns = df_f7.columns[1:] # 跳过第一列时间列
+# --- Process Structural Change (F7) data ---
+# F7 table contains heterogeneity index over time.
+# We take the average of the most recent 12 months (last 12 rows) to represent current "degree of change" for each industry.
+industry_columns = df_f7.columns[1:] # Skip first time column
 latest_change = df_f7.iloc[-12:][industry_columns].mean()
 df_change = pd.DataFrame({'Broad_Sector': latest_change.index, 'Dissimilarity_Index': latest_change.values})
 
 # ==========================================
-# 4. 数据合并 (Data Merging)
+# 4. Data Merging
 # ==========================================
-# 将三个处理好的数据框按 'Broad_Sector' 合并
+# Merge three processed dataframes by 'Broad_Sector'
 df_merged = pd.merge(df_change, df_ig_agg, on='Broad_Sector', how='inner')
 df_merged = pd.merge(df_merged, df_lm_agg, on='Broad_Sector', how='inner')
 
-# 计算综合暴露度 (Combined Exposure)
-# 这里使用简单的算术平均。您也可以根据需要调整权重，例如 0.7*LM + 0.3*IG
+# Calculate combined exposure (Combined Exposure)
+# Here we use simple arithmetic mean. You can adjust weights if needed, e.g., 0.7*LM + 0.3*IG
 df_merged['Combined_Exposure'] = (df_merged['IG_Exposure'] + df_merged['LM_Exposure']) / 2
 
-print("合并后的最终数据预览：")
+print("Preview of merged final data:")
 print(df_merged[['Broad_Sector', 'Combined_Exposure', 'Dissimilarity_Index']])
 
 # ==========================================
-# 5. 可视化绘图 (Plotting)
+# 5. Visualization (Plotting)
 # ==========================================
 plt.figure(figsize=(14, 6))
 sns.set_style("whitegrid")
 
-# --- 子图 1: 仅看语言模型暴露度 ---
+# --- Subplot 1: Language modeling exposure only ---
 plt.subplot(1, 2, 1)
 sns.scatterplot(
     data=df_merged,
@@ -95,7 +95,7 @@ sns.scatterplot(
     edgecolor='black',
     alpha=0.8
 )
-# 添加标签
+# Add labels
 for i in range(df_merged.shape[0]):
     row = df_merged.iloc[i]
     plt.text(row['LM_Exposure']+0.02, row['Dissimilarity_Index'], row['Broad_Sector'], fontsize=9)
@@ -104,7 +104,7 @@ plt.title('Language Modeling (Text) AI Exposure\nvs. Industry Structural Change'
 plt.xlabel('Avg Language Modeling Exposure (LM AIIE)', fontsize=10)
 plt.ylabel('Occupational Mix Change Index (Churn)', fontsize=10)
 
-# --- 子图 2: 仅看图像生成 ---
+# --- Subplot 2: Image generation only ---
 plt.subplot(1, 2, 2)
 sns.scatterplot(
     data=df_merged,
@@ -115,7 +115,7 @@ sns.scatterplot(
     edgecolor='black',
     alpha=0.8
 )
-# 添加标签
+# Add labels
 for i in range(df_merged.shape[0]):
     row = df_merged.iloc[i]
     plt.text(row['IG_Exposure']+0.02, row['Dissimilarity_Index'], row['Broad_Sector'], fontsize=9)
@@ -123,25 +123,25 @@ plt.title('Image Generation AI Exposure\nvs. Industry Structural Change', fontsi
 plt.xlabel('Avg Image Generation Exposure (IG AIIE)', fontsize=10)
 plt.ylabel('Occupational Mix Change Index (Churn)', fontsize=10)
 plt.tight_layout()
-plt.show() # 如果在脚本中运行，可以使用 plt.savefig('separate_analysis.png
+plt.show() # If running in script, can use plt.savefig('separate_analysis.png')
 
-# --- 子图 3: 综合暴露度 (文本+图像) ---
+# --- Subplot 3: Combined exposure (text+image) ---
 plt.subplot(1, 2, 2)
 sns.scatterplot(
     data=df_merged,
     x='Combined_Exposure',
     y='Dissimilarity_Index',
-    s=250, # 气泡稍微大一点
+    s=250, # Slightly larger bubbles
     color='purple',
     edgecolor='black',
     alpha=0.8
 )
-# 添加标签
+# Add labels
 for i in range(df_merged.shape[0]):
     row = df_merged.iloc[i]
     plt.text(row['Combined_Exposure']+0.02, row['Dissimilarity_Index'], row['Broad_Sector'], fontsize=9)
 
-# 添加辅助线 (均值线)
+# Add auxiliary lines (mean lines)
 plt.axvline(x=df_merged['Combined_Exposure'].mean(), color='gray', linestyle='--', alpha=0.5)
 plt.axhline(y=df_merged['Dissimilarity_Index'].mean(), color='gray', linestyle='--', alpha=0.5)
 
@@ -150,42 +150,42 @@ plt.xlabel('Combined AI Exposure Index (Avg of LM & IG)', fontsize=10)
 plt.ylabel('Occupational Mix Change Index (Churn)', fontsize=10)
 
 plt.tight_layout()
-plt.show() # 如果在脚本中运行，可以使用 plt.savefig('combined_analysis.png') 保存
+plt.show() # If running in script, can use plt.savefig('combined_analysis.png') to save
 
 # ==========================================
-# 6. 交互式 Vega-Lite/Altair 图表制作
+# 6. Interactive Vega-Lite/Altair Chart Creation
 # ==========================================
-# 1. 定义下拉菜单
+# 1. Define dropdown menu
 input_dropdown = alt.binding_select(
     options=['Text Generation', 'Image Generation', 'Combined'],
     name='Select AI Exposure Type: '
 )
 
-# 2. 创建参数
+# 2. Create parameter
 selection = alt.selection_point(
     fields=['Label'],
     bind=input_dropdown,
     value='Text Generation'
 )
 
-# 3. 基础图表定义 (注意：这里不要加 add_params)
-# 我们在这里只做数据转换和过滤
+# 3. Base chart definition (note: don't add add_params here)
+# We only do data transformation and filtering here
 base = alt.Chart(df_merged).transform_fold(
     ['LM_Exposure', 'IG_Exposure', 'Combined_Exposure'],
     as_=['Metric_Key', 'Exposure_Value']
 ).transform_calculate(
     Label="datum.Metric_Key == 'LM_Exposure' ? 'Text Generation' : (datum.Metric_Key == 'IG_Exposure' ? 'Image Generation' : 'Combined')"
 ).transform_filter(
-    selection  # 过滤器必须保留在这里，因为所有图层都需要根据它来改变数据
+    selection  # Filter must stay here as all layers need to change data based on it
 )
 
-# --- 定义颜色 ---
+# --- Define colors ---
 color_scale = alt.Scale(
     domain=['Text Generation', 'Image Generation', 'Combined'],
     range=['darkorange', 'seagreen', 'purple']
 )
 
-# --- 图层 A: 散点 ---
+# --- Layer A: Scatter points ---
 points = base.mark_circle(
     size=250,
     stroke='black',
@@ -206,7 +206,7 @@ points = base.mark_circle(
     ]
 )
 
-# --- 图层 B: 标签 ---
+# --- Layer B: Labels ---
 text = base.mark_text(
     align='left', dx=12, fontSize=10
 ).encode(
@@ -215,7 +215,7 @@ text = base.mark_text(
     text='Broad_Sector:N'
 )
 
-# --- 图层 C: 均值线 ---
+# --- Layer C: Mean lines ---
 rule_x = base.mark_rule(
     color='gray', strokeDash=[4, 4], opacity=0.5
 ).encode(
@@ -228,9 +228,7 @@ rule_y = base.mark_rule(
     y='mean(Dissimilarity_Index):Q'
 )
 
-# --- 组合 ---
-# ！！！关键修改！！！
-# add_params(selection) 必须加在这里，确保只添加一次
+
 final_chart = (rule_x + rule_y + points + text).add_params(
     selection
 ).properties(
@@ -240,5 +238,5 @@ final_chart = (rule_x + rule_y + points + text).add_params(
 )
 
 # final_chart.save('interactive_chart.html')
-# print("成功！已生成 interactive_chart.html")
+# print("Success! Generated interactive_chart.html")
 print(final_chart.to_json())

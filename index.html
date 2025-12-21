@@ -91,15 +91,13 @@
                         </p>
                     </div>
                     <div class="chart-placeholder">
-                        <!-- 包裹层用于居中和缩放控制 -->
                         <div id="vis1-wrapper">
                             <div id="vis1"></div>
                         </div>
                     </div>
                 </div>
-               
-            </div>
 
+                <!-- Figure 2 - 移到 chart-grid 内 -->
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 2</div>
@@ -112,6 +110,7 @@
                     <div id="vis2" class="chart-placeholder"></div>
                 </div>
 
+                <!-- Figure 3 -->
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 3</div>
@@ -121,14 +120,12 @@
                             and the percentage point change in unemployment across various US labor sectors.
                         </p>
                     </div>
-                    <!-- <div class="chart-placeholder">
-                        [Interactive Scatter Plot Here]
-                    </div> -->
                     <div class="chart-placeholder">
                         <img src="Figure3.png" alt="AI Exposure and Unemployment Trends" style="width: 100%; height: auto;">
                     </div>
                 </div>
 
+                <!-- Figure 4 -->
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 4</div>
@@ -138,14 +135,12 @@
                            highlighting how different labor sectors are structurally positioned relative to AI's technological impact and adoption.
                         </p>
                     </div>
-                    <!-- <div class="chart-placeholder">
-                        [Interactive Map Here]
-                    </div> -->
                     <div class="chart-placeholder">
                         <img src="Figure4.png" alt="Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants" style="width: 100%; height: auto;">
                     </div>
                 </div>
 
+                <!-- Figure 5 -->
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 5</div>
@@ -155,12 +150,12 @@
                             identifying sectors that are either leading in adoption (green) or under-utilizing their potential (red).
                         </p>
                     </div>
-                    <!-- <div id="vis5" class="chart-placeholder"></div> -->
-                     <div class="chart-placeholder">
+                    <div class="chart-placeholder">
                         <img src="Figure5.png" alt="Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants" style="width: 100%; height: auto;">
                     </div>
                 </div>
 
+                <!-- Figure 6 -->
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 6</div>
@@ -174,20 +169,6 @@
                         <img src="Figure6.png" alt="Structural Intensity Heatmap: AI Exposure Shifts by Unemployment Duration" style="width: 100%; height: auto;">
                     </div>
                 </div>
-
-                <!-- <div class="chart-item">
-                    <div class="chart-header">
-                        <div class="chart-number">FIGURE 7</div>
-                        <h4 class="chart-title">Temporal Dynamics of AI Integration in the Labor Market</h4>
-                        <p class="chart-description">
-                            Time-series analysis tracking the evolution of AI adoption, employment changes, and wage adjustments 
-                            across occupational sectors from 2020 to present.
-                        </p>
-                    </div>
-                    <div class="chart-placeholder">
-                        <img src="Figure7.png" alt="Temporal Dynamics of AI Integration in the Labor Market" style="width: 100%; height: auto;">
-                    </div>
-                </div> -->
             </div>
 
             <div class="project-conclusion">
@@ -197,6 +178,21 @@
                     Jobs with high AI exposure are not only facing wage stagnation but also significant shifts in occupational composition……
                 </p>
             </div>
+        </div>
+
+            <!-- 新增：Annotations Explanation 区域（放在 Key Findings 后、Portfolio 前） -->
+            <section class="annotations-section" aria-labelledby="annotations-title">
+                <div class="annotations-label">Annotations</div>
+                <h3 id="annotations-title" class="annotations-title">How to Read the Charts</h3>
+                <ul class="annotations-list">
+                    <li><span class="anno-tag">Trend Line</span> Dashed grey line indicates the fitted relationship in log-wage space.</li>
+                    <li><span class="anno-tag">Confidence Band</span> Light grey area shows the 95% confidence interval of the trend.</li>
+                    <li><span class="anno-tag">Bubble Size</span> Marker size represents total employment in each occupation.</li>
+                    <li><span class="anno-tag">Color Coding</span> Colors map to broad occupational sectors for quick comparison.</li>
+                    <li><span class="anno-tag">Log Scale</span> Wages on the x-axis are displayed on a logarithmic scale.</li>
+                    <li><span class="anno-tag">Tooltips</span> Hover to view sector, wage, exposure score, and employment details.</li>
+                </ul>
+            </section>
         </div>
     </section>
 

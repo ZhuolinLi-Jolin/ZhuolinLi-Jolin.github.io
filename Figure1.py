@@ -7,19 +7,17 @@ from scipy import stats
 import json
 
 # ==========================================
-# 1. 数据准备 (Data Preparation)
-# ==========================================
-# 模拟数据加载 (为了确保代码可运行，我保留了你的读取逻辑，但增加了容错)
+# 1. Data Preparation
 try:
     df_aioe = pd.read_csv('project/dataset/AIOE_DataAppendix__Appendix_A.csv')
     df_bls = pd.read_csv('project/dataset/national_M2024_dl__national_M2024_dl.csv')
 except FileNotFoundError:
     print("Warning: Data files not found. Please ensure files are in the working directory.")
-    # 为了演示，创建一个空结构，实际运行时需要你的文件
+    # For demonstration purposes, create empty structure; actual run requires your files
     df_aioe = pd.DataFrame(columns=['SOC Code', 'AIOE'])
     df_bls = pd.DataFrame(columns=['OCC_CODE', 'TOT_EMP', 'A_MEAN', 'O_GROUP', 'OCC_TITLE'])
 
-# 数据清洗逻辑保持不变
+# Data cleaning logic remains unchanged
 df_aioe['clean_soc'] = df_aioe['SOC Code'].astype(str).str.strip()
 df_bls['clean_soc'] = df_bls['OCC_CODE'].astype(str).str.strip()
 df_bls_detailed = df_bls[df_bls['O_GROUP'] == 'detailed'].copy()
@@ -38,23 +36,23 @@ sector_map = {
     '45': 'Manual & Trades', '47': 'Manual & Trades', '49': 'Manual & Trades', '51': 'Manual & Trades', '53': 'Manual & Trades'
 }
 merged_df['Sector'] = merged_df['major_code'].map(sector_map)
-# 过滤掉没有 Sector 的数据，防止绘图报错
+# Filter out data without Sector to prevent plotting errors
 merged_df = merged_df.dropna(subset=['Sector'])
 
 # ==========================================
-# 2. 计算回归线与置信区间 (Regression & CI)
+# 2. Calculate Regression Line & Confidence Interval
 # ==========================================
 x_data = np.log10(merged_df['A_MEAN'])
 y_data = merged_df['AIOE']
 
 slope, intercept, r_value, p_value, std_err = stats.linregress(x_data, y_data)
 
-# 生成范围 (log space)
+# Generate range (log space)
 x_range_log = np.linspace(x_data.min(), x_data.max(), 100)
 x_range_real = 10**x_range_log 
 y_pred = slope * x_range_log + intercept
 
-# 简单的置信区间计算 (Confidence Interval)
+# Simple confidence interval calculation
 n = len(x_data)
 dof = n - 2
 t_score = stats.t.ppf(0.975, dof)
@@ -70,41 +68,29 @@ ci_lower = y_pred - t_score * se_pred
 
 # 
 # ==========================================
-# 3. 绘图 (Plotting) - 视觉修正版
+# 3. Plotting - Visual Refinement Version
 # ==========================================
 
-# 【关键修正1】从原图提取的精确颜色代码
-# 原图不是纯黄，而是偏绿的黄；紫色也不是深紫，是偏亮一点的紫
+# [Key Fix 1] Precise color codes extracted from original plot
+# Original plot doesn't use pure yellow, but greenish-yellow; purple is also brighter
 color_map_fixed = {
-    # 'Business & Admin': '#440154',  # 深紫色 (保持深邃)
+    # 'Business & Admin': '#440154',  # Deep purple (keep it deep)
     'Business & Admin': '#6A4C93',
-    'STEM & Tech': '#395D9C',       # 偏蓝 (比之前更柔和)
-    'Edu, Health & Arts': '#2A9D8F',# 蓝绿色/青色 (Teal)
-    'Services': '#55C667',          # 翠绿色 (Green)
-    'Manual & Trades': '#DCE319'    # 【重点】嫩绿色/黄绿色 (不再是刺眼的纯黄)
-    # -------------------------------------
-    # 'Business & Admin': '#4C72B0',  # 柔和蓝
-    # 'STEM & Tech': '#55A868',       # 柔和绿
-    # 'Edu, Health & Arts': '#C44E52',# 柔和红
-    # 'Services': '#CCB974',          # 芥末金 (完全解决了亮黄刺眼的问题)
-    # 'Manual & Trades': '#8172B3'    # 柔和紫
-
-    # 'Business & Admin': '#8172B3',  # 柔和紫
-    # 'STEM & Tech': '#55C667',       
-    # 'Edu, Health & Arts': '#2A9D8F',
-    # 'Services': '#395D9C',          
-    # 'Manual & Trades': '#CCB974'
+    'STEM & Tech': '#395D9C',       # Bluish (softer than before)
+    'Edu, Health & Arts': '#2A9D8F',# Blue-green/Cyan (Teal)
+    'Services': '#55C667',          # Emerald green (Green)
+    'Manual & Trades': '#DCE319'    # [Key] Lime green/yellow-green (no longer harsh pure yellow)
 
     # 'Business & Admin': '#6A4C93',  
-    # 'STEM & Tech': '#395D9C',       # 保持稳重的蓝
-    # 'Edu, Health & Arts': '#2A9D8F',# 保持青碧色
-    # 'Services': '#55C667',          # 保持翠绿
-    # 'Manual & Trades': '#DCE319'    # 保持修正后的嫩绿 (不刺眼)
+    # 'STEM & Tech': '#395D9C',       # Keep stable blue
+    # 'Edu, Health & Arts': '#2A9D8F',# Keep cyan-teal color
+    # 'Services': '#55C667',          # Keep emerald green
+    # 'Manual & Trades': '#DCE319'    # Keep corrected lime green (not harsh)
 }
 
 fig = go.Figure()
 
-# --- 层级 1: 灰色误差带 (放在最底层) ---
+# --- Layer 1: Gray confidence band (at the bottom) ---
 fig.add_trace(go.Scatter(
     x=x_range_real, y=ci_upper,
     mode='lines', line=dict(width=0),
@@ -114,71 +100,71 @@ fig.add_trace(go.Scatter(
     x=x_range_real, y=ci_lower,
     mode='lines', line=dict(width=0),
     fill='tonexty', 
-    fillcolor='rgba(200, 200, 200, 0.3)', # 降低不透明度，更像原图的浅灰
+    fillcolor='rgba(200, 200, 200, 0.3)', # Lower opacity, more like original plot's light gray
     showlegend=False, hoverinfo='skip'
 ))
 
-# --- 层级 2: 虚线回归线 ---
+# --- Layer 2: Dashed regression line ---
 fig.add_trace(go.Scatter(
     x=x_range_real, y=y_pred,
     mode='lines', name='Trend Line',
-    line=dict(color='#555555', width=2, dash='dash'), # 稍微淡一点的黑
+    line=dict(color='#555555', width=2, dash='dash'), # Slightly lighter black
     showlegend=False, hoverinfo='skip'
 ))
 
-# --- 层级 3: 气泡图 (核心视觉修正) ---
-# 使用 px 生成数据结构，但手动控制参数
+# --- Layer 3: Bubble chart (core visual fix) ---
+# Use px to generate data structure, but manually control parameters
 scatter_fig = px.scatter(
     merged_df,
     x='A_MEAN', y='AIOE', size='TOT_EMP', color='Sector',
     hover_name='OCC_TITLE', 
     log_x=True, 
-    size_max=60, # 这里只是给 px 一个初始参考，后面我们会手动覆盖
+    size_max=60, # This only gives px an initial reference, we'll manually override later
     color_discrete_map=color_map_fixed,
     category_orders={"Sector": list(color_map_fixed.keys())},
     hover_data={
         'Sector': True,   # customdata[0]
         'TOT_EMP': True,  # customdata[1]
-        'A_MEAN': False,  # 不需要放入customdata，因为它是坐标轴 x，直接用 %{x}
-        'AIOE': False     # 不需要放入customdata，因为它是坐标轴 y，直接用 %{y}
+        'A_MEAN': False,  # Not needed in customdata, it's on x-axis, use %{x}
+        'AIOE': False     # Not needed in customdata, it's on y-axis, use %{y}
     }
 )
 
-# 计算最大就业人数，用于缩放比例
+# Calculate max employment for scaling ratio
 max_emp = merged_df['TOT_EMP'].max()
 
-# 【关键修改】设定预期的最大气泡直径 (像素)
-# 之前是 45，现在改为 55，气泡会明显变大
+# [Key Modification] Set expected maximum bubble diameter (pixels)
+# Previously 45, now changed to 55, bubbles will be noticeably larger
 target_max_diameter = 55
 
-# 将 px 的轨迹转移到 go.Figure，并应用透明度
+# Transfer px traces to go.Figure and apply transparency
 for trace in scatter_fig.data:
-    trace.marker.opacity = 0.75  # 【关键修正3】增加透明度，模仿原图质感
-    trace.marker.line.width = 0.5 # 给气泡加极其细微的白边，增加分离度
+    trace.marker.opacity = 0.75  # [Key Fix 3] Increase transparency to mimic original plot texture
+    trace.marker.line.width = 0.5 # Add very subtle white border to bubbles, increase separation
     trace.marker.line.color = 'white'
-    # 强制气泡大小计算模式为 'area' (面积)，视觉上更符合人类直觉
+    # Force bubble size calculation mode to 'area' (area), visually more intuitive
     trace.marker.sizemode = 'area' 
-    # 稍微放大整体缩放比例 (ref) 以匹配原图的丰满感
+    # Slightly enlarge overall scaling ratio (ref) to match original plot's fullness
     trace.marker.sizeref = 2.0 * max(merged_df['TOT_EMP']) / (45**2)
     trace.hovertemplate = (
         '<b>%{hovertext}</b><br><br>' +
         'Job Sector: %{customdata[0]}<br>' +
-        'Annual Salary: %{x:$,.0f}<br>' +  # 格式化：$符号, 千分位逗号, 0位小数
-        'AIOE Score: %{y:.3f}<br>' +       # 格式化：3位小数
-        'Total Employment: %{customdata[1]:,.0f}' + # 格式化：千分位逗号
-        '<extra></extra>' # 隐藏 Plotly 默认的 trace 名称框
+        'Annual Salary: %{x:$,.0f}<br>' +  # Format: $ symbol, thousands separator, 0 decimals
+        'AIOE Score: %{y:.3f}<br>' +       # Format: 3 decimals
+        'Total Employment: %{customdata[1]:,.0f}' + # Format: thousands separator
+        '<extra></extra>' # Hide Plotly's default trace name box
     )
     
-    # 强制设置 Hover 样式以匹配截图 (背景色自动跟随点的颜色，字体白色)
+    
     trace.hoverlabel = dict(
         font_size=13,
         font_family="Arial",
-        font_color="white" # 强制文字变白
+        font_color="white" 
     )
     fig.add_trace(trace)
 
 # ==========================================
-# 4. 样式与标注 (Styling & Annotations)
+# 4. Styling & Annotations
 # ==========================================
 key_occupations = [
     'Chief Executives', 'Software Developers', 'Cashiers', 
@@ -188,11 +174,11 @@ key_occupations = [
 
 annotations = []
 for occ in key_occupations:
-    # 查找职业
+ 
     row = merged_df[merged_df['OCC_TITLE'].str.contains(occ, case=False, na=False)].sort_values('TOT_EMP', ascending=False).head(1)
     
     if not row.empty:
-        # 手动微调某些重叠标签的位置
+        
         ay_val = -30
         ax_val = 0
         if "Waiters" in occ: ay_val = 40 
@@ -200,14 +186,14 @@ for occ in key_occupations:
         if "Nurses" in occ: ax_val = -40; ay_val = 10
         
         annotations.append(dict(
-            x=row['A_MEAN'].values[0], # 直接用原始值，因为 x轴已经是 log 类型
+            x=row['A_MEAN'].values[0],
             y=row['AIOE'].values[0],
             xref="x", yref="y", 
-            text=f"<b>{occ}</b>", # 使用简短名字
+            text=f"<b>{occ}</b>",
             showarrow=True, arrowhead=0, arrowwidth=1, arrowcolor="#666666",
             ax=ax_val, ay=ay_val,
             font=dict(size=10, color="#222222", family="Arial"), 
-            bgcolor="rgba(255,255,255,0.7)", # 半透明白色背景
+            bgcolor="rgba(255,255,255,0.7)", 
             borderpad=2
         ))
 
@@ -222,7 +208,7 @@ fig.update_layout(
     showlegend=True,
     legend=dict(
         title_text="Job Sector",
-        yanchor="top", y=0.95, xanchor="right", x=1.15, # 移到图表外右侧
+        yanchor="top", y=0.95, xanchor="right", x=1.15, 
         font=dict(size=12),
         itemsizing='constant'
     ),
@@ -231,7 +217,7 @@ fig.update_layout(
         gridcolor='#eeeeee', 
         tickprefix='$', 
         type='log', 
-        dtick=np.log10(2), # 让网格线稍微密一点，接近原图
+        dtick=np.log10(2), 
         tickvals=[30000, 50000, 75000, 100000, 150000, 250000],
         ticktext=['$30k', '$50k', '$75k', '$100k', '$150k', '$250k'],
         range=[np.log10(25000), np.log10(350000)]
@@ -240,7 +226,7 @@ fig.update_layout(
         title='<b>AI Exposure Score (AIOE)</b>', 
         gridcolor='#eeeeee', 
         zeroline=False,
-        range=[-2.5, 2.5] # 强制固定 Y 轴范围以匹配原图构图
+        range=[-2.5, 2.5] 
     ),
     annotations=annotations,
     font=dict(family="Arial", color="#333333")
@@ -249,7 +235,7 @@ fig.update_layout(
 fig.show()
 
 # ==========================================
-# 5. Export to JSON (JSON导出)
+# 5. Export to JSON
 # ==========================================
 
 def recursive_clean(obj):

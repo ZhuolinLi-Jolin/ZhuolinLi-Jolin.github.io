@@ -46,21 +46,33 @@ document.getElementById("assignmentsModal").addEventListener('click', function(e
 // vegaEmbed('#vis1', 'project/chart_1.json').catch(console.error);
 
 const plotFileName = 'project/chart_1.json';
-// fetch('project/chart_1.json') // Ensure path is correct
-//   .then(response => response.json())
-//   .then(plotlyData => {
-//       Plotly.newPlot('vis1', plotlyData.data, plotlyData.layout);
-//       console.log("Plotly chart loaded successfully.");
-//   })
-//   .catch(error => console.error('Error loading Plotly chart:', error));
+
 fetch(plotFileName)
   .then(response => response.json())
   .then(fig => {
-      // The JSON structure you provided is standard {data: ..., layout: ...}
-      // So we can directly take fig.data and fig.layout
+      // 强制使用原始尺寸渲染
+      fig.layout.width = 1100;
+      fig.layout.height = 750;
+
+      // 渲染图表
       Plotly.newPlot('vis1', fig.data, fig.layout);
+
+      // 根据包裹层宽度动态计算缩放比例
+      const wrapper = document.getElementById('vis1-wrapper');
+      const plot = document.getElementById('vis1');
       
-      console.log("✅ Chart rendered successfully!");
+      function applyScale() {
+          const containerWidth = wrapper.clientWidth;
+          const scale = Math.min(containerWidth / 1100, 1); // 不放大,只缩小
+          plot.style.transform = `scale(${scale})`;
+          // 调整包裹层高度以适应缩放后的图表
+          wrapper.style.height = `${750 * scale}px`;
+      }
+      
+      applyScale();
+      window.addEventListener('resize', applyScale);
+
+      console.log("✅ Chart rendered and scaled successfully!");
   })
   .catch(error => {
       console.error("❌ Rendering failed:", error);

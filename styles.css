@@ -631,6 +631,21 @@ footer {
     background: var(--cream);
 }
 
+/* Plotly 图表缩放包裹层 */
+#vis1-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px 0; /* 防止缩放后被裁切 */
+}
+
+#vis1 {
+    width: 1100px;
+    height: 750px;
+    transform-origin: top center; /* 从顶部中心开始缩放 */
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .assignments-grid {

@@ -1,35 +1,107 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
- 
-  "title": {"text": "GDP Per Capita"},
- 
-  "width": 400,
-  "height": 300,
-   
+  "description": "AI Adoption Index by Country Groupings (2017-2023)",
+  "width": 600,
+  "height": 400,
+  "background": "#fefdfb",
+  "padding": 20,
+  "title": {
+    "text": "Trends in AI Development by Economic Grouping",
+    "subtitle": "Source: UN Trade and Development (UNCTAD) elaboration on data from AI Index Report 2024 (Stanford).",
+    "anchor": "start",
+    "fontSize": 18,
+    "font": "sans-serif",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666",
+    "subtitlePadding": 10
+  },
   "data": {
     "values": [
-      {"Country": "China","GDP per capita": 21482},
-      {"Country": "DR Congo.","GDP per capita": 1337},
-      {"Country": "UK","GDP per capita": 54929},
-      {"Country": "India","GDP per capita": 8400},
-      {"Country": "Nigeria","GDP per capita": 5862},
-      {"Country": "USA","GDP per capita": 76329}
+      {"Year": 2017, "Group": "Developed countries", "Value": 0.02985},
+      {"Year": 2018, "Group": "Developed countries", "Value": 0.07463},
+      {"Year": 2019, "Group": "Developed countries", "Value": 0.28358},
+      {"Year": 2020, "Group": "Developed countries", "Value": 0.44776},
+      {"Year": 2021, "Group": "Developed countries", "Value": 0.58209},
+      {"Year": 2022, "Group": "Developed countries", "Value": 0.61194},
+      {"Year": 2023, "Group": "Developed countries", "Value": 0.64179},
+      {"Year": 2017, "Group": "Developing excluding LDCs", "Value": 0.00752},
+      {"Year": 2018, "Group": "Developing excluding LDCs", "Value": 0.03008},
+      {"Year": 2019, "Group": "Developing excluding LDCs", "Value": 0.09023},
+      {"Year": 2020, "Group": "Developing excluding LDCs", "Value": 0.11278},
+      {"Year": 2021, "Group": "Developing excluding LDCs", "Value": 0.19549},
+      {"Year": 2022, "Group": "Developing excluding LDCs", "Value": 0.23308},
+      {"Year": 2023, "Group": "Developing excluding LDCs", "Value": 0.30075},
+      {"Year": 2017, "Group": "Least developed countries (LDCs)", "Value": 0.0},
+      {"Year": 2018, "Group": "Least developed countries (LDCs)", "Value": 0.0},
+      {"Year": 2019, "Group": "Least developed countries (LDCs)", "Value": 0.04},
+      {"Year": 2020, "Group": "Least developed countries (LDCs)", "Value": 0.04},
+      {"Year": 2021, "Group": "Least developed countries (LDCs)", "Value": 0.04},
+      {"Year": 2022, "Group": "Least developed countries (LDCs)", "Value": 0.04},
+      {"Year": 2023, "Group": "Least developed countries (LDCs)", "Value": 0.12}
     ]
   },
- 
-  "mark": {
-    "type": "bar",
-    "color": "#3d5a47"
-  },
- 
-  "encoding": {
-    "x": {
-      "field": "Country"
-    },  
- 
-    "y": {
-      "field": "GDP per capita",
-      "type": "quantitative"}
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "strokeWidth": 2.5,
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative",
+          "axis": {
+            "format": "d",
+            "tickCount": 7,
+            "title": "Year",
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "axis": {
+            "title": "Index Score (0-1)",
+            "gridColor": "#e8e6e1",
+            "gridDash": [4, 4]
+          }
+        },
+        "color": {
+          "field": "Group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Developed countries",
+              "Developing excluding LDCs",
+              "Least developed countries (LDCs)"
+            ],
+            "range": ["#3d5a47", "#c97b63", "#2d2d2d"]
+          },
+          "legend": {
+            "orient": "top-left",
+            "title": null,
+            "labelFontSize": 12,
+            "symbolType": "stroke",
+            "offset": 10
+          }
+        },
+        "tooltip": [
+          {"field": "Year", "type": "quantitative"},
+          {"field": "Group", "type": "nominal"},
+          {"field": "Value", "type": "quantitative", "format": ".3f"}
+        ]
+      }
     }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFont": "sans-serif",
+      "titleFont": "sans-serif",
+      "titleFontSize": 13,
+      "titleFontWeight": "normal"
+    }
+  }
 }
- 

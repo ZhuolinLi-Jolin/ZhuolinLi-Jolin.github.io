@@ -114,15 +114,16 @@
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 3</div>
-                        <h4 class="chart-title">Correlation Analysis of AI Exposure and Unemployment Trends</h4>
+                        <h4 class="chart-title">US Unemployment Composition by Industry and AI Exposure Score (2023–2025)</h4>
                         <p class="chart-description">
-                            This scatter plot illustrates the relationship between the AI Exposure Rate
-                            and the percentage point change in unemployment across various US labor sectors.
+                            This stacked area chart illustrates the dynamics of the US labor market. The top boundary of the chart tracks the fluctuations 
+                            in total US unemployment from December 2022 (following the release of ChatGPT) through 2025.Each color band represents a specific industry, 
+                            where the vertical thickness of the band indicates the volume of unemployment within that sector at any given time.
+                            The color gradient corresponds directly to each industry's AI Occupational Exposure (AIOE) score. 
+                            This distribution allows for a direct observation of whether the unemployed population is concentrated in sectors highly susceptible to AI (High AIOE) or in industries less affected, such as manual labor (Low AIOE).
                         </p>
                     </div>
-                    <div class="chart-placeholder">
-                        <img src="Figure3.png" alt="AI Exposure and Unemployment Trends" style="width: 100%; height: auto;">
-                    </div>
+                    <div id="vis3" class="chart-placeholder"></div>
                 </div>
 
                 <!-- Figure 4 -->
@@ -183,14 +184,14 @@
             <!-- 新增：Annotations Explanation 区域（放在 Key Findings 后、Portfolio 前） -->
             <section class="annotations-section" aria-labelledby="annotations-title">
                 <div class="annotations-label">Annotations</div>
-                <h3 id="annotations-title" class="annotations-title">How to Read the Charts</h3>
+                <h3 id="annotations-title" class="annotations-title">To be added</h3>
                 <ul class="annotations-list">
-                    <li><span class="anno-tag">Trend Line</span> Dashed grey line indicates the fitted relationship in log-wage space.</li>
+                    <!-- <li><span class="anno-tag">Trend Line</span> Dashed grey line indicates the fitted relationship in log-wage space.</li>
                     <li><span class="anno-tag">Confidence Band</span> Light grey area shows the 95% confidence interval of the trend.</li>
                     <li><span class="anno-tag">Bubble Size</span> Marker size represents total employment in each occupation.</li>
                     <li><span class="anno-tag">Color Coding</span> Colors map to broad occupational sectors for quick comparison.</li>
                     <li><span class="anno-tag">Log Scale</span> Wages on the x-axis are displayed on a logarithmic scale.</li>
-                    <li><span class="anno-tag">Tooltips</span> Hover to view sector, wage, exposure score, and employment details.</li>
+                    <li><span class="anno-tag">Tooltips</span> Hover to view sector, wage, exposure score, and employment details.</li> -->
                 </ul>
             </section>
         </div>
@@ -235,7 +236,8 @@
                             Set up a GitHub repository and live site. Embed two charts using the vegaEmbed function to demonstrate hosting capabilities.
                         </p>
                     </div>
-                    <div class="assignment-chart">[Interactive Chart: CC1]</div>
+                   <div id="vis-cc1-1" class="assignment-chart"></div>
+                   <div id="vis-cc1-2" class="assignment-chart"></div>
                 </div>
 
                 <!-- <div class="assignment-item">
@@ -260,6 +262,8 @@
                  </div>
                  <div id="vis-cc2-1" class="assignment-chart"></div>
                  <div id="vis-cc2-2" class="assignment-chart"></div>
+                
+                 
                 </div>
 
                 <div class="assignment-item">
@@ -360,5 +364,9 @@
     </footer>
     
     <script src="scripts.js"></script> 
+    <script>
+        // 嵌入 wk1_chart1.json 到 vis-cc2-wk1
+        vegaEmbed('#vis-cc2-wk1', 'wk1_chart1.json', {actions: false});
+    </script>
 </body>
 </html>

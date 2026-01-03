@@ -240,3 +240,5 @@ final_chart = (rule_x + rule_y + points + text).add_params(
 # final_chart.save('interactive_chart.html')
 # print("Success! Generated interactive_chart.html")
 print(final_chart.to_json())
+
+# 本文采用 The Budget Lab at Yale 提供的数据，借鉴 Duncan and Duncan（1955）的不相似度指数方法，构建行业层面的职业结构变动指标。具体而言，以基期月份为参照，逐月计算各职业在总就业中占比的变化，并对职业占比序列进行 12 个月移动平均以平滑短期波动。每个月的不相似度指数定义为各职业就业占比相对于基期差异的绝对值之和，用以衡量行业内部职业结构的调整程度。指数数值越高，表示该行业职业构成随时间发生了更显著的结构性变化。

@@ -78,7 +78,10 @@ fetch(plotFileName)
       console.error("❌ Rendering failed:", error);
   });
 
+
+vegaEmbed('#vis3', 'project/chart_3.json').catch(console.error);
 vegaEmbed('#vis2', 'project/chart_2.json').catch(console.error);
-vegaEmbed('#vis5', 'project/chart5.json').catch(console.error);
+vegaEmbed('#vis-cc1-1', 'portfolio/cc1-1.json').catch(console.error);
+vegaEmbed('#vis-cc1-2', 'portfolio/cc1-2.json').catch(console.error);
 vegaEmbed('#vis-cc2-1', 'portfolio/cc2-1.json').catch(console.error);
 vegaEmbed('#vis-cc2-2', 'portfolio/cc2-2.json').catch(console.error);

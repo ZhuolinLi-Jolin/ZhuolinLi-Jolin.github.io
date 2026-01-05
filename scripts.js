@@ -81,6 +81,7 @@ fetch(plotFileName)
 
 vegaEmbed('#vis3', 'project/chart_3.json').catch(console.error);
 vegaEmbed('#vis2', 'project/chart_2.json').catch(console.error);
+
 vegaEmbed('#vis-cc1-1', 'portfolio/cc1-1.json').catch(console.error);
 vegaEmbed('#vis-cc1-2', 'portfolio/cc1-2.json').catch(console.error);
 vegaEmbed('#vis-cc2-1', 'portfolio/cc2-1.json').catch(console.error);

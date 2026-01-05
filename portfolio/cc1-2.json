@@ -1,21 +1,80 @@
- 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-  "title": {
-    "text":"Real GDP Per Capita",
-    "subtitle": ["Current International USD, PPP", "Source: World Bank"]},
-
-  "width": 400,
+  "description": "Global Private Investment in AI (2013-2024) - Standardized Style",
+  "width": 500,
   "height": 300,
- 
-  "data": {"url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/1/s1_example_data/chart2_GDP_pc_6_countries.csv"},
- 
-  "mark": "line",
- 
+  "background": "#fefdfb",
+  "padding": 20,
+  "title": {
+    "text": "Global Private Investment in AI, 2013–2024",
+    "subtitle": [
+      "Total investment in billions of US dollars",
+      "Source: Quid (2024), Stanford AI Index Report (2025)"
+    ],
+    "anchor": "middle",
+    "fontSize": 16,
+    "font": "sans-serif",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666",
+    "subtitlePadding": 10
+  },
+  "data": {
+    "values": [
+      {"Year": 2013, "Investment": 5.17},
+      {"Year": 2014, "Investment": 9.56},
+      {"Year": 2015, "Investment": 13.35},
+      {"Year": 2016, "Investment": 17.13},
+      {"Year": 2017, "Investment": 25.72},
+      {"Year": 2018, "Investment": 43.10},
+      {"Year": 2019, "Investment": 58.18},
+      {"Year": 2020, "Investment": 73.79},
+      {"Year": 2021, "Investment": 145.40},
+      {"Year": 2022, "Investment": 113.01},
+      {"Year": 2023, "Investment": 104.34},
+      {"Year": 2024, "Investment": 150.79}
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "color": "#3d5a47",
+    "tooltip": true
+  },
   "encoding": {
-    "x": {"field": "Year", "type": "temporal", "title": null},
-    "y": {"field": "GDP pc", "type": "quantitative", "title": null},
-    "color": {"field": "Country Name", "type": "nominal"}
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "axis": {
+        "title": "Year",
+        "labelAngle": 0,
+        "grid": false,
+        "titlePadding": 10
+      }
+    },
+    "y": {
+      "field": "Investment",
+      "type": "quantitative",
+      "axis": {
+        "title": "Investment (Billions of USD)",
+        "gridColor": "#e8e6e1",
+        "gridDash": [4, 4],
+        "domain": false,
+        "tickCount": 6
+      }
+    },
+    "tooltip": [
+      {"field": "Year", "type": "ordinal", "title": "Year"},
+      {"field": "Investment", "type": "quantitative", "title": "Investment ($B)", "format": ".2f"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFont": "sans-serif",
+      "labelFontSize": 11,
+      "titleFont": "sans-serif",
+      "titleFontSize": 13,
+      "titleFontWeight": "normal"
+    }
   }
 }

@@ -772,3 +772,11 @@ footer {
     position: relative;
     max-width: 100%; 
 }
+/* 强制 Vega-Lite Tooltip 处于最顶层 */
+#vg-tooltip-element {
+    position: fixed !important; /* 关键：改为 fixed 定位，防止被父容器 transform 影响 */
+    z-index: 2147483647 !important; /* 最大的整数，确保在所有层之上 */
+    top: 0;
+    left: 0;
+    pointer-events: none; /* 防止 Tooltip 自身阻挡鼠标交互 */
+}

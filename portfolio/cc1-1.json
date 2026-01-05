@@ -1,16 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "AI Adoption Index by Country Groupings (2017-2023)",
-  "width": 600,
-  "height": 400,
+  "description": "Cumulative share of countries with a national AI strategy (2017-2023)",
+  "width": 500,
+  "height": 300,
   "background": "#fefdfb",
   "padding": 20,
   "title": {
-    "text": "Trends in AI Development by Economic Grouping",
-    "subtitle": "Source: UN Trade and Development (UNCTAD) elaboration on data from AI Index Report 2024 (Stanford).",
-    "anchor": "start",
-    "fontSize": 18,
+    "text": "Cumulative share of countries with a national AI strategy by country grouping",
+    "subtitle": "Source: UN Trade and Development (2025), Stanford AI Index Report (2024)",
+    "anchor": "middle",
+    "fontSize": 16,
     "font": "sans-serif",
+    "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "subtitleColor": "#666",
     "subtitlePadding": 10
@@ -79,12 +80,14 @@
             ],
             "range": ["#3d5a47", "#c97b63", "#2d2d2d"]
           },
+         
           "legend": {
-            "orient": "top-left",
+            "orient": "right",
             "title": null,
-            "labelFontSize": 12,
+            "labelFontSize": 11,
             "symbolType": "stroke",
-            "offset": 10
+            "offset": 10,
+            "labelExpr": "datum.value == 'Least developed countries (LDCs)' ? ['Least developed', 'countries (LDCs)'] : datum.value == 'Developing excluding LDCs' ? ['Developing', 'excluding LDCs'] : datum.value"
           }
         },
         "tooltip": [

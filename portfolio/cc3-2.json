@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#f8f6f1",
+  "padding": {"top": 40, "left": 40, "right": 60, "bottom": 60},
+  "title": {
+    "text": "Teens' Perception of Social Media Impact",
+    "subtitle": [
+      "% of U.S. teens ages 13 to 17 who say using social media 'a lot/a little'...",
+      "Source: Pew Research Center Survey, 2024."
+    ],
+    "anchor": "start",
+    "fontSize": 18,
+    "font": "Arial",
+    "color": "#2d2d2d",
+    "subtitlePadding": 10
+  },
+  "data": {
+    "values": [
+      {"Category": "Friendships", "Type": "Hurts", "Value": -7, "Display": 7},
+      {"Category": "Friendships", "Type": "Helps", "Value": 30, "Display": 30},
+      {"Category": "Friendships", "Type": "Neither", "Value": 43, "Display": 43},
+      {"Category": "Confidence", "Type": "Hurts", "Value": -15, "Display": 15},
+      {"Category": "Confidence", "Type": "Helps", "Value": 19, "Display": 19},
+      {"Category": "Confidence", "Type": "Neither", "Value": 46, "Display": 46},
+      {"Category": "Mental health", "Type": "Hurts", "Value": -19, "Display": 19},
+      {"Category": "Mental health", "Type": "Helps", "Value": 10, "Display": 10},
+      {"Category": "Mental health", "Type": "Neither", "Value": 50, "Display": 50},
+      {"Category": "Grades", "Type": "Hurts", "Value": -22, "Display": 22},
+      {"Category": "Grades", "Type": "Helps", "Value": 8, "Display": 8},
+      {"Category": "Grades", "Type": "Neither", "Value": 51, "Display": 51},
+      {"Category": "Productivity", "Type": "Hurts", "Value": -40, "Display": 40},
+      {"Category": "Productivity", "Type": "Helps", "Value": 9, "Display": 9},
+      {"Category": "Productivity", "Type": "Neither", "Value": 31, "Display": 31},
+      {"Category": "Amount of sleep", "Type": "Hurts", "Value": -45, "Display": 45},
+      {"Category": "Amount of sleep", "Type": "Helps", "Value": 4, "Display": 4},
+      {"Category": "Amount of sleep", "Type": "Neither", "Value": 32, "Display": 32}
+    ]
+  },
+  "hconcat": [
+    {
+      "width": 300,
+      "height": 300,
+      "transform": [
+        {"filter": "datum.Type != 'Neither'"}
+      ],
+      "layer": [
+        {
+          "mark": {"type": "bar", "height": {"band": 0.7}},
+          "encoding": {
+            "y": {
+              "field": "Category",
+              "type": "nominal",
+              "title": null,
+              "sort": ["Friendships", "Confidence", "Mental health", "Grades", "Productivity", "Amount of sleep"],
+              "axis": {"labelFontSize": 12, "labelColor": "#2d2d2d", "domain": false, "ticks": false}
+            },
+            "x": {
+              "field": "Value",
+              "type": "quantitative",
+              "title": "Hurts ← % → Helps",
+              "scale": {"domain": [-60, 60]},
+              "axis": {"grid": false, "values": [-50, 0, 50], "labelExpr": "abs(datum.value) + '%'"}
+            },
+            "color": {
+              "field": "Type",
+              "type": "nominal",
+              "scale": {
+                "domain": ["Hurts", "Helps", "Neither"],
+                "range": ["#c97b63", "#3d5a47", "#e8e6e1"]
+              },
+              "legend": {
+                "orient": "right", 
+                "title": "Impact Type",
+                "offset": 20
+              }
+            }
+          }
+        },
+        {
+          "mark": {"type": "text", "dx": {"expr": "datum.Value < 0 ? -12 : 12"}, "color": "#2d2d2d", "fontWeight": "bold"},
+          "encoding": {
+            "y": {"field": "Category", "type": "nominal"},
+            "x": {"field": "Value", "type": "quantitative"},
+            "text": {"field": "Display", "type": "quantitative"}
+          }
+        }
+      ]
+    },
+    {
+      "width": 120,
+      "height": 300,
+      "transform": [
+        {"filter": "datum.Type == 'Neither'"}
+      ],
+      "layer": [
+        {
+          "mark": {"type": "bar", "height": {"band": 0.7}},
+          "encoding": {
+            "y": {
+              "field": "Category",
+              "type": "nominal",
+              "sort": ["Friendships", "Confidence", "Mental health", "Grades", "Productivity", "Amount of sleep"],
+              "axis": null
+            },
+            "x": {
+              "field": "Value",
+              "type": "quantitative",
+              "title": "Neither",
+              "scale": {"domain": [0, 70]},
+              "axis": {"grid": false, "ticks": false, "labels": false}
+            },
+            "color": {
+              "field": "Type",
+              "type": "nominal",
+              "scale": {
+                "domain": ["Hurts", "Helps", "Neither"],
+                "range": ["#c97b63", "#3d5a47", "#e8e6e1"]
+              },
+              "legend": null
+            }
+          }
+        },
+        {
+          "mark": {"type": "text", "dx": 12, "color": "#2d2d2d"},
+          "encoding": {
+            "y": {"field": "Category", "type": "nominal"},
+            "x": {"field": "Value", "type": "quantitative"},
+            "text": {"field": "Display", "type": "quantitative"}
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "font": "Arial"
+  }
+}

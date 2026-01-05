@@ -1,0 +1,283 @@
+﻿Country,Country Code,Status,id
+Afghanistan,AFG,No CS,4.0
+Algeria,DZA,No CS,12.0
+American Samoa,ASM,No CS,16.0
+Angola,AGO,No CS,24.0
+Antigua and Barbuda,ATG,No CS,28.0
+Aruba,ABW,No CS,533.0
+Azerbaijan,AZE,No CS,31.0
+"Bahamas, The",BHS,No CS,44.0
+Bahrain,BHR,No CS,48.0
+Bangladesh,BGD,No CS,50.0
+Barbados,BRB,No CS,52.0
+Belgium,BEL,No CS,56.0
+Belize,BLZ,No CS,84.0
+Benin,BEN,No CS,204.0
+Bolivia,BOL,No CS,68.0
+Botswana,BWA,No CS,72.0
+British Virgin Islands,VGB,No CS,92.0
+Brunei Darussalam,BRN,No CS,96.0
+Burkina Faso,BFA,No CS,854.0
+Burundi,BDI,No CS,108.0
+Cabo Verde,CPV,No CS,132.0
+Cambodia,KHM,No CS,116.0
+Cameroon,CMR,No CS,120.0
+Cayman Islands,CYM,No CS,136.0
+Central African Republic,CAF,No CS,140.0
+Chad,TCD,No CS,148.0
+Comoros,COM,No CS,174.0
+"Congo, Dem. Rep.",COD,No CS,180.0
+"Congo, Rep.",COG,No CS,178.0
+Côte d'Ivoire,CIV,No CS,384.0
+Cuba,CUB,No CS,192.0
+Curaçao,CUW,No CS,531.0
+Djibouti,DJI,No CS,262.0
+Dominica,DMA,No CS,212.0
+"Egypt, Arab Rep.",EGY,No CS,818.0
+El Salvador,SLV,No CS,222.0
+Equatorial Guinea,GNQ,No CS,226.0
+Eritrea,ERI,No CS,232.0
+Eswatini,SWZ,No CS,748.0
+Ethiopia,ETH,No CS,231.0
+Faroe Islands,FRO,No CS,234.0
+Fiji,FJI,No CS,242.0
+French Polynesia,PYF,No CS,258.0
+Gabon,GAB,No CS,266.0
+"Gambia, The",GMB,No CS,270.0
+Georgia,GEO,No CS,268.0
+Gibraltar,GIB,No CS,292.0
+Greenland,GRL,No CS,304.0
+Grenada,GRD,No CS,308.0
+Guam,GUM,No CS,316.0
+Guatemala,GTM,No CS,320.0
+Guinea,GIN,No CS,324.0
+Guinea-Bissau,GNB,No CS,624.0
+Guyana,GUY,No CS,328.0
+Haiti,HTI,No CS,332.0
+Honduras,HND,No CS,340.0
+Iceland,ISL,No CS,352.0
+"Iran, Islamic Rep.",IRN,No CS,364.0
+Iraq,IRQ,No CS,368.0
+Isle of Man,IMN,No CS,833.0
+Jamaica,JAM,No CS,388.0
+Jordan,JOR,No CS,400.0
+Kenya,KEN,No CS,404.0
+Kiribati,KIR,No CS,296.0
+"North Korea, (Dem. People's Rep. of Korea)",PRK,No CS,408.0
+Kosovo,XKX,No CS,926
+Kuwait,KWT,No CS,414.0
+Kyrgyz Republic,KGZ,No CS,417.0
+Lao PDR,LAO,No CS,418.0
+Lebanon,LBN,No CS,422.0
+Lesotho,LSO,No CS,426.0
+Liberia,LBR,No CS,430.0
+Libya,LBY,No CS,434.0
+Luxembourg,LUX,No CS,442.0
+Madagascar,MDG,No CS,450.0
+Malawi,MWI,No CS,454.0
+Maldives,MDV,No CS,462.0
+Mali,MLI,No CS,466.0
+Marshall Islands,MHL,No CS,584.0
+Mauritania,MRT,No CS,478.0
+Mauritius,MUS,No CS,480.0
+"Micronesia, Fed. Sts.",FSM,No CS,583.0
+Moldova,MDA,No CS,498.0
+Monaco,MCO,No CS,492.0
+Mongolia,MNG,No CS,496.0
+Mozambique,MOZ,No CS,508.0
+Myanmar,MMR,No CS,104.0
+Namibia,NAM,No CS,516.0
+Nauru,NRU,No CS,520.0
+Nepal,NPL,No CS,524.0
+New Caledonia,NCL,No CS,540.0
+Nicaragua,NIC,No CS,558.0
+Niger,NER,No CS,562.0
+North Macedonia,MKD,No CS,807.0
+Northern Mariana Islands,MNP,No CS,580.0
+Oman,OMN,No CS,512.0
+Palau,PLW,No CS,585.0
+Papua New Guinea,PNG,No CS,598.0
+Peru,PER,No CS,604.0
+Philippines,PHL,No CS,608.0
+Qatar,QAT,No CS,634.0
+Rwanda,RWA,No CS,646.0
+Samoa,WSM,No CS,882.0
+San Marino,SMR,No CS,674.0
+São Tomé and Principe,STP,No CS,678.0
+Senegal,SEN,No CS,686.0
+Seychelles,SYC,No CS,690.0
+Sierra Leone,SLE,No CS,694.0
+Sint Maarten (Dutch part),SXM,No CS,663.0
+Solomon Islands,SLB,No CS,90.0
+Somalia,SOM,No CS,706.0
+South Sudan,SSD,No CS,728.0
+Sri Lanka,LKA,No CS,144.0
+St. Kitts and Nevis,KNA,No CS,659.0
+St. Lucia,LCA,No CS,662.0
+St. Martin (French part),MAF,No CS,663.0
+St. Vincent and the Grenadines,VCT,No CS,670.0
+Sudan,SDN,No CS,729.0
+Suriname,SUR,No CS,740.0
+Syrian Arab Republic,SYR,No CS,760.0
+Tajikistan,TJK,No CS,762.0
+Tanzania,TZA,No CS,834.0
+Timor-Leste,TLS,No CS,626.0
+Togo,TGO,No CS,768.0
+Tonga,TON,No CS,776.0
+Trinidad and Tobago,TTO,No CS,780.0
+Tunisia,TUN,No CS,788.0
+Turkmenistan,TKM,No CS,795.0
+Turks and Caicos Islands,TCA,No CS,796.0
+Tuvalu,TUV,No CS,798.0
+Uganda,UGA,No CS,800.0
+Uzbekistan,UZB,No CS,860.0
+Vanuatu,VUT,No CS,548.0
+Venezuela,VEN,No CS,862.0
+Virgin Islands (U.S.),VIR,No CS,850.0
+West Bank and Gaza,PSE,No CS,275.0
+Yemen,YEM,No CS,887.0
+Zambia,ZMB,No CS,894.0
+Aruba,ABW,CS planned,533.0
+Azerbaijan,AZE,CS planned,31.0
+"Bahamas, The",BHS,CS planned,44.0
+Bangladesh,BGD,CS planned,50.0
+Barbados,BRB,CS planned,52.0
+Botswana,BWA,CS planned,72.0
+Cabo Verde,CPV,CS planned,132.0
+Cambodia,KHM,CS planned,116.0
+Cuba,CUB,CS planned,192.0
+Ecuador,ECU,CS planned,218.0
+"Egypt, Arab Rep.",EGY,CS planned,818.0
+El Salvador,SLV,CS planned,222.0
+Eswatini,SWZ,CS planned,748.0
+Ethiopia,ETH,CS planned,231.0
+Fiji,FJI,CS planned,242.0
+Gibraltar,GIB,CS planned,292.0
+Haiti,HTI,CS planned,332.0
+Honduras,HND,CS planned,340.0
+Indonesia,IDN,CS planned,360.0
+Jamaica,JAM,CS planned,388.0
+Jordan,JOR,CS planned,400.0
+Mexico,MEX,CS planned,484.0
+Monaco,MCO,CS planned,492.0
+Mongolia,MNG,CS planned,496.0
+Nepal,NPL,CS planned,524.0
+Nicaragua,NIC,CS planned,558.0
+North Macedonia,MKD,CS planned,807.0
+Northern Mariana Islands,MNP,CS planned,580.0
+Oman,OMN,CS planned,512.0
+Puerto Rico,PRI,CS planned,630.0
+South Africa,ZAF,CS planned,710.0
+Tajikistan,TJK,CS planned,762.0
+Turkmenistan,TKM,CS planned,795.0
+Chile,CHL,CS cross curricular,152.0
+Netherlands,NLD,CS cross curricular,528.0
+Norway,NOR,CS cross curricular,578.0
+Algeria,DZA,CS in some schools/districts,12.0
+Belgium,BEL,CS in some schools/districts,56.0
+Bermuda,BMU,CS in some schools/districts,60.0
+Bosnia and Herzegovina,BIH,CS in some schools/districts,70.0
+Brazil,BRA,CS in some schools/districts,76.0
+Brunei Darussalam,BRN,CS in some schools/districts,96.0
+Cameroon,CMR,CS in some schools/districts,120.0
+Canada,CAN,CS in some schools/districts,124.0
+"Congo, Dem. Rep.",COD,CS in some schools/districts,180.0
+France,FRA,CS in some schools/districts,250.0
+Greenland,GRL,CS in some schools/districts,304.0
+Guyana,GUY,CS in some schools/districts,328.0
+"Hong Kong SAR, China",HKG,CS in some schools/districts,344.0
+India,IND,CS in some schools/districts,356.0
+Isle of Man,IMN,CS in some schools/districts,833.0
+Kenya,KEN,CS in some schools/districts,404.0
+Lebanon,LBN,CS in some schools/districts,422.0
+Madagascar,MDG,CS in some schools/districts,450.0
+Malawi,MWI,CS in some schools/districts,454.0
+Maldives,MDV,CS in some schools/districts,462.0
+Nigeria,NGA,CS in some schools/districts,566.0
+Pakistan,PAK,CS in some schools/districts,586.0
+Paraguay,PRY,CS in some schools/districts,600.0
+Qatar,QAT,CS in some schools/districts,634.0
+San Marino,SMR,CS in some schools/districts,674.0
+Singapore,SGP,CS in some schools/districts,702.0
+South Sudan,SSD,CS in some schools/districts,728.0
+Spain,ESP,CS in some schools/districts,724.0
+Sri Lanka,LKA,CS in some schools/districts,144.0
+St. Kitts and Nevis,KNA,CS in some schools/districts,659.0
+St. Vincent and the Grenadines,VCT,CS in some schools/districts,670.0
+Syrian Arab Republic,SYR,CS in some schools/districts,760.0
+Tunisia,TUN,CS in some schools/districts,788.0
+United States of America,USA,CS in some schools/districts,840.0
+Uruguay,URY,CS in some schools/districts,858.0
+Uzbekistan,UZB,CS in some schools/districts,860.0
+Vietnam,VNM,CS in some schools/districts,704.0
+Zimbabwe,ZWE,CS in some schools/districts,716.0
+Colombia,COL,CS as an elective course everywhere,170.0
+Denmark,DNK,CS as an elective course everywhere,208.0
+Germany,DEU,CS as an elective course everywhere,276.0
+Israel,ISR,CS as an elective course everywhere,376.0
+Marshall Islands,MHL,CS as an elective course everywhere,584.0
+Albania,ALB,CS mandatory in primary or secondary only,8.0
+Austria,AUT,CS mandatory in primary or secondary only,40.0
+Cayman Islands,CYM,CS mandatory in primary or secondary only,136.0
+China,CHN,CS mandatory in primary or secondary only,156.0
+Costa Rica,CRI,CS mandatory in primary or secondary only,188.0
+Croatia,HRV,CS mandatory in primary or secondary only,191.0
+Cyprus,CYP,CS mandatory in primary or secondary only,196.0
+Dominican Republic,DOM,CS mandatory in primary or secondary only,214.0
+Greece,GRC,CS mandatory in primary or secondary only,300.0
+Guatemala,GTM,CS mandatory in primary or secondary only,320.0
+Hungary,HUN,CS mandatory in primary or secondary only,348.0
+Ireland,IRL,CS mandatory in primary or secondary only,372.0
+Italy,ITA,CS mandatory in primary or secondary only,380.0
+Japan,JPN,CS mandatory in primary or secondary only,392.0
+Latvia,LVA,CS mandatory in primary or secondary only,428.0
+Liechtenstein,LIE,CS mandatory in primary or secondary only,438.0
+Luxembourg,LUX,CS mandatory in primary or secondary only,442.0
+Malaysia,MYS,CS mandatory in primary or secondary only,458.0
+Mauritius,MUS,CS mandatory in primary or secondary only,480.0
+Morocco,MAR,CS mandatory in primary or secondary only,504.0
+Mozambique,MOZ,CS mandatory in primary or secondary only,508.0
+Panama,PAN,CS mandatory in primary or secondary only,591.0
+Portugal,PRT,CS mandatory in primary or secondary only,620.0
+Russian Federation,RUS,CS mandatory in primary or secondary only,643.0
+Rwanda,RWA,CS mandatory in primary or secondary only,646.0
+Samoa,WSM,CS mandatory in primary or secondary only,882.0
+Sierra Leone,SLE,CS mandatory in primary or secondary only,694.0
+Slovenia,SVN,CS mandatory in primary or secondary only,705.0
+St. Lucia,LCA,CS mandatory in primary or secondary only,662.0
+"Taiwan, China",TWN,CS mandatory in primary or secondary only,158.0
+Tanzania,TZA,CS mandatory in primary or secondary only,834.0
+Trinidad and Tobago,TTO,CS mandatory in primary or secondary only,780.0
+Turks and Caicos Islands,TCA,CS mandatory in primary or secondary only,796.0
+Uganda,UGA,CS mandatory in primary or secondary only,800.0
+Zambia,ZMB,CS mandatory in primary or secondary only,894.0
+Andorra,AND,CS mandatory in primary and secondary,20.0
+Argentina,ARG,CS mandatory in primary and secondary,32.0
+Armenia,ARM,CS mandatory in primary and secondary,51.0
+Australia,AUS,CS mandatory in primary and secondary,36.0
+Belarus,BLR,CS mandatory in primary and secondary,112.0
+Bhutan,BTN,CS mandatory in primary and secondary,64.0
+Bulgaria,BGR,CS mandatory in primary and secondary,100.0
+Channel Islands,CHI,CS mandatory in primary and secondary,830
+Czech Republic,CZE,CS mandatory in primary and secondary,203.0
+Estonia,EST,CS mandatory in primary and secondary,233.0
+Finland,FIN,CS mandatory in primary and secondary,246.0
+Ghana,GHA,CS mandatory in primary and secondary,288.0
+Kazakhstan,KAZ,CS mandatory in primary and secondary,398.0
+South Korea (Rep.of Korea),KOR,CS mandatory in primary and secondary,410.0
+Lithuania,LTU,CS mandatory in primary and secondary,440.0
+Malta,MLT,CS mandatory in primary and secondary,470.0
+Montenegro,MNE,CS mandatory in primary and secondary,499.0
+New Zealand,NZL,CS mandatory in primary and secondary,554.0
+Poland,POL,CS mandatory in primary and secondary,616.0
+Romania,ROU,CS mandatory in primary and secondary,642.0
+Saudi Arabia,SAU,CS mandatory in primary and secondary,682.0
+Serbia,SRB,CS mandatory in primary and secondary,688.0
+Slovak Republic,SVK,CS mandatory in primary and secondary,703.0
+Sweden,SWE,CS mandatory in primary and secondary,752.0
+Switzerland,CHE,CS mandatory in primary and secondary,756.0
+Thailand,THA,CS mandatory in primary and secondary,764.0
+Turkey,TUR,CS mandatory in primary and secondary,792.0
+Ukraine,UKR,CS mandatory in primary and secondary,804.0
+United Arab Emirates,ARE,CS mandatory in primary and secondary,784.0
+United Kingdom of Great Britin and Northern Ireland,GBR,CS mandatory in primary and secondary,826.0

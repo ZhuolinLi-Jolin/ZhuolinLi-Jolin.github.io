@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#f8f6f1",
+  "title": {
+    "text": "Mental Health Issues by Age of First Smartphone",
+    "subtitle": [
+    "Percentage of 13-17 year olds reporting problems (Sample: US & India)",
+    "Source: Global Mind Project, Sapien Labs, January 2025."],
+    "anchor": "start",
+    "fontSize": 18,
+    "font": "Arial",
+    "color": "#2d2d2d",
+    "subtitleColor": "#2d2d2d"
+  },
+  "width": 600,
+  "height": 400,
+  "padding": 50,
+  "data": {
+    "values": [
+      {"Age": "Under 10", "Item": "Aggression Towards Others", "Value": 38.7},
+      {"Age": "10", "Item": "Aggression Towards Others", "Value": 32.0},
+      {"Age": "11", "Item": "Aggression Towards Others", "Value": 30.1},
+      {"Age": "12", "Item": "Aggression Towards Others", "Value": 29.8},
+      {"Age": "13", "Item": "Aggression Towards Others", "Value": 29.1},
+      {"Age": "Over 13", "Item": "Aggression Towards Others", "Value": 27.9},
+      {"Age": "Under 10", "Item": "Anger & Irritability", "Value": 38.4},
+      {"Age": "10", "Item": "Anger & Irritability", "Value": 37.0},
+      {"Age": "11", "Item": "Anger & Irritability", "Value": 34.1},
+      {"Age": "12", "Item": "Anger & Irritability", "Value": 34.1},
+      {"Age": "13", "Item": "Anger & Irritability", "Value": 30.7},
+      {"Age": "Over 13", "Item": "Anger & Irritability", "Value": 31.3},
+      {"Age": "Under 10", "Item": "Physical Health Issues", "Value": 28.4},
+      {"Age": "10", "Item": "Physical Health Issues", "Value": 25.4},
+      {"Age": "11", "Item": "Physical Health Issues", "Value": 24.2},
+      {"Age": "12", "Item": "Physical Health Issues", "Value": 21.4},
+      {"Age": "13", "Item": "Physical Health Issues", "Value": 22.3},
+      {"Age": "Over 13", "Item": "Physical Health Issues", "Value": 22.0},
+      {"Age": "Under 10", "Item": "Suicidal Thoughts", "Value": 39.4},
+      {"Age": "10", "Item": "Suicidal Thoughts", "Value": 40.1},
+      {"Age": "11", "Item": "Suicidal Thoughts", "Value": 34.9},
+      {"Age": "12", "Item": "Suicidal Thoughts", "Value": 37.2},
+      {"Age": "13", "Item": "Suicidal Thoughts", "Value": 36.0},
+      {"Age": "Over 13", "Item": "Suicidal Thoughts", "Value": 35.6},
+      {"Age": "Under 10", "Item": "Hallucinations", "Value": 16.8},
+      {"Age": "10", "Item": "Hallucinations", "Value": 20.3},
+      {"Age": "11", "Item": "Hallucinations", "Value": 13.4},
+      {"Age": "12", "Item": "Hallucinations", "Value": 15.7},
+      {"Age": "13", "Item": "Hallucinations", "Value": 11.7},
+      {"Age": "Over 13", "Item": "Hallucinations", "Value": 14.0}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": {"size": 0},
+        "strokeWidth": 4
+        
+      },
+      "encoding": {
+        "x": {
+          "field": "Age",
+          "type": "ordinal",
+          "sort": ["Under 10", "10", "11", "12", "13", "Over 13"],
+          "axis": {
+            "title": "Age of First Smartphone",
+            "labelAngle": 0,
+            "titleColor": "#2d2d2d",
+            "labelColor": "#2d2d2d",
+            "domainColor": "#2d2d2d"
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "axis": {
+            "title": "% Reporting as a Problem",
+            "titleColor": "#2d2d2d",
+            "labelColor": "#2d2d2d",
+            "domainColor": "#2d2d2d",
+            "grid": true,
+            "gridColor": "#e8e6e1"
+          },
+          "scale": {"domain": [0, 50]}
+        },
+        "color": {
+          "field": "Item",
+          "type": "nominal",
+          "scale": {
+            "range": ["#3d5a47", "#c97b63", "#2d2d2d", "#7a9081", "#e0a695"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "Item", "type": "nominal", "title": "Category"},
+          {"field": "Age", "type": "ordinal", "title": "Smartphone Age"},
+          {"field": "Value", "type": "quantitative", "title": "Report Rate (%)"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "font": "Arial",
+        "fontSize": 12,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "Age",
+          "type": "ordinal",
+          "sort": ["Under 10", "10", "11", "12", "13", "Over 13"]
+        },
+        "y": {"field": "Value", "type": "quantitative"},
+        "text": {"field": "Item", "type": "nominal"},
+        "color": {"field": "Item", "type": "nominal"},
+        "opacity": {
+          "condition": {"test": "datum['Age'] == 'Over 13'", "value": 1},
+          "value": 0
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "font": "Arial"
+  }
+}

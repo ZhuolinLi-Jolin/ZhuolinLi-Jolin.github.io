@@ -1,7 +1,57 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Placeholder CC2-1",
-  "data": {"values": [{"a":"A","b":28},{"a":"B","b":55}]},
-  "mark": "bar",
-  "encoding": {"x": {"field": "a","type": "nominal"},"y": {"field": "b","type": "quantitative"}}
+  "padding": 20,
+  "title": {
+    "text": "Employment Rate",
+    "anchor": "start",
+    "subtitle": "All persons, aged 15-64, % | FRED through ECO API",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "color": "#2d2d2d",
+    "subtitlePadding": 10,
+    "subtitleColor": "#000000"
+    
+  },
+  "width": 500,
+  "height": 400,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": "#ffffff",
+  "view": {
+    "fill": "#ffffff",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://api.economicsobservatory.com/usa/empl?vega",
+    "format": {
+      "type": "json"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#3d5a47",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "",
+        "titleColor": "#122B39",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": "",
+        "titleColor": "#122B39",
+        "grid": false
+      }
+    }
+  }
 }

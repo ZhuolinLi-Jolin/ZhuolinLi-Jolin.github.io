@@ -588,19 +588,20 @@ nav {
 .cc6-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    padding: 0;
+    gap: 1rem;
+    padding: 2rem;
     background: white;
     overflow: visible; /* 确保tooltip不被裁剪 */
 }
 
 .cc6-chart {
     width: 100%;
-    min-height: 250px;
-    background: transparent;
+    min-height: 200px;
+    background: #fafafa;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--light-grey);
     overflow: visible; /* 确保tooltip不被裁剪 */
     position: relative; /* 为tooltip提供定位上下文 */
 }

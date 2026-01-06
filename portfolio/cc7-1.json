@@ -1,14 +1,22 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Distribution of Train Stations in Scotland",
+   "title": {
+    "text": "Distribution of Train Stations in Scotland",
+    "subtitle": "Source: National Public Transport Access Nodes (NaPTAN), Department for Transport, UK",
+    "fontSize": 16,
+    "font": "sans-serif",
+    "subtitleFontStyle": "italic",
+    "subtitlePadding": 10,
+    "anchor": "middle"
+  },
   "width": 375,
   "height": 450,
+  "background": "#fefdfb",
   "projection": {
     "type": "mercator"
   },
   "layer": [
     {
-      "description": "图层 1: 苏格兰地理边界 (Scotland Boundary)",
       "data": {
         "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL1_2021_20m.geojson",
         "format": {
@@ -27,7 +35,6 @@
       }
     },
     {
-      "description": "图层 2: 火车站散点 (Train Station Points)",
       "data": {
         "url": "https://gist.githubusercontent.com/ZhuolinLi-Jolin/e7258f48568e985303754e1c7c3f402b/raw/6c1af8166baed777a307e3eebb7b0d7f38577933/Scotland_Train_Stations.csv"
       },

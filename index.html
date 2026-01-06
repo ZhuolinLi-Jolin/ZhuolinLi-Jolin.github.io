@@ -271,11 +271,17 @@
                         <div class="assignment-number">FIGURE CC3</div>
                         <h3 class="assignment-title">Policy Debate</h3>
                         <p class="assignment-requirement">
-                            Produce two charts that support or refute a specific policy topic, accompanied by a short commentary on the findings.
+                           <strong>Policy topic:</strong><br> Governments should mandate stricter age-verification for social media and smartphone access to protect the cognitive development and mental well-being of minors.
                         </p>
                     </div>
                     <div id="vis-cc3-1" class="assignment-chart"></div>
+                    <div style="padding: 1.5rem 2rem; background: #f5f5f5; line-height: 1.7;">
+                        <p style="margin: 0;">Data indicates that delaying smartphone ownership until age 13 or later correlates with lower reported incidents of suicidal thoughts, aggression, and physical health issues.</p>
+                    </div>
                     <div id="vis-cc3-2" class="assignment-chart"></div>
+                    <div style="padding: 1.5rem 2rem; background: #f5f5f5; line-height: 1.7;">
+                        <p style="margin: 0;">Teens report that social media predominantly hurts their sleep and productivity, with negative impacts on mental health significantly outweighing the perceived benefits.</p>
+                    </div>
                 </div>
 
                 <div class="assignment-item">
@@ -283,14 +289,17 @@
                         <div class="assignment-number">FIGURE CC4</div>
                         <h3 class="assignment-title">Replication and Improvement</h3>
                         <p class="assignment-requirement">
-                            Replicate a chart from a reputable source (e.g., Financial Times), then create an improved version with better design choices.
+                            Replicate a chart from Artificial Intelligence Index Report 2025 by Stanford University, then create an improved version.
                         </p>
                     </div>
+                    <div class="assignment-chart">
+                        <img src="portfolio/cc4.png" alt="CC4 Visualization" style="width: 100%; height: auto;">
+                    </div>
                     <div id="vis-cc4-1" class="assignment-chart"></div>
-                    <p style="padding: 1rem 2rem; background: #f5f5f5;">
-                        Chart 1 explanation here...
-                    </p>
                     <div id="vis-cc4-2" class="assignment-chart"></div>
+                    <div style="padding: 1.5rem 2rem; background: #f5f5f5; line-height: 1.7;">
+                        <p style="margin: 0;">Sequential coloring clarifies the logical hierarchy obscured by the original palette, while white strokes reduce noise, making data relationships significantly more intuitive to interpret.</p>
+                    </div>
                 </div>
 
                 <div class="assignment-item">
@@ -302,6 +311,24 @@
                         </p>
                     </div>
                     <div id="vis-cc5-1" class="assignment-chart"></div>
+                    <div style="padding: 1.5rem 2rem; background: #f5f5f5; line-height: 1.7;">
+                        <h4 style="font-size: 1rem; font-weight: 600; color: var(--deep-green); margin-bottom: 1rem;">API Functional Description</h4>
+                        <p style="margin-bottom: 0.8rem;">
+                            The chart retrieves employment data via the <strong>World Bank Indicators API</strong>, using a RESTful structure based on the URL <code style="background: white; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.9em;">https://api.worldbank.org/v2/</code>.
+                        </p>
+                        <p style="margin-bottom: 0.8rem;">
+                            To execute a data call, specific path segments are appended to define the scope: <code style="background: white; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.9em;">/country/</code> followed by ISO-3 codes (e.g., <code style="background: white; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.9em;">usa;ind</code> for the U.S. and India) and <code style="background: white; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.9em;">/indicator/</code> followed by the metric ID (<code style="background: white; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.9em;">SL.EMP.TOTL.SP.ZS</code> for employment to population ratio). The request is further refined with query parameters: <code style="background: white; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.9em;">format=json</code> for machine-readable data, <code style="background: white; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.9em;">date=2000:2025</code> to set the temporal range, and <code style="background: white; padding: 0.2rem 0.5rem; border-radius: 3px; font-size: 0.9em;">per_page=160</code> to capture all data points in one response.
+                        </p>
+                        <p style="margin-bottom: 0.4rem; font-weight: 500; color: var(--charcoal);">Full Final URL:</p>
+                        <code style="display: block; background: white; padding: 0.8rem; border-radius: 4px; font-size: 0.85em; overflow-x: auto; border-left: 3px solid var(--deep-green);">https://api.worldbank.org/v2/country/usa;ind/indicator/SL.EMP.TOTL.SP.ZS?format=json&date=2000:2025&per_page=160</code>
+                    </div>
+                    <div id="vis-cc5-2" class="assignment-chart"></div>
+                    <div style="padding: 1.5rem 2rem; background: #f5f5f5; line-height: 1.7;">
+                        <p style="margin: 0;">
+                            Scraped Wales GVA data. Navigating complex HTML tags to pinpoint target data was challenging, requiring precise cell isolation before converting into a tidy long-format CSV.<br><br>
+                            View code at: <a href="https://colab.research.google.com/drive/1Bnvx6LVKI58NMY5adCY_gOpkaidc6bw2#scrollTo=7Q0aUZdkaM3Z" target="_blank" style="color: var(--deep-green); text-decoration: underline;">Google Colab</a>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="assignment-item">
@@ -319,6 +346,12 @@
                         <div id="vis-cc6-4" class="cc6-chart"></div>
                         <div id="vis-cc6-5" class="cc6-chart"></div>
                         <div id="vis-cc6-6" class="cc6-chart"></div>
+                    </div>
+                    <div style="padding: 1.5rem 2rem; background: #f5f5f5; line-height: 1.7;">
+                        <p style="margin: 0;">
+                            The six charts above are dynamically generated and embedded using a JavaScript loop. <br><br>
+                            View code at: <a href="https://colab.research.google.com/drive/1y5a5aO6-CYzNnfXBJp2HGTdrQoda-0uq#scrollTo=00f75b80" target="_blank" style="color: var(--deep-green); text-decoration: underline;">Google Colab</a>
+                        </p>
                     </div>
                 </div>
 

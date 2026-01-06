@@ -91,6 +91,7 @@ vegaEmbed('#vis-cc3-2', 'portfolio/cc3-2.json').catch(console.error);
 vegaEmbed('#vis-cc4-1', 'portfolio/cc4-1.json').catch(console.error);   
 vegaEmbed('#vis-cc4-2', 'portfolio/cc4-2.json').catch(console.error);
 vegaEmbed('#vis-cc5-1', 'portfolio/cc5-1.json').catch(console.error);
+vegaEmbed('#vis-cc5-2', 'portfolio/cc5-2.json').catch(console.error);
 vegaEmbed('#vis-cc7-1', 'portfolio/cc7-1.json').catch(console.error);
 vegaEmbed('#vis-cc7-2', 'portfolio/cc7-2.json').catch(console.error);
 

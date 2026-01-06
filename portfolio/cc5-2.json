@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Gross Value Added (GVA) by Welsh NUTS2 areas (2022) - Horizontal with Labels",
+  "width": 500,
+  "height": 250,
+  "background": "#fefdfb",
+  "padding": 20,
+  "title": {
+    "text": "Gross Value Added (GVA) by Welsh Area, 2022",
+    "subtitle": [
+      "GVA Value in millions of GBP (£)",
+      "Source:Regional Accounts, Office for National Statistics, UK"
+    ],
+    "anchor": "middle",
+    "fontSize": 16,
+    "font": "sans-serif",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666",
+    "subtitlePadding": 10
+  },
+  "data": {
+    "values": [
+      {"Area": "Isle of Anglesey", "Year": 2022, "GVA_Value": 1378},
+      {"Area": "Gwynedd", "Year": 2022, "GVA_Value": 2616},
+      {"Area": "Conwy and Denbighshire", "Year": 2022, "GVA_Value": 4145},
+      {"Area": "Flintshire and Wrexham", "Year": 2022, "GVA_Value": 8953},
+      {"Area": "Mid Wales", "Year": 2022, "GVA_Value": 4062}
+    ]
+  },
+  "encoding": {
+    "y": {
+      "field": "Area",
+      "type": "nominal",
+      "sort": "-x",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelFontSize": 12
+      }
+    },
+    "x": {
+      "field": "GVA_Value",
+      "type": "quantitative",
+      "axis": {
+        "title": "GVA Value (£ million)",
+        "gridColor": "#e8e6e1",
+        "gridDash": [4, 4],
+        "domain": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#3d5a47",
+        "tooltip": true,
+        "cornerRadiusEnd": 3
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "fontSize": 12,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "text": {"field": "GVA_Value", "type": "quantitative", "format": ","}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFont": "sans-serif",
+      "titleFont": "sans-serif",
+      "titleFontSize": 13,
+      "titleFontWeight": "normal"
+    }
+  }
+}

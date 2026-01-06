@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 286,
+  "height": 198,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": "#fefdfb",
+  "padding": 20,
+  "title": {
+    "text": "Inflation, consumer prices (annual %)",
+    "fontSize": 11,
+    "subtitleFontSize": 9,
+    "subtitle": "CAN"
+  },
+  "data": {
+    "values": [
+      {
+        "date": "2010",
+        "value": 1.77687154092627
+      },
+      {
+        "date": "2011",
+        "value": 2.91213508872351
+      },
+      {
+        "date": "2012",
+        "value": 1.51567823124517
+      },
+      {
+        "date": "2013",
+        "value": 0.938291897815317
+      },
+      {
+        "date": "2014",
+        "value": 1.90663590717861
+      },
+      {
+        "date": "2015",
+        "value": 1.12524136094277
+      },
+      {
+        "date": "2016",
+        "value": 1.42875954701085
+      },
+      {
+        "date": "2017",
+        "value": 1.59688412852977
+      },
+      {
+        "date": "2018",
+        "value": 2.26822567248103
+      },
+      {
+        "date": "2019",
+        "value": 1.94926902411593
+      },
+      {
+        "date": "2020",
+        "value": 0.716999632307827
+      },
+      {
+        "date": "2021",
+        "value": 3.39519318527528
+      },
+      {
+        "date": "2022",
+        "value": 6.80280115341613
+      },
+      {
+        "date": "2023",
+        "value": 3.87900159788426
+      },
+      {
+        "date": "2024",
+        "value": 2.38158383281173
+      }
+    ]
+  },
+  "transform": [
+    {
+      "filter": "year(datum.date) >= 2011"
+    },
+    {
+      "filter": "year(datum.date) >= 2011"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": false,
+    "strokeWidth": 1.5,
+    "color": "#3d5a47"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "",
+      "axis": {
+        "labelFontSize": 8,
+        "format": "%Y",
+        "tickCount": "year"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "value",
+      "axis": {
+        "labelFontSize": 8,
+        "titleFontSize": 9
+      }
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Date",
+        "format": "%Y"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Value",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 8,
+      "titleFontSize": 9
+    },
+    "legend": {
+      "labelFontSize": 8,
+      "titleFontSize": 9
+    }
+  }
+}

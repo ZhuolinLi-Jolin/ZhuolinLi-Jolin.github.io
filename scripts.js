@@ -93,3 +93,8 @@ vegaEmbed('#vis-cc4-2', 'portfolio/cc4-2.json').catch(console.error);
 vegaEmbed('#vis-cc5-1', 'portfolio/cc5-1.json').catch(console.error);
 vegaEmbed('#vis-cc7-1', 'portfolio/cc7-1.json').catch(console.error);
 vegaEmbed('#vis-cc7-2', 'portfolio/cc7-2.json').catch(console.error);
+
+// CC6: Loop to embed six charts
+for (let i = 1; i <= 6; i++) {
+    vegaEmbed(`#vis-cc6-${i}`, `portfolio/cc6-${i}.json`, {actions: false}).catch(console.error);
+}

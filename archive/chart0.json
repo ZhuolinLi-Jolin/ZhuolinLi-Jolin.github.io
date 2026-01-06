@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "background": "#fefdfb",
+  "padding": 20,
+  "title": {
+    "text": "Main Chart Title Goes Here",
+    "subtitle": "Source: Enter data source information here",
+    "anchor": "middle",
+    "fontSize": 16,
+    "font": "sans-serif"
+  },
+  "data": {
+    "values": [
+      {"date": 2017, "Value": 0.1},
+      {"date": 2018, "Value": 0.2},
+      {"date": 2019, "Value": 0.5},
+      {"date": 2020, "Value": 0.6}
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true, 
+      "size": 50,
+      "color": "#3d5a47"
+    },
+    "strokeWidth": 2.5,
+    "color": "#3d5a47",
+    "interpolate": "linear"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "quantitative",
+      "axis": {
+        "format": "d",
+        "title": "Date",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "axis": {
+        "title": "Value Title",
+        "gridColor": "#e8e6e1",
+        "gridDash": [4, 4]
+      }
+    },
+    "tooltip": [
+      {"field": "date", "title": "Date"},
+      {"field": "Value", "title": "Value", "format": ".3f"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFont": "sans-serif",
+      "titleFont": "sans-serif",
+      "titleFontSize": 13,
+      "titleFontWeight": "normal"
+    }
+  }
+}

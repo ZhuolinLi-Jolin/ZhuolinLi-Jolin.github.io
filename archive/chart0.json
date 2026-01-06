@@ -1,66 +1,78 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 500,
-  "height": 300,
+  "width": 260,
+  "height": 180,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "background": "#fefdfb",
   "padding": 20,
   "title": {
-    "text": "Main Chart Title Goes Here",
-    "subtitle": "Source: Enter data source information here",
-    "anchor": "middle",
-    "fontSize": 16,
+    "text": "Inflation, consumer prices (annual %)",
+    "subtitle": "Source: World Bank",
+    "anchor": "start",
+    "fontSize": 10,
+    "subtitleFontSize": 8,
     "font": "sans-serif"
   },
   "data": {
     "values": [
-      {"date": 2017, "Value": 0.1},
-      {"date": 2018, "Value": 0.2},
-      {"date": 2019, "Value": 0.5},
-      {"date": 2020, "Value": 0.6}
+      {"date": "2017-01-01", "value": 0.1},
+      {"date": "2018-01-01", "value": 0.2},
+      {"date": "2019-01-01", "value": 0.5},
+      {"date": "2020-01-01", "value": 0.6}
     ]
   },
+  "transform": [
+    {
+      "filter": "year(datum.date) >= 2011"
+    }
+  ],
   "mark": {
     "type": "line",
-    "point": {
-      "filled": true, 
-      "size": 50,
-      "color": "#3d5a47"
-    },
-    "strokeWidth": 2.5,
+    "point": false,
+    "strokeWidth": 1.5,
     "color": "#3d5a47",
     "interpolate": "linear"
   },
   "encoding": {
     "x": {
       "field": "date",
-      "type": "quantitative",
+      "type": "temporal",
+      "title": null,
       "axis": {
-        "format": "d",
-        "title": "Date",
+        "format": "%Y",
+        "tickCount": "year",
+        "labelFontSize": 8,
         "grid": false
       }
     },
     "y": {
-      "field": "Value",
+      "field": "value",
       "type": "quantitative",
+      "title": "value",
       "axis": {
-        "title": "Value Title",
+        "labelFontSize": 8,
+        "titleFontSize": 9,
         "gridColor": "#e8e6e1",
         "gridDash": [4, 4]
       }
     },
     "tooltip": [
-      {"field": "date", "title": "Date"},
-      {"field": "Value", "title": "Value", "format": ".3f"}
+      {"field": "date", "type": "temporal", "title": "Date", "format": "%Y"},
+      {"field": "value", "type": "quantitative", "title": "Value", "format": ".2f"}
     ]
   },
   "config": {
     "view": {"stroke": "transparent"},
     "axis": {
       "labelFont": "sans-serif",
-      "titleFont": "sans-serif",
-      "titleFontSize": 13,
-      "titleFontWeight": "normal"
+      "titleFont": "sans-serif"
+    },
+    "legend": {
+      "labelFontSize": 8,
+      "titleFontSize": 9
     }
   }
 }

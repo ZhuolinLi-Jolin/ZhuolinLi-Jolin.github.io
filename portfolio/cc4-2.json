@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Availability of CS education by country, 2024",
+    "subtitle": [
+      "Source: Raspberry Pi Computing Education Research Centre, 2024 | Chart: 2025 AI Index report"
+    ],
+    "subtitleFontSize": 12,
+    "anchor": "middle"
+  },
+  "width": 800,
+  "height": 450,
+  "projection": {"type": "equalEarth"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
+    "format": {"type": "topojson", "feature": "countries"}
+  },
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://gist.githubusercontent.com/ZhuolinLi-Jolin/cf43c0fc415d0890944c250a756c5c9c/raw/38426b1b42cb8fd921b7c3d03668673c9318d281/gistfile1.csv",
+          "format": {"type": "csv", "parse": {"id": "number"}}
+        },
+        "key": "id",
+        "fields": ["Status", "Country"]
+      }
+    },
+    {
+      "calculate": "datum.Status || 'No Data'",
+      "as": "CS_Status"
+    },
+    {"filter": "datum.id !== 10"}
+  ],
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "field": "CS_Status",
+      "type": "ordinal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "CS mandatory in primary and secondary",
+          "CS mandatory in primary or secondary only",
+          "CS as an elective course everywhere",
+          "CS in some schools/districts",
+          "CS cross curricular",
+          "CS planned",
+          "No CS"
+        ],
+        "range": [
+          "#08306b",
+          "#08519c",
+          "#2171b5",
+          "#4292c6",
+          "#9ecae1",
+          "#deebf7",
+          "#d9d9d9"
+        ]
+      },
+      "legend": {
+        "orient": "none",
+        "legendX": -5,
+        "legendY": 280,
+        "symbolType": "square",
+        "titleAnchor": "start",
+        "direction": "vertical",
+        "rowPadding": 5,
+        "fillColor": "rgba(255,255,255,0.8)",
+        "padding": 10,
+        "strokeColor": "transparent",
+        "labelFontSize": 10.5,
+        "labelLimit": 0
+      }
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "CS_Status", "type": "nominal", "title": "Status"}
+    ]
+  },
+  "config": {"view": {"stroke": null}, "font": "Arial"}
+}

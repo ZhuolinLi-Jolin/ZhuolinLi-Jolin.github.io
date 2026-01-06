@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 390,
+  "height": 400,
+  "background": "#fefdfb",
+  "padding": 20,
+  "title": {
+    "text": "Gross Disposable Household Income (2023)",
+    "subtitle": [
+      "Index (UK = 100) | Source: Regional Accounts, Office for National Statistics, UK"
+    ],
+    "anchor": "middle",
+    "fontSize": 16,
+    "font": "sans-serif",
+    "subtitleFontStyle": "italic",
+    "subtitlePadding": 10
+  },
+  "data": {
+    "url": "https://martinjc.github.io/UK-GeoJSON/json/wal/topo_lad.json",
+    "format": {
+      "type": "topojson",
+      "feature": "lad"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.LAD13NM",
+      "from": {
+        "data": {
+          "values": [
+            {"Area": "Isle of Anglesey", "Index": 82.8},
+            {"Area": "Gwynedd", "Index": 78.0},
+            {"Area": "Conwy", "Index": 86.0},
+            {"Area": "Denbighshire", "Index": 81.9},
+            {"Area": "Flintshire", "Index": 90.0},
+            {"Area": "Wrexham", "Index": 78.9},
+            {"Area": "Ceredigion", "Index": 80.1},
+            {"Area": "Powys", "Index": 85.5},
+            {"Area": "Pembrokeshire", "Index": 82.0},
+            {"Area": "Carmarthenshire", "Index": 79.4},
+            {"Area": "Swansea", "Index": 77.1},
+            {"Area": "Neath Port Talbot", "Index": 75.8},
+            {"Area": "Bridgend", "Index": 81.9},
+            {"Area": "Vale of Glamorgan", "Index": 98.6},
+            {"Area": "Cardiff", "Index": 80.6},
+            {"Area": "Rhondda Cynon Taf", "Index": 72.9},
+            {"Area": "Caerphilly", "Index": 78.6},
+            {"Area": "Blaenau Gwent", "Index": 66.9},
+            {"Area": "Torfaen", "Index": 78.5},
+            {"Area": "Monmouthshire", "Index": 104.8},
+            {"Area": "Newport", "Index": 77.5},
+            {"Area": "Merthyr Tydfil", "Index": 74.4}
+          ]
+        },
+        "key": "Area",
+        "fields": ["Index"]
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.8
+  },
+  "encoding": {
+    "color": {
+      "field": "Index",
+      "type": "quantitative",
+      "scale": {
+        "range": ["#f2f5f3", "#1e3025"],
+        "domain": [66, 105],
+        "nice": true
+      },
+      "legend": {
+        "title": "Index (UK=100)",
+        "orient": "right",
+        "gradientLength": 250,
+        "labelFontSize": 11
+      }
+    },
+    "tooltip": [
+      {"field": "properties.LAD13NM", "type": "nominal", "title": "Authority"},
+      {"field": "Index", "type": "quantitative", "title": "Index Score"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"}
+  }
+}

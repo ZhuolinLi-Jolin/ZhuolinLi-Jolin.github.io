@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Distribution of Train Stations in Scotland",
+  "width": 375,
+  "height": 450,
+  "projection": {
+    "type": "mercator"
+  },
+  "layer": [
+    {
+      "description": "图层 1: 苏格兰地理边界 (Scotland Boundary)",
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL1_2021_20m.geojson",
+        "format": {
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.ITL121NM == 'Scotland'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e0e0e0",
+        "stroke": "#ffffff"
+      }
+    },
+    {
+      "description": "图层 2: 火车站散点 (Train Station Points)",
+      "data": {
+        "url": "https://gist.githubusercontent.com/ZhuolinLi-Jolin/e7258f48568e985303754e1c7c3f402b/raw/6c1af8166baed777a307e3eebb7b0d7f38577933/Scotland_Train_Stations.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "size": 50,
+        "color": "#3d5a47",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "CommonName", "type": "nominal", "title": "Station Name"},
+          {"field": "ATCOCode", "type": "nominal", "title": "ATCO Code"},
+          {"field": "Latitude", "type": "quantitative", "title": "Latitude", "format": ".4f"},
+          {"field": "Longitude", "type": "quantitative", "title": "Longitude", "format": ".4f"}
+        ]
+      }
+    }
+  ]
+}

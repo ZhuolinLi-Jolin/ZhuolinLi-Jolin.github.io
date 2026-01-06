@@ -1,20 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "background": "#f8f6f1",
+  "background": "#fefdfb",
   "title": {
     "text": "Mental Health Issues by Age of First Smartphone",
     "subtitle": [
     "Percentage of 13-17 year olds reporting problems (Sample: US & India)",
     "Source: Global Mind Project, Sapien Labs, January 2025."],
-    "anchor": "start",
+    "anchor": "middle",
     "fontSize": 18,
     "font": "Arial",
     "color": "#2d2d2d",
-    "subtitleColor": "#2d2d2d"
+    "subtitleColor": "#666",
+    "subtitleFontStyle": "italic"
   },
-  "width": 600,
-  "height": 400,
-  "padding": 50,
+  "width": 500,
+  "height": 300,
+  "padding": 20,
   "data": {
     "values": [
       {"Age": "Under 10", "Item": "Aggression Towards Others", "Value": 38.7},

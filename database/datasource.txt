@@ -20,3 +20,16 @@ Similar shares of teens say social media help (19%) or hurt (15%) their confiden
 
 cc4
 https://drive.google.com/drive/folders/1u6hNl_Z7kT1BgrZRKk9vFU4Scz-K2_CP
+
+cc5
+https://data.worldbank.org/indicator/SP.DYN.WFRT
+The World Bank data is accessed via the base URL https://api.worldbank.org/v2/country/, where the request is constructed by appending ISO country codes (e.g., usa;ind), the /indicator/ path, and the specific indicator ID (SL.EMP.TOTL.SP.ZS). Data retrieval is refined through query parameters: format=json for JSON output, date=2000:2025 for the temporal range, and per_page=160 to capture all data points in a single response. The final URL used for this chart is: https://api.worldbank.org/v2/country/usa;ind/indicator/SL.EMP.TOTL.SP.ZS?format=json&date=2000:2025&per_page=160.
+https://datahelpdesk.worldbank.org/knowledgebase/articles/898581-api-basic-call-structures
+The World Bank Indicators API follows a RESTful structure where data is retrieved by appending path segments and query parameters to the base URL https://api.worldbank.org/v2/. A functional request is constructed by defining the target locations via /country/{iso-codes}/ (using semicolons for multiple countries) and the specific metric via /indicator/{id}/. The output is refined using query parameters: format=json for machine-readable data, date=YYYY:YYYY to specify a time range, and per_page to control the volume of results per request.
+
+
+cc7-1
+https://beta-naptan.dft.gov.uk/Download/National
+
+cc7-2
+https://statswales.gov.wales/Catalogue/Business-Economy-and-Labour-Market/Regional-Accounts/Household-Income/grossdisposablehouseholdincome-by-area-measure

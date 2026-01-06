@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "background": "#f8f6f1",
+  "background": "#fefdfb",
   "padding": {"top": 40, "left": 40, "right": 60, "bottom": 60},
   "title": {
     "text": "Teens' Perception of Social Media Impact",
@@ -8,11 +8,13 @@
       "% of U.S. teens ages 13 to 17 who say using social media 'a lot/a little'...",
       "Source: Pew Research Center Survey, 2024."
     ],
-    "anchor": "start",
+    "anchor": "middle",
     "fontSize": 18,
     "font": "Arial",
     "color": "#2d2d2d",
-    "subtitlePadding": 10
+    "subtitlePadding": 10,
+    "subtitleColor": "#666",
+    "subtitleFontStyle": "italic"
   },
   "data": {
     "values": [

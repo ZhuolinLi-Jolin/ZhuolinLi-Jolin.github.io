@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Employment to population ratio - English Standardized Style",
+  "width": 500,
+  "height": 350,
+  "background": "#fefdfb",
+  "padding": 20,
+  "title": {
+    "text": "Employment to Population Ratio, 15+ (%)",
+    "subtitle": [
+      "Ratio of a country's population that is employed",
+      "Source: World Bank (Indicator: SL.EMP.TOTL.SP.ZS)"
+    ],
+    "anchor": "middle",
+    "fontSize": 16,
+    "font": "sans-serif",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666",
+    "subtitlePadding": 10
+  },
+  "data": {
+    "url": "https://api.worldbank.org/v2/country/usa;ind/indicator/SL.EMP.TOTL.SP.ZS?format=json&date=2015:2025&per_page=160",
+    "format": {
+      "property": "[1]"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "point": {"size": 30},
+    "strokeWidth": 2.5,
+    "interpolate": "monotone"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "Year",
+        "labelAngle": 0,
+        "grid": false,
+        "titlePadding": 10,
+        "format": "%Y",
+        "domainColor": "#e8e6e1"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {"domain": [0, 90]},
+      "axis": {
+        "title": "Percentage (%)",
+        "gridColor": "#e8e6e1",
+        "gridDash": [4, 4],
+        "domain": false,
+        "tickCount": 6,
+        "titlePadding": 10
+      }
+    },
+    "color": {
+      "field": "country.value",
+      "type": "nominal",
+      "title": "Country",
+      "scale": {
+        "range": ["#3d5a47", "#8b7e66"]
+      },
+      "legend": {
+        "orient": "right",
+        "offset": 10,
+        "labelFontSize": 11,
+        "titleFontSize": 12
+      }
+    },
+    "tooltip": [
+      {"field": "country.value", "type": "nominal", "title": "Country"},
+      {"field": "date", "type": "temporal", "title": "Year", "format": "%Y"},
+      {"field": "value", "type": "quantitative", "title": "Ratio (%)", "format": ".2f"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {
+      "labelFont": "sans-serif",
+      "labelFontSize": 11,
+      "labelColor": "#444",
+      "titleFont": "sans-serif",
+      "titleFontSize": 13,
+      "titleFontWeight": "normal"
+    }
+  }
+}

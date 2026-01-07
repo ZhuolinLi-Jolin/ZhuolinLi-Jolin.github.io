@@ -78,28 +78,46 @@ fetch(plotFileName)
       console.error("❌ Rendering failed:", error);
   });
 
+// Pre-Figure charts on project page
+vegaEmbed('#vis-chart01', 'project/chart_01.json', {actions: false, renderer: 'svg'}).then(result => {
+    result.view.width(document.getElementById('vis-chart01').offsetWidth).run();
+}).catch(console.error);
+vegaEmbed('#vis-chart02', 'project/chart_02.json', {actions: false, renderer: 'svg'}).then(result => {
+    result.view.width(document.getElementById('vis-chart02').offsetWidth).run();
+}).catch(console.error);
 
-vegaEmbed('#vis3', 'project/chart_3.json', {actions: false}).catch(console.error);
-vegaEmbed('#vis2', 'project/chart_2.json', {actions: false}).catch(console.error);
 
-vegaEmbed('#vis-cc1-1', 'portfolio/cc1-1.json').catch(console.error);
-vegaEmbed('#vis-cc1-2', 'portfolio/cc1-2.json').catch(console.error);
-vegaEmbed('#vis-cc2-1', 'portfolio/cc2-1.json').catch(console.error);
-vegaEmbed('#vis-cc2-2', 'portfolio/cc2-2.json').catch(console.error);
-vegaEmbed('#vis-cc3-1', 'portfolio/cc3-1.json').catch(console.error);
-vegaEmbed('#vis-cc3-2', 'portfolio/cc3-2.json').catch(console.error);
-vegaEmbed('#vis-cc4-1', 'portfolio/cc4-1.json').catch(console.error);   
-vegaEmbed('#vis-cc4-2', 'portfolio/cc4-2.json').catch(console.error);
-vegaEmbed('#vis-cc5-1', 'portfolio/cc5-1.json').catch(console.error);
-vegaEmbed('#vis-cc5-2', 'portfolio/cc5-2.json').catch(console.error);
-vegaEmbed('#vis-cc7-1', 'portfolio/cc7-1.json').catch(console.error);
-vegaEmbed('#vis-cc7-2', 'portfolio/cc7-2.json').catch(console.error);
-vegaEmbed('#vis-cc9-1', 'portfolio/cc9-1.json').catch(console.error);
-vegaEmbed('#vis-cc9-2', 'portfolio/cc9-2.json').catch(console.error);
-vegaEmbed('#vis-cc10-1', 'portfolio/cc10-1.json').catch(console.error);
-vegaEmbed('#vis-cc10-2', 'portfolio/cc10-2.json').catch(console.error);
+vegaEmbed('#vis3', 'project/chart_3.json', {actions: false, renderer: 'svg'}).then(result => {
+    result.view.width(document.getElementById('vis3').offsetWidth).run();
+}).catch(console.error);
+vegaEmbed('#vis2', 'project/chart_2.json', {actions: false, renderer: 'svg'}).then(result => {
+    result.view.width(document.getElementById('vis2').offsetWidth).run();
+}).catch(console.error);
 
-// CC6: Loop to embed six charts
+// Portfolio charts with responsive width
+const portfolioCharts = [
+    'vis-cc1-1', 'vis-cc1-2', 'vis-cc2-1', 'vis-cc2-2',
+    'vis-cc3-1', 'vis-cc3-2', 'vis-cc4-1', 'vis-cc4-2',
+    'vis-cc5-1', 'vis-cc5-2', 'vis-cc7-1', 'vis-cc7-2',
+    'vis-cc9-1', 'vis-cc9-2', 'vis-cc10-1', 'vis-cc10-2'
+];
+
+portfolioCharts.forEach(chartId => {
+    const chartPath = `portfolio/${chartId.replace('vis-', '')}.json`;
+    vegaEmbed(`#${chartId}`, chartPath, {actions: false, renderer: 'svg'}).then(result => {
+        const container = document.getElementById(chartId);
+        if (container) {
+            result.view.width(container.offsetWidth).run();
+        }
+    }).catch(console.error);
+});
+
+// CC6: Loop to embed six charts with responsive width
 for (let i = 1; i <= 6; i++) {
-    vegaEmbed(`#vis-cc6-${i}`, `portfolio/cc6-${i}.json`, {actions: false}).catch(console.error);
+    vegaEmbed(`#vis-cc6-${i}`, `portfolio/cc6-${i}.json`, {actions: false, renderer: 'svg'}).then(result => {
+        const container = document.getElementById(`vis-cc6-${i}`);
+        if (container) {
+            result.view.width(container.offsetWidth).run();
+        }
+    }).catch(console.error);
 }

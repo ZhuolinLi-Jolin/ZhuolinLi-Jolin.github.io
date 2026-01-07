@@ -39,13 +39,11 @@
             <div class="project-intro">
                 <h3 class="project-title">Are AI Taking Our Jobs?</h3>
                 <p class="project-description">
-                    This project investigates the widespread fear of automation through a data-driven lens, 
-                    analyzing the relationship between AI adoption and occupational stability.
-                    Unlike previous industrial shifts, Generative AI targets different roles. 
-                    Through a series of interactive visualizations integrating O*NET task data with BLS employment statistics, 
-                    we explore whether we are witnessing a simple replacement of labor, or a complex structural reorganization of the workforce.
+                    This project examines the link between AI adoption and occupational stability through a data-driven lens, 
+                    addressing widespread automation fears. Unlike previous industrial shifts,
+                    Generative AI impacts distinct roles. Focusing on the United States, the frontier of AI innovation, we synthesize multi-dimensional datasets（including O*NET task data and BLS statistics) to visualize whether these technologies are merely replacing labor or driving a complex structural reorganization of the workforce.
                 </p>
-                <div class="research-question">
+                    <div class="research-question">
                     <div class="research-question-label">Research Question</div>
                     <p class="research-question-text">
                         How is AI driving a structural shift in the US labor market?
@@ -53,7 +51,48 @@
                 </div>
             </div>
 
+            <div class="research-background">
+                <h3 class="background-title">Research Background</h3>
+                <p class="background-text">
+                    The rapid advancement of artificial intelligence, particularly generative AI systems like ChatGPT and GPT-4, 
+                    has reignited public anxiety about technological unemployment. However, understanding the true impact of AI 
+                    on labor markets requires moving beyond anecdotal fears to data-driven analysis. This research bridges that gap 
+                    by integrating multiple datasets: O*NET's comprehensive ability framework captures which job skills are most 
+                    exposed to AI capabilities, while Bureau of Labor Statistics (BLS) employment data reveals actual labor market 
+                    shifts across industries and occupational categories. By correlating AI exposure at the ability level with 
+                    real employment dynamics, we can distinguish between genuine structural transformations and cyclical disruptions.
+                </p>
+            </div>
+
             <div class="chart-grid">
+                <!-- Chart 01 (Pre-Figure) -->
+                <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">CHART 01</div>
+                        <h4 class="chart-title">AI Exposure Polarization of O*NET Abilities</h4>
+                        <p class="chart-description">
+                            Bubble chart showing ability-level AI exposure with bubble size indicating importance percentile.
+                        </p>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div id="vis-chart01"></div>
+                    </div>
+                </div>
+
+                <!-- Chart 02 (Pre-Figure) -->
+                <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">CHART 02</div>
+                        <h4 class="chart-title">Industry AI Exposure vs. Mix Change</h4>
+                        <p class="chart-description">
+                            Vega-Lite scatter of AI exposure index and occupational mix change for major industries.
+                        </p>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div id="vis-chart02"></div>
+                    </div>
+                </div>
+
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 1</div>

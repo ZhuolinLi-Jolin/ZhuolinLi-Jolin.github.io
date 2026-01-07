@@ -284,6 +284,35 @@ nav {
     margin: 2rem 0;
 }
 
+.research-background {
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+}
+
+.background-title {
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 400;
+    color: var(--charcoal);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.background-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--charcoal);
+    font-weight: 300;
+    max-width: 900px;
+}
+
+.research-question {
+    background: var(--light-grey);
+    padding: 2rem;
+    border-left: 4px solid var(--deep-green);
+    margin: 2rem 0;
+}
+
 .research-question-label {
     font-size: 0.75rem;
     letter-spacing: 2px;
@@ -347,19 +376,19 @@ nav {
 .chart-placeholder {
     width: 100%;
     max-width: 800px;
-    /* aspect-ratio: 16 / 9; */
     margin: 0 auto;
-    /* background: var(--light-grey);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--charcoal);
-    font-size: 1rem;
-    border: 2px dashed var(--deep-green); */
     border: none;
     display: flex;              
     justify-content: center;    
     align-items: center;
+    overflow: hidden;
+}
+
+.chart-placeholder > div,
+.chart-placeholder canvas,
+.chart-placeholder svg {
+    max-width: 100%;
+    height: auto;
 }
 
 .project-conclusion {
@@ -590,16 +619,22 @@ nav {
     opacity: 0.8;
 }
 
-/* 图表容器样式 */
 .assignment-chart {
     width: 100%;
-    /* 移除固定 aspect-ratio，让内容自适应，或者保留由 Vega 控制 */
-    min-height: 400px; /* 给一个最小高度，防止加载前塌陷 */
+    min-height: 400px;
     background: white;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    overflow: hidden;
+}
+
+.assignment-chart > div,
+.assignment-chart canvas,
+.assignment-chart svg {
+    max-width: 100%;
+    height: auto;
 }
 
 /* CC6专用：2x3网格布局 */
@@ -620,13 +655,25 @@ nav {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--light-grey);
-    overflow: visible; /* 确保tooltip不被裁剪 */
-    position: relative; /* 为tooltip提供定位上下文 */
+    overflow: hidden;
+    position: relative;
+}
+
+.cc6-chart > div,
+.cc6-chart canvas,
+.cc6-chart svg {
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
     .cc6-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .assignment-chart {
+        padding: 1rem;
+        min-height: 300px;
     }
 }
 

@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "AI Exposure Polarization Analysis of Job Skills",
-    "subtitle": "Based on O*NET 52 Core Abilities | Positive values indicate high exposure, negative values indicate hard for AI to reach",
+    "subtitle": "Based on O*NET 52 Core Abilities |Bubble size indicates Ability Importance Percentile",
     "fontSize": 20,
     "font": "sans-serif",
     "anchor": "middle",

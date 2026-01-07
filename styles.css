@@ -303,7 +303,7 @@ nav {
     line-height: 1.8;
     color: var(--charcoal);
     font-weight: 300;
-    max-width: 900px;
+    max-width: 100%;
 }
 
 .research-question {

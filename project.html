@@ -52,15 +52,15 @@
             </div>
 
             <div class="research-background">
-                <h3 class="background-title">Research Background</h3>
+                <p class="background-text"><br>
+                    To answer this question, this project draws upon the logic of labor economics. Rather than treating occupations as indivisible units, we deconstruct them into a bundle of specific tasks and abilities. This granularity is crucial because AI typically targets specific functions rather than entire job titles.
+                </p>
+                <p class="background-text"><br>
+                    Simultaneously, this research introduces AI Exposure (AIOE) as a key analytical metric. This index measures the overlap between AI capabilities and the human abilities (such as logical reasoning and language comprehension) required for specific occupations. It represents the degree of potential impact that AI technology has on a particular profession, task, or industry. For example, the AIOE for painters is very low, whereas it is very high for translators.
+                </p>
+                <h4 class="chart-title" style="margin-top: 1.5rem;">AI Exposure (AIOE) and Abilities for Jobs </h4>
                 <p class="background-text">
-                    The rapid advancement of artificial intelligence, particularly generative AI systems like ChatGPT and GPT-4, 
-                    has reignited public anxiety about technological unemployment. However, understanding the true impact of AI 
-                    on labor markets requires moving beyond anecdotal fears to data-driven analysis. This research bridges that gap 
-                    by integrating multiple datasets: O*NET's comprehensive ability framework captures which job skills are most 
-                    exposed to AI capabilities, while Bureau of Labor Statistics (BLS) employment data reveals actual labor market 
-                    shifts across industries and occupational categories. By correlating AI exposure at the ability level with 
-                    real employment dynamics, we can distinguish between genuine structural transformations and cyclical disruptions.
+                    The AIOE framework typically utilizes the 52 human abilities defined by the U.S. Department of Labor's O*NET database. These abilities are categorized into four major groups. Among them, Cognitive Abilities exhibit the highest AIOE, while Physical Abilities are the lowest.The large bubble sizes indicate these are high-importance skills, meaning the "intellectual" core of the U.S. workforce is currently the most exposed to AI's impact.
                 </p>
             </div>
 
@@ -68,8 +68,8 @@
                 <!-- Chart 01 (Pre-Figure) -->
                 <div class="chart-item">
                     <div class="chart-header">
-                        <div class="chart-number">CHART 01</div>
-                        <h4 class="chart-title">AI Exposure Polarization of O*NET Abilities</h4>
+                        <div class="chart-number">Figure 1</div>
+                        <!-- <h4 class="chart-title">AI Exposure Polarization of O*NET Abilities</h4> -->
                         <p class="chart-description">
                             Bubble chart showing ability-level AI exposure with bubble size indicating importance percentile.
                         </p>
@@ -78,41 +78,66 @@
                         <div id="vis-chart01"></div>
                     </div>
                 </div>
-
+            <div class="research-background" style="margin-bottom: 0rem;">
+                <h4 class="chart-title">AI Geographic Exposure (AIGE)</h4>
+                <p class="background-text"><br>
+                    Furthermore, by integrating the industrial structure and occupational distribution of different regions across the United States, we can derive the Potential Extent of AI Technology Impact on the U.S. Regional Labor Market (AIGE).
+                </p>
+                <p class="background-text"><br>
+                    Areas with a higher AIGE signify the greatest potential for a productivity explosion; conversely, they also face the most intense job market shocks if the pace of AI displacement occurs too rapidly. Even within the same state, these disparities are extreme. In California, for example, Silicon Valley (Santa Clara County) has an exposure index as high as 2.247, far exceeding that of neighboring Monterey County, which stands at -1.943.
+                </p>
+            </div>
                 <!-- Chart 02 (Pre-Figure) -->
                 <div class="chart-item">
                     <div class="chart-header">
-                        <div class="chart-number">CHART 02</div>
-                        <h4 class="chart-title">Industry AI Exposure vs. Mix Change</h4>
+                        <div class="chart-number">FIGURE 2</div>
+                        <!-- <h4 class="chart-title">US AI Geographic Exposure (AIGE) Map</h4> -->
                         <p class="chart-description">
-                            Vega-Lite scatter of AI exposure index and occupational mix change for major industries.
+                            Geographic distribution of AI exposure across U.S. counties, showing regional variation in how AI capabilities align with local occupational structures.
                         </p>
                     </div>
                     <div class="chart-placeholder">
                         <div id="vis-chart02"></div>
                     </div>
                 </div>
-
+            <div class="research-background" style="margin-bottom: 0rem;">
+                <h4 class="chart-title">AI Exposure vs. Wage</h4>
+                <p class="background-text"><br>
+                    The provided data indicates a notable positive correlation between annual mean wages and AI exposure scores, suggesting a significant structural shift in the contemporary labor market. Unlike historical automation trends that primarily affected routine manual labor, 
+                    current AI advancements appear to be increasingly concentrated in higher-income sectors. This trend is particularly evident in fields such as Business, STEM, and Technology, where high-skill cognitive tasks show the highest levels of exposure.
+                    Conversely, manual and service-oriented sectors currently remain relatively insulated from these changes, likely due to the physical complexities inherent in those roles. 
+                </p>
+                <p class="background-text"><br>
+                    The distribution of bubble sizes indicates that the total employment in high-exposure sectors is substantial, 
+                    particularly within business and administrative roles. Given that many of the largest employment clusters coincide with high AI exposure scores, the potential for a broad-scale structural shift appears significant. 
+                    This suggests that a cautious and proactive approach to workforce adaptation may be beneficial.
+                </p>
+            </div>
                 <div class="chart-item">
                     <div class="chart-header">
-                        <div class="chart-number">FIGURE 1</div>
-                        <h4 class="chart-title">AI Exposure vs. Wage: A Structural Shift</h4>
+                        <div class="chart-number">FIGURE 3</div>
+                        <!-- <h4 class="chart-title">AI Exposure vs. Wage: A Structural Shift</h4> -->
                         <p class="chart-description">
                             Interactive visualization analyzing the correlation between AI Exposure Scores (AIOE) 
                             and Annual Mean Wages across different job sectors (Logarithmic Scale).
                         </p>
                     </div>
                     <div class="chart-placeholder">
-                        <div id="vis1-wrapper">
+                        <div id="vis1-wrapper" style="width: 100%; max-width: 1000px;">
                             <div id="vis1"></div>
                         </div>
                     </div>
                 </div>
-
+            <div class="research-background">
+                <h4 class="chart-title" style="margin-top: 1.5rem;">AI Exposure and Occupational Mix Change </h4>
+                <p class="background-text">
+                    We measure occupational mix change using a churn index, constructed following the data and methodology of The Budget Lab at Yale. Specifically, we develop an industry-level occupational structure change index based on the Duncan and Duncan (1955) dissimilarity index. Monthly deviations in occupational employment shares from a baseline month are computed and smoothed using a 12-month moving average, with higher values indicating greater occupational restructuring.
+                </p>
+            </div>
                 <!-- Figure 2 -->
                 <div class="chart-item">
                     <div class="chart-header">
-                        <div class="chart-number">FIGURE 2</div>
+                        <div class="chart-number">FIGURE 4</div>
                         <h4 class="chart-title">Relationship Between AI Exposure and Occupational Mix Change</h4>
                         <p class="chart-description">
                             Scattered distribution analysis of AI Exposure Index 
@@ -121,11 +146,23 @@
                     </div>
                     <div id="vis2" class="chart-placeholder"></div>
                 </div>
-
+           <div class="research-background" style="margin-bottom: 0rem;">
+                <h4 class="chart-title">AI Exposure vs. Wage</h4>
+                <p class="background-text"><br>
+                    The provided data indicates a notable positive correlation between annual mean wages and AI exposure scores, suggesting a significant structural shift in the contemporary labor market. Unlike historical automation trends that primarily affected routine manual labor, 
+                    current AI advancements appear to be increasingly concentrated in higher-income sectors. This trend is particularly evident in fields such as Business, STEM, and Technology, where high-skill cognitive tasks show the highest levels of exposure.
+                    Conversely, manual and service-oriented sectors currently remain relatively insulated from these changes, likely due to the physical complexities inherent in those roles. 
+                </p>
+                <p class="background-text"><br>
+                    The distribution of bubble sizes indicates that the total employment in high-exposure sectors is substantial, 
+                    particularly within business and administrative roles. Given that many of the largest employment clusters coincide with high AI exposure scores, the potential for a broad-scale structural shift appears significant. 
+                    This suggests that a cautious and proactive approach to workforce adaptation may be beneficial.
+                </p>
+            </div>
                 <!-- Figure 3 -->
                 <div class="chart-item">
                     <div class="chart-header">
-                        <div class="chart-number">FIGURE 3</div>
+                        <div class="chart-number">FIGURE 5</div>
                         <h4 class="chart-title">US Unemployment Composition by Industry and AI Exposure Score (2023–2025)</h4>
                         <p class="chart-description">
                             This interactive chart ……

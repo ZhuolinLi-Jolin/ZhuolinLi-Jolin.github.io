@@ -5001,7 +5001,7 @@
       "font": {
         "size": 20
       },
-      "text": "\u003cb\u003eAI Exposure vs. Wage: A Structural Shift\u003c\u002fb\u003e\u003cbr\u003e\u003cspan style=\"font-size:14px; color:grey;\"\u003e(Logarithmic Scale)\u003c\u002fspan\u003e",
+      "text": "\u003cb\u003eAI Exposure vs. Wage: A Structural Shift\u003c\u002fb\u003e\u003cbr\u003e\u003cspan style=\"font-size:14px; color:grey;\"\u003e(Logarithmic Scale) | Bubble size indicates Total Employment\u003c\u002fspan\u003e",
       "x": 0.5,
       "xanchor": "center"
     },
@@ -5014,8 +5014,8 @@
       },
       "yanchor": "top",
       "y": 0.95,
-      "xanchor": "right",
-      "x": 1.15,
+      "xanchor": "left",
+      "x": 1.02,
       "itemsizing": "constant"
     },
     "xaxis": {

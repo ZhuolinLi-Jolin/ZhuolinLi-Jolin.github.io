@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "AI Exposure Polarization Analysis of Job Skills",
+    "subtitle": "Based on O*NET 52 Core Abilities | Positive values indicate high exposure, negative values indicate hard for AI to reach",
+    "fontSize": 20,
+    "font": "sans-serif",
+    "anchor": "middle",
+    "subtitlePadding": 10
+  },
+  "width": 600,
+  "height": 400,
+  "background": "#fefdfb",
+  "data": {
+    "url": "https://gist.githubusercontent.com/ZhuolinLi-Jolin/b7c5cdf1a64d40bc09d7370dca0f8f76/raw/64d9c5bfbc97714fa4afd65385388deda6a2fd0a/AIOE_ability.csv"
+  },
+  "transform": [
+    {
+      "calculate": "abs(datum['Ability-Level AI Exposure'])",
+      "as": "abs_exposure"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "#888", "strokeDash": [4, 4]},
+      "encoding": {"x": {"datum": 0}}
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "opacity": 0.6,
+        "stroke": "#444",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "Ability-Level AI Exposure",
+          "type": "quantitative",
+          "title": "AI Exposure Index",
+          "scale": {"domain": [-2.2, 2.2]},
+          "axis": {"grid": true, "gridColor": "#eee"}
+        },
+        "y": {
+          "field": "label",
+          "type": "nominal",
+          "title": null,
+          "sort": ["Cognitive Abilities", "Sensory Abilities", "Psychomotor Abilities", "Physical Abilities"]
+        },
+        "color": {
+          "field": "label",
+          "type": "nominal",
+          "scale": {"scheme": "tableau10"},
+          "legend": {"title": "Ability Category", "orient": "right"}
+        },
+        "size": {
+          "field": "Importance_percentile",
+          "type": "quantitative",
+          "scale": {"range": [100, 800]},
+          "legend": null
+        },
+        "yOffset": {"field": "Ability-Level AI Exposure", "type": "quantitative"}, 
+        "tooltip": [
+          {"field": "O*NET Abilities", "title": "Ability"},
+          {"field": "label", "title": "Category"},
+          {"field": "Ability-Level AI Exposure", "title": "Exposure", "format": ".3f"},
+          {"field": "Importance_percentile", "title": "Importance Percentile", "format": ".2f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"labelFont": "sans-serif", "titleFont": "sans-serif"}
+  }
+}

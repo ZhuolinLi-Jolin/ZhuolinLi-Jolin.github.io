@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "US AI Geographic Exposure (AIGE) Map",
+  "width": 800,
+  "height": 500,
+  "data": {
+    "url": "https://vega.github.io/vega-datasets/data/us-10m.json",
+    "format": {"type": "topojson", "feature": "counties"}
+  },
+  "projection": {"type": "albersUsa"},
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://gist.githubusercontent.com/ZhuolinLi-Jolin/218a27a8e9c66c7e36789f65419e880a/raw/a56d65ddade42278c297f738311dbf3d4df0944a/AIGE.csv",
+          "format": {"type": "csv"}
+        },
+        "key": "FIPS Code",
+        "fields": ["AIGE", "Geographic Area"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "field": "AIGE",
+      "type": "quantitative",
+      "scale": {"scheme": "blueorange", "domainMid": 0},
+      "legend": {"title": "AI Exposure (AIGE)"}
+    },
+    "tooltip": [
+      {"field": "Geographic Area", "type": "nominal", "title": "Region"},
+      {"field": "AIGE", "type": "quantitative", "title": "AIGE Score", "format": ".3f"}
+    ]
+  }
+}

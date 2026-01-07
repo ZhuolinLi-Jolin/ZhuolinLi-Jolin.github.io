@@ -44,7 +44,6 @@ if (modal) {
         }
     });
 }
-// vegaEmbed('#vis1', 'project/chart_1.json').catch(console.error);
 
 const plotFileName = 'project/chart_1.json';
 
@@ -97,6 +96,8 @@ vegaEmbed('#vis-cc7-1', 'portfolio/cc7-1.json').catch(console.error);
 vegaEmbed('#vis-cc7-2', 'portfolio/cc7-2.json').catch(console.error);
 vegaEmbed('#vis-cc9-1', 'portfolio/cc9-1.json').catch(console.error);
 vegaEmbed('#vis-cc9-2', 'portfolio/cc9-2.json').catch(console.error);
+vegaEmbed('#vis-cc10-1', 'portfolio/cc10-1.json').catch(console.error);
+vegaEmbed('#vis-cc10-2', 'portfolio/cc10-2.json').catch(console.error);
 
 // CC6: Loop to embed six charts
 for (let i = 1; i <= 6; i++) {

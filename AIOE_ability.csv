@@ -1,0 +1,53 @@
+﻿O*NET Abilities,Importance,Ability-Level AI Exposure,label,Importance_percentile
+Oral Comprehension,0.9,0.7,Cognitive Abilities,0.33653846153846156
+Written Comprehension,0.94,0.563,Cognitive Abilities,0.5865384615384616
+Oral Expression,0.92,0.526,Cognitive Abilities,0.46153846153846156
+Written Expression,0.94,0.458,Cognitive Abilities,0.5865384615384616
+Fluency of Ideas,0.92,0.401,Cognitive Abilities,0.46153846153846156
+Originality,0.93,-0.144,Cognitive Abilities,0.5096153846153846
+Problem Sensitivity,0.88,0.538,Cognitive Abilities,0.25
+Deductive Reasoning,0.91,1.04,Cognitive Abilities,0.40384615384615385
+Inductive Reasoning,0.93,0.964,Cognitive Abilities,0.5096153846153846
+Information Ordering,0.81,1.908,Cognitive Abilities,0.07692307692307693
+Category Flexibility,0.83,1.276,Cognitive Abilities,0.1346153846153846
+Mathematical Reasoning,0.94,0.486,Cognitive Abilities,0.5865384615384616
+Number Facility,0.92,0.483,Cognitive Abilities,0.46153846153846156
+Memorization,0.83,1.686,Cognitive Abilities,0.1346153846153846
+Speed of Closure,0.82,1.377,Cognitive Abilities,0.09615384615384616
+Flexibility of Closure,0.84,1.36,Cognitive Abilities,0.18269230769230768
+Perceptual Speed,0.85,1.24,Cognitive Abilities,0.22115384615384615
+Spatial Orientation,0.95,0.375,Cognitive Abilities,0.6923076923076923
+Visualization,0.91,0.449,Cognitive Abilities,0.40384615384615385
+Selective Attention,0.68,1.151,Cognitive Abilities,0.019230769230769232
+Time Sharing,0.8,0.67,Cognitive Abilities,0.057692307692307696
+Arm-Hand Steadiness,0.98,-1.125,Psychomotor Abilities,0.9903846153846154
+Manual Dexterity,0.97,-1.053,Psychomotor Abilities,0.8846153846153846
+Finger Dexterity,0.94,-0.907,Psychomotor Abilities,0.5865384615384616
+Control Precision,0.97,0.032,Psychomotor Abilities,0.8846153846153846
+Multilimb Coordination,0.97,-1.151,Psychomotor Abilities,0.8846153846153846
+Response Orientation,0.96,0.437,Psychomotor Abilities,0.7692307692307693
+Rate Control,0.97,-0.135,Psychomotor Abilities,0.8846153846153846
+Reaction Time,0.97,0.117,Psychomotor Abilities,0.8846153846153846
+Wrist-Finger Speed,0.9,-1.051,Psychomotor Abilities,0.33653846153846156
+Speed of Limb Movement,0.94,-1.302,Psychomotor Abilities,0.5865384615384616
+Static Strength,0.98,-1.562,Physical Abilities,0.9903846153846154
+Explosive Strength,0.9,-1.599,Physical Abilities,0.33653846153846156
+Dynamic Strength,0.95,-1.582,Physical Abilities,0.6923076923076923
+Trunk Strength,0.94,-1.721,Physical Abilities,0.5865384615384616
+Stamina,0.97,-1.514,Physical Abilities,0.8846153846153846
+Extent Flexibility,0.97,-1.558,Physical Abilities,0.8846153846153846
+Dynamic Flexibility,0.85,-1.452,Physical Abilities,0.22115384615384615
+Gross Body Coordination,0.97,-1.355,Physical Abilities,0.8846153846153846
+Gross Body Equilibrium,0.97,-1.417,Physical Abilities,0.8846153846153846
+Near Vision,0.72,0.15,Sensory Abilities,0.038461538461538464
+Far Vision,0.83,-0.197,Sensory Abilities,0.1346153846153846
+Visual Color Discrimination,0.91,0.415,Sensory Abilities,0.40384615384615385
+Night Vision,0.95,-0.377,Sensory Abilities,0.6923076923076923
+Peripheral Vision,0.96,-0.33,Sensory Abilities,0.7692307692307693
+Depth Perception,0.95,0.067,Sensory Abilities,0.6923076923076923
+Glare Sensitivity,0.96,-0.287,Sensory Abilities,0.7692307692307693
+Hearing Sensitivity,0.9,0.434,Sensory Abilities,0.33653846153846156
+Auditory Attention,0.89,0.66,Sensory Abilities,0.27884615384615385
+Sound Localization,0.95,0.317,Sensory Abilities,0.6923076923076923
+Speech Recognition,0.84,0.972,Sensory Abilities,0.18269230769230768
+Speech Clarity,0.89,0.568,Sensory Abilities,0.27884615384615385

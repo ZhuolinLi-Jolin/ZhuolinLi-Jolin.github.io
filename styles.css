@@ -217,11 +217,11 @@ nav {
 }
 
 .section-subtitle {
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 300;
     letter-spacing: 1px;
     color: var(--charcoal);
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .project-container {
@@ -254,6 +254,24 @@ nav {
 .project-description {
     font-size: 1.1rem;
     line-height: 1.9;
+    color: var(--charcoal);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+/* Project preview section on index page */
+.project-intro-preview {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    background: #fafafa;
+    border-radius: 8px;
+}
+
+.project-description-preview {
+    font-size: 1.1rem;
+    line-height: 1.6;
     color: var(--charcoal);
     font-weight: 300;
     margin-bottom: 2rem;

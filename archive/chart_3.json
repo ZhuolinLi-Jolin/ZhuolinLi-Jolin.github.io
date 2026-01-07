@@ -1,0 +1,4273 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Composition of US Unemployment by AI Exposure",
+    "subtitle": "Stacked by unemployment volume (thousands), sorted by AI Exposure Score",
+    "anchor": "start"
+  },
+  "width": 800,
+  "height": 450,
+  "data": {
+    "values": [
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 196.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 102.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 699.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 835.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 956.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 317.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 305.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 1046.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 365.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 46.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 245.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 709.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 129.0,
+        "Date_ISO": "2022-01-01",
+        "Month_Str": "Jan 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 246.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 91.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 754.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 737.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 983.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 207.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 324.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 849.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 409.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 29.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 174.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 677.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 144.0,
+        "Date_ISO": "2022-02-01",
+        "Month_Str": "Feb 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 211.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 58.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 628.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 756.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 881.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 200.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 343.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 771.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 433.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 14.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 142.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 598.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 107.0,
+        "Date_ISO": "2022-03-01",
+        "Month_Str": "Mar 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 198.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 69.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 556.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 551.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 805.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 209.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 312.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 641.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 287.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 19.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 177.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 464.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 62.0,
+        "Date_ISO": "2022-04-01",
+        "Month_Str": "Apr 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 193.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 70.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 620.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 583.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 819.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 200.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 256.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 681.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 348.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 24.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 166.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 392.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 49.0,
+        "Date_ISO": "2022-05-01",
+        "Month_Str": "May 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 211.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 80.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 803.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 640.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 799.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 169.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 277.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 721.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 323.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 10.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 189.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 385.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 69.0,
+        "Date_ISO": "2022-06-01",
+        "Month_Str": "Jun 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 162.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 62.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 785.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 628.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 804.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 194.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 276.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 677.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 310.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 6.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 215.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 359.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 82.0,
+        "Date_ISO": "2022-07-01",
+        "Month_Str": "Jul 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 181.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 84.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 760.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 688.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 724.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 231.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 278.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 839.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 349.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 16.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 237.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 401.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 105.0,
+        "Date_ISO": "2022-08-01",
+        "Month_Str": "Aug 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 136.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 85.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 659.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 544.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 768.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 189.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 236.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 802.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 337.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 16.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 181.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 346.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 46.0,
+        "Date_ISO": "2022-09-01",
+        "Month_Str": "Sep 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 195.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 94.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 677.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 645.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 699.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 174.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 319.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 738.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 273.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 4.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 144.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 419.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 81.0,
+        "Date_ISO": "2022-10-01",
+        "Month_Str": "Oct 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 200.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 57.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 521.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 702.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 666.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 165.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 254.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 769.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 360.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 19.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 148.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 393.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 85.0,
+        "Date_ISO": "2022-11-01",
+        "Month_Str": "Nov 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 271.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 67.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 483.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 668.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 688.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 170.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 175.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 694.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 349.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 12.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 95.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 443.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 75.0,
+        "Date_ISO": "2022-12-01",
+        "Month_Str": "Dec 2022"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 236.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 114.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 599.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 649.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 992.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 209.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 228.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 797.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 345.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 2.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 172.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 720.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 70.0,
+        "Date_ISO": "2023-01-01",
+        "Month_Str": "Jan 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 227.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 87.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 611.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 801.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 1039.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 194.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 268.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 693.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 377.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 17.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 196.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 708.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 105.0,
+        "Date_ISO": "2023-02-01",
+        "Month_Str": "Feb 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 189.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 84.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 604.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 744.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 846.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 208.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 257.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 684.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 390.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 36.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 202.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 598.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 108.0,
+        "Date_ISO": "2023-03-01",
+        "Month_Str": "Mar 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 214.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 38.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 494.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 684.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 644.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 139.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 240.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 686.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 298.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 11.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 190.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 424.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 68.0,
+        "Date_ISO": "2023-04-01",
+        "Month_Str": "Apr 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 240.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 73.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 595.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 750.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 855.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 195.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 245.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 717.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 282.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 10.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 164.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 355.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 75.0,
+        "Date_ISO": "2023-05-01",
+        "Month_Str": "May 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 226.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 85.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 733.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 628.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 855.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 140.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 238.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 735.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 263.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 7.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 158.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 381.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 85.0,
+        "Date_ISO": "2023-06-01",
+        "Month_Str": "Jun 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 197.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 64.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 722.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 688.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 758.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 187.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 261.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 836.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 374.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 17.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 159.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 410.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 63.0,
+        "Date_ISO": "2023-07-01",
+        "Month_Str": "Jul 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 224.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 106.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 822.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 729.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 766.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 232.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 264.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 817.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 370.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 16.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 169.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 424.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 93.0,
+        "Date_ISO": "2023-08-01",
+        "Month_Str": "Aug 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 190.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 117.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 638.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 699.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 889.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 211.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 278.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 734.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 379.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 16.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 217.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 392.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 62.0,
+        "Date_ISO": "2023-09-01",
+        "Month_Str": "Sep 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 222.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 106.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 593.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 611.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 789.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 264.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 318.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 757.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 361.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 39.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 160.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 414.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 106.0,
+        "Date_ISO": "2023-10-01",
+        "Month_Str": "Oct 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 232.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 100.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 528.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 747.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 735.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 234.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 286.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 758.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 346.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 13.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 201.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 496.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 105.0,
+        "Date_ISO": "2023-11-01",
+        "Month_Str": "Nov 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 293.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 86.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 560.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 721.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 810.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 236.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 206.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 662.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 322.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 9.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 250.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 442.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 110.0,
+        "Date_ISO": "2023-12-01",
+        "Month_Str": "Dec 2023"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 214.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 156.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 667.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 816.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 936.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 269.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 284.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 814.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 351.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 16.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 227.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 699.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 120.0,
+        "Date_ISO": "2024-01-01",
+        "Month_Str": "Jan 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 242.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 121.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 587.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 962.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 926.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 265.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 270.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 810.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 424.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 24.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 180.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 711.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 140.0,
+        "Date_ISO": "2024-02-01",
+        "Month_Str": "Feb 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 225.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 96.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 611.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 826.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 939.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 300.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 311.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 746.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 401.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 17.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 158.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 570.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 105.0,
+        "Date_ISO": "2024-03-01",
+        "Month_Str": "Mar 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 280.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 128.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 559.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 746.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 725.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 235.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 281.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 784.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 358.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 8.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 134.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 555.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 83.0,
+        "Date_ISO": "2024-04-01",
+        "Month_Str": "Apr 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 286.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 119.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 745.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 726.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 718.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 219.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 188.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 824.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 413.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 19.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 210.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 406.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 116.0,
+        "Date_ISO": "2024-05-01",
+        "Month_Str": "May 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 274.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 147.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 823.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 738.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 988.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 263.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 278.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 743.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 378.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 7.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 191.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 345.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 77.0,
+        "Date_ISO": "2024-06-01",
+        "Month_Str": "Jun 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 256.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 145.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 973.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 845.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 965.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 219.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 298.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 811.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 432.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 31.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 239.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 420.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 152.0,
+        "Date_ISO": "2024-07-01",
+        "Month_Str": "Jul 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 297.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 148.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 975.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 864.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 931.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 219.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 301.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 748.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 365.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 22.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 212.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 338.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 207.0,
+        "Date_ISO": "2024-08-01",
+        "Month_Str": "Aug 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 238.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 98.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 816.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 746.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 848.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 192.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 278.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 761.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 373.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 12.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 204.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 403.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 135.0,
+        "Date_ISO": "2024-09-01",
+        "Month_Str": "Sep 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 191.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 71.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 820.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 835.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 906.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 217.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 390.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 818.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 342.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 14.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 146.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 456.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 73.0,
+        "Date_ISO": "2024-10-01",
+        "Month_Str": "Oct 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 240.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 58.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 781.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 787.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 924.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 207.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 344.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 830.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 349.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 12.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 172.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 482.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 54.0,
+        "Date_ISO": "2024-11-01",
+        "Month_Str": "Nov 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 214.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 98.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 700.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 710.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 897.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 252.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 334.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 715.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 308.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 35.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 208.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 550.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 139.0,
+        "Date_ISO": "2024-12-01",
+        "Month_Str": "Dec 2024"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 214.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 152.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 739.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 958.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 1135.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 240.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 316.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 983.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 274.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 30.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 289.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 669.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 138.0,
+        "Date_ISO": "2025-01-01",
+        "Month_Str": "Jan 2025"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 211.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 148.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 785.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 1038.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 967.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 277.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 316.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 983.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 349.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 23.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 141.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 741.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 117.0,
+        "Date_ISO": "2025-02-01",
+        "Month_Str": "Feb 2025"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 290.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 133.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 780.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 847.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 933.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 337.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 288.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 828.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 360.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 8.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 190.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 573.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 131.0,
+        "Date_ISO": "2025-03-01",
+        "Month_Str": "Mar 2025"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 308.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 119.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 678.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 702.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 862.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 257.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 320.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 734.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 280.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 23.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 232.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 594.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 107.0,
+        "Date_ISO": "2025-04-01",
+        "Month_Str": "Apr 2025"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 281.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 143.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 750.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 673.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 1005.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 221.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 356.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 891.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 322.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 23.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 191.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 373.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 97.0,
+        "Date_ISO": "2025-05-01",
+        "Month_Str": "May 2025"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 245.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 103.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 924.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 724.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 1001.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 228.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 334.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 896.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 328.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 10.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 211.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 364.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 97.0,
+        "Date_ISO": "2025-06-01",
+        "Month_Str": "Jun 2025"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 238.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 140.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 1023.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 696.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 877.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 259.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 413.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 883.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 329.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 22.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 228.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 379.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 64.0,
+        "Date_ISO": "2025-07-01",
+        "Month_Str": "Jul 2025"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 174.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 118.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 981.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 885.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 891.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 298.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 287.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 890.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 451.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 20.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 268.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 347.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 98.0,
+        "Date_ISO": "2025-08-01",
+        "Month_Str": "Aug 2025"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 244.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 177.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 888.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 803.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 928.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 257.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 361.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 939.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 340.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 33.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 210.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 404.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 111.0,
+        "Date_ISO": "2025-09-01",
+        "Month_Str": "Sep 2025"
+      },
+      {
+        "industry": "Financial activities",
+        "AI_Exposure_Score": 1.538181275,
+        "Unemployed_Count": 210.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Information",
+        "AI_Exposure_Score": 1.2675550444444446,
+        "Unemployed_Count": 125.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Education and health services",
+        "AI_Exposure_Score": 0.7745416319999999,
+        "Unemployed_Count": 810.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Professional and business services",
+        "AI_Exposure_Score": 0.6538997047619047,
+        "Unemployed_Count": 857.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Wholesale and retail trade",
+        "AI_Exposure_Score": 0.0685773676470588,
+        "Unemployed_Count": 1092.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Other services",
+        "AI_Exposure_Score": -0.0255067461538461,
+        "Unemployed_Count": 265.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Durable goods manufacturing",
+        "AI_Exposure_Score": -0.244721647368421,
+        "Unemployed_Count": 270.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Leisure and hospitality",
+        "AI_Exposure_Score": -0.3151947,
+        "Unemployed_Count": 802.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Transportation and utilities",
+        "AI_Exposure_Score": -0.3418978,
+        "Unemployed_Count": 371.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Mining, quarrying, and oil and gas extraction",
+        "AI_Exposure_Score": -0.67779472,
+        "Unemployed_Count": 50.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Nondurable goods manufacturing",
+        "AI_Exposure_Score": -0.7778106903225807,
+        "Unemployed_Count": 237.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Construction",
+        "AI_Exposure_Score": -0.99696114,
+        "Unemployed_Count": 431.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      },
+      {
+        "industry": "Agriculture and related industries",
+        "AI_Exposure_Score": -1.5582573333333334,
+        "Unemployed_Count": 175.0,
+        "Date_ISO": "2025-11-01",
+        "Month_Str": "Nov 2025"
+      }
+    ]
+  },
+  "mark": {
+    "type": "area",
+    "line": {
+      "strokeWidth": 1,
+      "opacity": 0.5
+    },
+    "interpolate": "monotone"
+  },
+  "encoding": {
+    "x": {
+      "field": "Date_ISO",
+      "type": "temporal",
+      "title": "Timeline (2022-2025)",
+      "axis": {
+        "format": "%b %Y",
+        "labelAngle": -45
+      }
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Unemployed_Count",
+      "type": "quantitative",
+      "title": "Total Unemployed (Thousands)",
+      "stack": "zero"
+    },
+    "color": {
+      "field": "AI_Exposure_Score",
+      "type": "quantitative",
+      "title": "AI Exposure Score",
+      "scale": {
+        "scheme": "viridis"
+      },
+      "legend": {
+        "gradientLength": 200
+      }
+    },
+    "order": {
+      "field": "AI_Exposure_Score",
+      "type": "quantitative",
+      "sort": "descending"
+    },
+    "tooltip": [
+      {
+        "field": "industry",
+        "type": "nominal",
+        "title": "Industry"
+      },
+      {
+        "field": "Month_Str",
+        "type": "nominal",
+        "title": "Month"
+      },
+      {
+        "field": "AI_Exposure_Score",
+        "type": "quantitative",
+        "title": "AI Exposure",
+        "format": ".2f"
+      },
+      {
+        "field": "Unemployed_Count",
+        "type": "quantitative",
+        "title": "Unemployed (K)"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "grid": false
+    },
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

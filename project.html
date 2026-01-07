@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project - Data Visualization Portfolio</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://cdn.plot.ly/plotly-3.3.0.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <nav>
+        <div class="logo">PP434</div>
+        <ul class="nav-menu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="project.html">Main Project</a></li>
+            <li><a href="portfolio.html">Portfolio Tasks</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-project" id="project">
+        <div class="section-header">
+            <h2 class="section-title">Final Project</h2>
+            <p class="section-subtitle">An in-depth analytical exploration</p>
+        </div>
+        
+        <div class="project-container reveal-element">
+            <div class="project-intro">
+                <h3 class="project-title">Are AI Taking Our Jobs?</h3>
+                <p class="project-description">
+                    This project investigates the widespread fear of automation through a data-driven lens, 
+                    analyzing the relationship between AI adoption and occupational stability.
+                    Unlike previous industrial shifts, Generative AI targets different roles. 
+                    Through a series of interactive visualizations integrating O*NET task data with BLS employment statistics, 
+                    we explore whether we are witnessing a simple replacement of labor, or a complex structural reorganization of the workforce.
+                </p>
+                <div class="research-question">
+                    <div class="research-question-label">Research Question</div>
+                    <p class="research-question-text">
+                        How is AI driving a structural shift in the US labor market?
+                    </p>
+                </div>
+            </div>
+
+            <div class="chart-grid">
+                <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">FIGURE 1</div>
+                        <h4 class="chart-title">AI Exposure vs. Wage: A Structural Shift</h4>
+                        <p class="chart-description">
+                            Interactive visualization analyzing the correlation between AI Exposure Scores (AIOE) 
+                            and Annual Mean Wages across different job sectors (Logarithmic Scale).
+                        </p>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div id="vis1-wrapper">
+                            <div id="vis1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Figure 2 -->
+                <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">FIGURE 2</div>
+                        <h4 class="chart-title">Relationship Between AI Exposure and Occupational Mix Change</h4>
+                        <p class="chart-description">
+                            Scattered distribution analysis of AI Exposure Index 
+                            and Occupational Mix Change Index of major industries in the United States.
+                        </p>
+                    </div>
+                    <div id="vis2" class="chart-placeholder"></div>
+                </div>
+
+                <!-- Figure 3 -->
+                <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">FIGURE 3</div>
+                        <h4 class="chart-title">US Unemployment Composition by Industry and AI Exposure Score (2023–2025)</h4>
+                        <p class="chart-description">
+                            This interactive chart ……
+                        </p>
+                    </div>
+                    <div id="vis3" class="chart-placeholder"></div>
+                </div>
+
+                <!-- Figure 4 -->
+                <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">FIGURE 4</div>
+                        <h4 class="chart-title">Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants</h4>
+                        <p class="chart-description">
+                           This diagram illustrates the mapping of occupational categories into the four-quadrant framework of AI exposure and utilization, 
+                           highlighting how different labor sectors are structurally positioned relative to AI's technological impact and adoption.
+                        </p>
+                    </div>
+                    <div class="chart-placeholder">
+                        <img src="Figure4.png" alt="Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+
+                <!-- Figure 5 -->
+                <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">FIGURE 5</div>
+                        <h4 class="chart-title">AI Adoption Gap by Occupational Category</h4>
+                        <p class="chart-description">
+                            Arrows illustrate the deviation of actual AI usage from technical expectations, 
+                            identifying sectors that are either leading in adoption (green) or under-utilizing their potential (red).
+                        </p>
+                    </div>
+                    <div class="chart-placeholder">
+                        <img src="Figure5.png" alt="Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+
+                <!-- Figure 6 -->
+                <div class="chart-item">
+                    <div class="chart-header">
+                        <div class="chart-number">FIGURE 6</div>
+                        <h4 class="chart-title">Structural Intensity Heatmap: AI Exposure Shifts by Unemployment Duration</h4>
+                        <p class="chart-description">
+                            This visualization provides empirical evidence that the impact of AI on the labor market is both lagged and cumulative. The concentration of automation risk among the long-term unemployed suggests that AI is not merely causing frictional churn but is fundamentally altering the unemployment structure. 
+                            This slow but persistent re-composition of the labor force captures the very essence of a "Structural Shift" in the modern economy.
+                        </p>
+                    </div>
+                    <div class="chart-placeholder">
+                        <img src="Figure6.png" alt="Structural Intensity Heatmap: AI Exposure Shifts by Unemployment Duration" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-conclusion">
+                <div class="conclusion-label">Key Findings</div>
+                <p class="conclusion-text">
+                    The analysis reveals that AI adoption is driving a structural transformation in the labor market.
+                    Jobs with high AI exposure are not only facing wage stagnation but also significant shifts in occupational composition……
+                </p>
+            </div>
+        </div>
+
+        <!-- Annotations Section -->
+        <section class="annotations-section" aria-labelledby="annotations-title">
+            <div class="annotations-label">Annotations</div>
+            <h3 id="annotations-title" class="annotations-title">To be added</h3>
+            <ul class="annotations-list">
+                <!-- <li><span class="anno-tag">Trend Line</span> Dashed grey line indicates the fitted relationship in log-wage space.</li>
+                <li><span class="anno-tag">Confidence Band</span> Light grey area shows the 95% confidence interval of the trend.</li>
+                <li><span class="anno-tag">Bubble Size</span> Marker size represents total employment in each occupation.</li>
+                <li><span class="anno-tag">Color Coding</span> Colors map to broad occupational sectors for quick comparison.</li>
+                <li><span class="anno-tag">Log Scale</span> Wages on the x-axis are displayed on a logarithmic scale.</li>
+                <li><span class="anno-tag">Tooltips</span> Hover to view sector, wage, exposure score, and employment details.</li> -->
+            </ul>
+        </section>
+    </section>
+
+    <footer id="contact">
+        <h3 class="footer-title">Get In Touch</h3>
+        <p class="footer-text">Questions about this work? Feel free to reach out</p>
+        <a href="mailto:your.email@university.edu" class="footer-email">your.email@university.edu</a>
+    </footer>
+    
+    <script src="scripts.js"></script> 
+</body>
+</html>

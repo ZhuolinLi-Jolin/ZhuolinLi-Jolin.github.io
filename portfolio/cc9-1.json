@@ -1,0 +1,341 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#fefdfb",
+  "padding": 20,
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300,
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFont": "sans-serif",
+      "titleFont": "sans-serif",
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    }
+  },
+  "data": {
+    "name": "data-7f27c4b408d266871df38a1a89a7ba16"
+  },
+  "datasets": {
+    "data-7f27c4b408d266871df38a1a89a7ba16": [
+      {
+        "Broad_Sector": "Natural Resources and Mining",
+        "Combined_Exposure": -0.794271075,
+        "Dissimilarity_Index": 14.268411949240834,
+        "IG_Exposure": -0.45341041249999997,
+        "LM_Exposure": -1.1351317375
+      },
+      {
+        "Broad_Sector": "Construction",
+        "Combined_Exposure": -0.8206778100000001,
+        "Dissimilarity_Index": 20.604429787508067,
+        "IG_Exposure": -0.6308484,
+        "LM_Exposure": -1.01050722
+      },
+      {
+        "Broad_Sector": "Manufacturing",
+        "Combined_Exposure": -0.3744976347826087,
+        "Dissimilarity_Index": 16.88280059646858,
+        "IG_Exposure": -0.16060976086956522,
+        "LM_Exposure": -0.5883855086956522
+      },
+      {
+        "Broad_Sector": "Trade, Transportation, and Utilities",
+        "Combined_Exposure": -0.16046731538461537,
+        "Dissimilarity_Index": 17.723264147349507,
+        "IG_Exposure": -0.22247322769230768,
+        "LM_Exposure": -0.09846140307692307
+      },
+      {
+        "Broad_Sector": "Information",
+        "Combined_Exposure": 1.3261336166666666,
+        "Dissimilarity_Index": 24.791603681209725,
+        "IG_Exposure": 1.4574560555555556,
+        "LM_Exposure": 1.1948111777777777
+      },
+      {
+        "Broad_Sector": "Financial Activities",
+        "Combined_Exposure": 1.3707201791666668,
+        "Dissimilarity_Index": 20.420320057089903,
+        "IG_Exposure": 1.26828205,
+        "LM_Exposure": 1.4731583083333335
+      },
+      {
+        "Broad_Sector": "Professional and Business Services",
+        "Combined_Exposure": 0.6707336523809524,
+        "Dissimilarity_Index": 19.329348290715576,
+        "IG_Exposure": 0.727712638095238,
+        "LM_Exposure": 0.6137546666666667
+      },
+      {
+        "Broad_Sector": "Education and Health Services",
+        "Combined_Exposure": 0.5986331699999999,
+        "Dissimilarity_Index": 15.459820004445303,
+        "IG_Exposure": 0.275193104,
+        "LM_Exposure": 0.9220732359999999
+      },
+      {
+        "Broad_Sector": "Leisure and Hospitality",
+        "Combined_Exposure": -0.4956119466666667,
+        "Dissimilarity_Index": 15.659823476461675,
+        "IG_Exposure": -0.9370334,
+        "LM_Exposure": -0.054190493333333346
+      },
+      {
+        "Broad_Sector": "Other Services",
+        "Combined_Exposure": -0.06801046923076923,
+        "Dissimilarity_Index": 19.0509321927418,
+        "IG_Exposure": -0.20226555384615386,
+        "LM_Exposure": 0.0662446153846154
+      }
+    ]
+  },
+  "height": 300,
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "aggregate": "mean",
+          "field": "Exposure_Value",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "color": "#999",
+        "opacity": 0.4,
+        "strokeDash": [4, 4],
+        "type": "rule"
+      },
+      "name": "view_6a0f5abf9b949ab2_0",
+      "transform": [
+        {
+          "as": [
+            "Metric_Key",
+            "Exposure_Value"
+          ],
+          "fold": [
+            "LM_Exposure",
+            "IG_Exposure",
+            "Combined_Exposure"
+          ]
+        },
+        {
+          "as": "Label",
+          "calculate": "datum.Metric_Key == 'LM_Exposure' ? 'Text Generation' : (datum.Metric_Key == 'IG_Exposure' ? 'Image Generation' : 'Combined')"
+        },
+        {
+          "filter": {
+            "param": "param_c0899807c228c03e"
+          }
+        }
+      ]
+    },
+    {
+      "encoding": {
+        "y": {
+          "aggregate": "mean",
+          "field": "Dissimilarity_Index",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "color": "#999",
+        "opacity": 0.4,
+        "strokeDash": [4, 4],
+        "type": "rule"
+      },
+      "transform": [
+        {
+          "as": [
+            "Metric_Key",
+            "Exposure_Value"
+          ],
+          "fold": [
+            "LM_Exposure",
+            "IG_Exposure",
+            "Combined_Exposure"
+          ]
+        },
+        {
+          "as": "Label",
+          "calculate": "datum.Metric_Key == 'LM_Exposure' ? 'Text Generation' : (datum.Metric_Key == 'IG_Exposure' ? 'Image Generation' : 'Combined')"
+        },
+        {
+          "filter": {
+            "param": "param_c0899807c228c03e"
+          }
+        }
+      ]
+    },
+    {
+      "encoding": {
+        "color": {
+          "field": "Label",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Text Generation",
+              "Image Generation",
+              "Combined"
+            ],
+            "range": [
+              "darkorange",
+              "seagreen",
+              "purple"
+            ]
+          },
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Broad_Sector",
+            "title": "Sector",
+            "type": "nominal"
+          },
+          {
+            "field": "Exposure_Value",
+            "format": ".2f",
+            "title": "Exposure",
+            "type": "quantitative"
+          },
+          {
+            "field": "Dissimilarity_Index",
+            "format": ".2f",
+            "title": "Churn Index",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "Exposure_Value",
+          "scale": {
+            "padding": 1,
+            "zero": false
+          },
+          "title": "AI Exposure Index",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Dissimilarity_Index",
+          "scale": {
+            "padding": 1,
+            "zero": false
+          },
+          "title": "Occupational Mix Change Index",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "opacity": 0.75,
+        "size": 250,
+        "stroke": "#333",
+        "strokeWidth": 1.5,
+        "type": "circle"
+      },
+      "transform": [
+        {
+          "as": [
+            "Metric_Key",
+            "Exposure_Value"
+          ],
+          "fold": [
+            "LM_Exposure",
+            "IG_Exposure",
+            "Combined_Exposure"
+          ]
+        },
+        {
+          "as": "Label",
+          "calculate": "datum.Metric_Key == 'LM_Exposure' ? 'Text Generation' : (datum.Metric_Key == 'IG_Exposure' ? 'Image Generation' : 'Combined')"
+        },
+        {
+          "filter": {
+            "param": "param_c0899807c228c03e"
+          }
+        }
+      ]
+    },
+    {
+      "encoding": {
+        "text": {
+          "field": "Broad_Sector",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Exposure_Value",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Dissimilarity_Index",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "align": "left",
+        "dx": 12,
+        "fontSize": 10,
+        "color": "#333",
+        "type": "text"
+      },
+      "transform": [
+        {
+          "as": [
+            "Metric_Key",
+            "Exposure_Value"
+          ],
+          "fold": [
+            "LM_Exposure",
+            "IG_Exposure",
+            "Combined_Exposure"
+          ]
+        },
+        {
+          "as": "Label",
+          "calculate": "datum.Metric_Key == 'LM_Exposure' ? 'Text Generation' : (datum.Metric_Key == 'IG_Exposure' ? 'Image Generation' : 'Combined')"
+        },
+        {
+          "filter": {
+            "param": "param_c0899807c228c03e"
+          }
+        }
+      ]
+    }
+  ],
+  "params": [
+    {
+      "bind": {
+        "input": "select",
+        "name": "Select AI Exposure Type: ",
+        "options": [
+          "Text Generation",
+          "Image Generation",
+          "Combined"
+        ]
+      },
+      "name": "param_c0899807c228c03e",
+      "select": {
+        "fields": [
+          "Label"
+        ],
+        "type": "point"
+      },
+      "value": "Text Generation",
+      "views": [
+        "view_6a0f5abf9b949ab2_0"
+      ]
+    }
+  ],
+  "title": {
+    "text": "AI Exposure vs. Industry Structural Change",
+    "subtitle": "Interactive scatter plot with dropdown selector",
+    "anchor": "middle",
+    "fontSize": 16,
+    "font": "sans-serif",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666",
+    "subtitlePadding": 10
+  },
+  "width": 500
+}

@@ -1,7 +1,6 @@
 // 1. Scroll Animation Logic
 function reveal() {
     var projectContainer = document.querySelector(".project-container");
-    var weeklyContainer = document.querySelector(".weekly-link-container");
     var windowHeight = window.innerHeight;
     var elementVisible = 150;
 
@@ -9,13 +8,6 @@ function reveal() {
         var elementTop = projectContainer.getBoundingClientRect().top;
         if (elementTop < windowHeight - elementVisible) {
             projectContainer.classList.add("reveal");
-        }
-    }
-
-    if (weeklyContainer) {
-        var elementTop = weeklyContainer.getBoundingClientRect().top;
-        if (elementTop < windowHeight - elementVisible) {
-            weeklyContainer.classList.add("reveal");
         }
     }
 }
@@ -26,23 +18,32 @@ reveal();
 
 // 2. Modal Logic
 function openAssignments() {
-    document.getElementById("assignmentsModal").classList.add("active");
-    // Prevent page scroll
-    document.body.style.overflow = "hidden"; 
+    const modal = document.getElementById("assignmentsModal");
+    if (modal) {
+        modal.classList.add("active");
+        // Prevent page scroll
+        document.body.style.overflow = "hidden"; 
+    }
 }
 
 function closeAssignments() {
-    document.getElementById("assignmentsModal").classList.remove("active");
-    // Restore page scroll
-    document.body.style.overflow = "auto";
+    const modal = document.getElementById("assignmentsModal");
+    if (modal) {
+        modal.classList.remove("active");
+        // Restore page scroll
+        document.body.style.overflow = "auto";
+    }
 }
 
 // Close modal when clicking the backdrop
-document.getElementById("assignmentsModal").addEventListener('click', function(e) {
-    if (e.target === this) {
-        closeAssignments();
-    }
-});
+const modal = document.getElementById("assignmentsModal");
+if (modal) {
+    modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeAssignments();
+        }
+    });
+}
 // vegaEmbed('#vis1', 'project/chart_1.json').catch(console.error);
 
 const plotFileName = 'project/chart_1.json';
@@ -79,8 +80,8 @@ fetch(plotFileName)
   });
 
 
-vegaEmbed('#vis3', 'project/chart_3.json').catch(console.error);
-vegaEmbed('#vis2', 'project/chart_2.json').catch(console.error);
+vegaEmbed('#vis3', 'project/chart_3.json', {actions: false}).catch(console.error);
+vegaEmbed('#vis2', 'project/chart_2.json', {actions: false}).catch(console.error);
 
 vegaEmbed('#vis-cc1-1', 'portfolio/cc1-1.json').catch(console.error);
 vegaEmbed('#vis-cc1-2', 'portfolio/cc1-2.json').catch(console.error);
@@ -94,6 +95,8 @@ vegaEmbed('#vis-cc5-1', 'portfolio/cc5-1.json').catch(console.error);
 vegaEmbed('#vis-cc5-2', 'portfolio/cc5-2.json').catch(console.error);
 vegaEmbed('#vis-cc7-1', 'portfolio/cc7-1.json').catch(console.error);
 vegaEmbed('#vis-cc7-2', 'portfolio/cc7-2.json').catch(console.error);
+vegaEmbed('#vis-cc9-1', 'portfolio/cc9-1.json').catch(console.error);
+vegaEmbed('#vis-cc9-2', 'portfolio/cc9-2.json').catch(console.error);
 
 // CC6: Loop to embed six charts
 for (let i = 1; i <= 6; i++) {

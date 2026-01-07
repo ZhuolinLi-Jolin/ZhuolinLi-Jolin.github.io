@@ -104,12 +104,36 @@ const portfolioCharts = [
 
 portfolioCharts.forEach(chartId => {
     const chartPath = `portfolio/${chartId.replace('vis-', '')}.json`;
-    vegaEmbed(`#${chartId}`, chartPath, {actions: false, renderer: 'svg'}).then(result => {
-        const container = document.getElementById(chartId);
-        if (container) {
-            result.view.width(container.offsetWidth).run();
-        }
-    }).catch(console.error);
+
+    // cc1 / cc3 特殊处理：缩小宽度并提升高度，保持自适应
+    if (['vis-cc1-1', 'vis-cc1-2', 'vis-cc3-1', 'vis-cc3-2', 'vis-cc9-1'].includes(chartId)) {
+        vegaEmbed(`#${chartId}`, chartPath, {actions: false, renderer: 'svg'})
+            .then(result => {
+                const container = document.getElementById(chartId);
+                if (!container) return;
+
+                const applySize = () => {
+                    const targetWidth = Math.round(container.offsetWidth * 0.65);
+                    const targetHeight = Math.round(targetWidth * 0.6);
+                    result.view.width(targetWidth).height(targetHeight).run();
+                };
+
+                applySize();
+                window.addEventListener('resize', applySize);
+            })
+            .catch(console.error);
+        return;
+    }
+
+    // 默认处理：宽度适配容器宽度
+    vegaEmbed(`#${chartId}`, chartPath, {actions: false, renderer: 'svg'})
+        .then(result => {
+            const container = document.getElementById(chartId);
+            if (container) {
+                result.view.width(container.offsetWidth).run();
+            }
+        })
+        .catch(console.error);
 });
 
 // CC6: Loop to embed six charts with responsive width

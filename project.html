@@ -128,17 +128,20 @@
                         </div>
                     </div>
                 </div>
-            <div class="research-background">
+            <div class="research-background" style="margin-bottom: 0rem;">
                 <h4 class="chart-title" style="margin-top: 1.5rem;">AI Exposure and Occupational Mix Change </h4>
                 <p class="background-text">
                     We measure occupational mix change using a churn index, constructed following the data and methodology of The Budget Lab at Yale. Specifically, we develop an industry-level occupational structure change index based on the Duncan and Duncan (1955) dissimilarity index. Monthly deviations in occupational employment shares from a baseline month are computed and smoothed using a 12-month moving average, with higher values indicating greater occupational restructuring.
+                </p>
+                <p class="background-text"><br>
+                    Occupational mix change is most pronounced in industries highly exposed to text-based and general-purpose AI, particularly information, finance, and professional services, while image-generative AI alone shows limited restructuring effects. This pattern suggests that contemporary AI-driven labor reallocation operates primarily through the reconfiguration of cognitive and analytical tasks rather than through visual or manual task substitution.
                 </p>
             </div>
                 <!-- Figure 2 -->
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 4</div>
-                        <h4 class="chart-title">Relationship Between AI Exposure and Occupational Mix Change</h4>
+                        <!-- <h4 class="chart-title">Relationship Between AI Exposure and Occupational Mix Change</h4> -->
                         <p class="chart-description">
                             Scattered distribution analysis of AI Exposure Index 
                             and Occupational Mix Change Index of major industries in the United States.
@@ -147,32 +150,28 @@
                     <div id="vis2" class="chart-placeholder"></div>
                 </div>
            <div class="research-background" style="margin-bottom: 0rem;">
-                <h4 class="chart-title">AI Exposure vs. Wage</h4>
+                <h4 class="chart-title">AI Exposure Score and Unemployment Composition by Age groups</h4>
                 <p class="background-text"><br>
-                    The provided data indicates a notable positive correlation between annual mean wages and AI exposure scores, suggesting a significant structural shift in the contemporary labor market. Unlike historical automation trends that primarily affected routine manual labor, 
-                    current AI advancements appear to be increasingly concentrated in higher-income sectors. This trend is particularly evident in fields such as Business, STEM, and Technology, where high-skill cognitive tasks show the highest levels of exposure.
-                    Conversely, manual and service-oriented sectors currently remain relatively insulated from these changes, likely due to the physical complexities inherent in those roles. 
+                    Utilizing U.S. Census Bureau CPS longitudinal microdata and AI exposure metrics from Eloundou et al., this study follows Tyler et al.’s approach to categorize occupations into high, moderate, and low exposure groups based on the 2024 employment-weighted distribution. By segmenting the sample into young (20–24) and prime-age (25–55) workers across six cross-analysis groups, we apply 12-month moving averages to employment and transition rates to mitigate small-sample noise and ensure statistical stability; the chart specifically highlights the High and Low AI Exposure cohorts.
                 </p>
                 <p class="background-text"><br>
-                    The distribution of bubble sizes indicates that the total employment in high-exposure sectors is substantial, 
-                    particularly within business and administrative roles. Given that many of the largest employment clusters coincide with high AI exposure scores, the potential for a broad-scale structural shift appears significant. 
-                    This suggests that a cautious and proactive approach to workforce adaptation may be beneficial.
+                    Following the release of ChatGPT, separation rates for young workers in high AI-exposure occupations (light green line) initially declined before recently exhibiting a notable rebound. This trend suggests that generative AI may be accelerating job turnover or displacement within this specific demographic. In stark contrast, both young workers in low AI-exposure roles (dark green line) and all prime-age workers (25–55) have remained relatively stable or even shown a slight decline since 2022. The relative stability observed in the 25–55 age groups (orange and brown lines) suggests that professional experience and seniority currently serve as an effective buffer against AI-driven labor market shocks.
                 </p>
             </div>
                 <!-- Figure 3 -->
                 <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 5</div>
-                        <h4 class="chart-title">US Unemployment Composition by Industry and AI Exposure Score (2023–2025)</h4>
+                        <!-- <h4 class="chart-title">US Unemployment Composition by Industry and AI Exposure Score (2023–2025)</h4> -->
                         <p class="chart-description">
-                            This interactive chart ……
-                        </p>
+                            Separation Rates by AI Exposure and Age Group with ChatGPT release annotation
+                        </p>  
                     </div>
                     <div id="vis3" class="chart-placeholder"></div>
                 </div>
 
                 <!-- Figure 4 -->
-                <div class="chart-item">
+                <!-- <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 4</div>
                         <h4 class="chart-title">Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants</h4>
@@ -184,10 +183,10 @@
                     <div class="chart-placeholder">
                         <img src="Figure4.png" alt="Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants" style="width: 100%; height: auto;">
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Figure 5 -->
-                <div class="chart-item">
+                <!-- <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 5</div>
                         <h4 class="chart-title">AI Adoption Gap by Occupational Category</h4>
@@ -199,10 +198,10 @@
                     <div class="chart-placeholder">
                         <img src="Figure5.png" alt="Distribution of Major Occupational Categories Across AI Exposure and Usage Quadrants" style="width: 100%; height: auto;">
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Figure 6 -->
-                <div class="chart-item">
+                <!-- <div class="chart-item">
                     <div class="chart-header">
                         <div class="chart-number">FIGURE 6</div>
                         <h4 class="chart-title">Structural Intensity Heatmap: AI Exposure Shifts by Unemployment Duration</h4>
@@ -214,31 +213,39 @@
                     <div class="chart-placeholder">
                         <img src="Figure6.png" alt="Structural Intensity Heatmap: AI Exposure Shifts by Unemployment Duration" style="width: 100%; height: auto;">
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="project-conclusion">
                 <div class="conclusion-label">Key Findings</div>
                 <p class="conclusion-text">
-                    The analysis reveals that AI adoption is driving a structural transformation in the labor market.
-                    Jobs with high AI exposure are not only facing wage stagnation but also significant shifts in occupational composition……
+                    AI is driving a "top-down" structural shift by targeting high-wage, cognitive sectors, fueling geographic disparities in productivity and labor volatility. Rather than eliminating roles outright, AI accelerates occupational churn by addressing specific tasks within jobs—disproportionately affecting young workers while seniority buffers the prime-age workforce. While current AIOE metrics provide only a partial snapshot due to their inability to keep pace with the unprecedented speed of LLM evolution, it is this very rapid technological advancement that is driving shifts far beyond U.S. borders, signaling a universal labor paradigm. To navigate this inevitable transition, policymakers must move beyond debate to prioritize AI literacy and proactive workforce development, ensuring labor market resilience in an increasingly interconnected, AI-driven world.
                 </p>
-            </div>
+                <!-- <p class="conclusion-text">
+                    Unlike previous waves of manual automation, AI is driving a "top-down" structural shift by targeting high-wage, cognitive-heavy sectors like STEM and Finance. This transformation is creating sharp geographic divides, where tech hubs experience simultaneous productivity explosions and heightened labor volatility.
+
+                    Rather than eliminating jobs outright, AI deconstructs occupations into "task bundles," accelerating occupational churn within information-driven industries. Currently, this disruption is most acute for young workers (ages 20–24), whereas professional seniority continues to serve as a critical buffer for the prime-age workforce (25–55).
+
+                    While this analysis highlights structural shifts, it is important to acknowledge the inherent lag in technology adoption and diffusion. the exponential evolution of LLMs between 2022 and 2026 has created a profound capability gap. As a result, initial AI Exposure (AIOE) metrics require continuous recalibration to reflect the current, more advanced landscape of Generative AI.
+
+                    Ultimately, regardless of whether AI leads to net job displacement or creation, the AI Era is an established reality. To navigate this transition, it is imperative for policymakers to move beyond debate and take proactive action. Governments must prioritize the large-scale promotion of AI literacy and integrate AI-specific professional development into national workforce strategies, ensuring that the labor market remains resilient and adaptable in this new structural paradigm.
+                </p> -->
+                </div>
         </div>
 
         <!-- Annotations Section -->
-        <section class="annotations-section" aria-labelledby="annotations-title">
+        <!-- <section class="annotations-section" aria-labelledby="annotations-title">
             <div class="annotations-label">Annotations</div>
             <h3 id="annotations-title" class="annotations-title">To be added</h3>
-            <ul class="annotations-list">
+            <ul class="annotations-list"> -->
                 <!-- <li><span class="anno-tag">Trend Line</span> Dashed grey line indicates the fitted relationship in log-wage space.</li>
                 <li><span class="anno-tag">Confidence Band</span> Light grey area shows the 95% confidence interval of the trend.</li>
                 <li><span class="anno-tag">Bubble Size</span> Marker size represents total employment in each occupation.</li>
                 <li><span class="anno-tag">Color Coding</span> Colors map to broad occupational sectors for quick comparison.</li>
                 <li><span class="anno-tag">Log Scale</span> Wages on the x-axis are displayed on a logarithmic scale.</li>
                 <li><span class="anno-tag">Tooltips</span> Hover to view sector, wage, exposure score, and employment details.</li> -->
-            </ul>
-        </section>
+            <!-- </ul>
+        </section> -->
     </section>
 
     <footer id="contact">

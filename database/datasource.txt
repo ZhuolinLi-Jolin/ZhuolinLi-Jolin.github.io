@@ -38,31 +38,8 @@ https://statswales.gov.wales/Catalogue/Business-Economy-and-Labour-Market/Region
 
 Reference:
 T Eloundou, S Manning, P Mishkin and D Rock“GPTs are GPTs: Labor market impact potential of LLMs”In Science 384.6702, 2024, pp. 1306–1308DOI: 10.1126/science.adj0998
+Felten E, Raj M, Seamans R (2021) Occupational, industry, and geographic exposure to artificial intelligence: A novel dataset and its potential uses. Strategic Management Journal 42(12):2195–2217.
 
-
-
-1. 核心发现：工资与 AI 暴露程度的正相关性
-图中的虚线（回归线）呈现明显的上升趋势，这说明：平均年薪越高的职业，其 AI 暴露得分（AIOE）往往也越高。
-
-这挑战了“自动化主要威胁低端劳动力”的传统观念。
-
-它表明 AI 对“白领”和高薪专业岗位的影响远大于体力劳动岗位。
-
-2. 行业间的结构性差异 (Sectoral Disparity)
-通过颜色区分，你可以得出以下结论：
-
-高薪高暴露区（右上/中上）： Business & Admin (紫色) 和 STEM & Tech (蓝色) 占据了高位。这意味着这些高薪行业的工作内容（如数据分析、编程、管理决策）与 AI 的能力高度重合。
-
-低薪低暴露区（左下）： Manual & Trades (黄色) 和 Services (绿色) 集中在下方。这说明涉及体力劳动、手艺或直接面对面服务的工作，目前受 AI 影响最小，但其平均工资也相对较低。
-
-中间地带： Edu, Health & Arts (青色) 分布较广，说明即便在同一行业内，不同职位的 AI 影响程度也大不相同。
-
-3. “结构性转型” (A Structural Shift) 的含义
-你标题中的“Structural Shift”非常有深度。这暗示了：
-
-随着经济向高附加值转型，工作岗位对技术和信息的依赖增加，导致它们不可避免地与 AI 产生交集。
-
-未来的高薪岗位可能不再是“逃避”自动化，而是必须学习如何与 AI 协作。
 
 
 project figure3

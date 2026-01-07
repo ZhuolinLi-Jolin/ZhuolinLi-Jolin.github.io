@@ -1,3 +1,9 @@
+/* Inline term style for AIOE citation */
+.term-aioe {
+    font-weight: 700;
+    color: #2E7D32; /* green */
+    cursor: help;
+}
 :root {
     --cream: #f8f6f1;
     --warm-white: #fefdfb;
@@ -854,11 +860,30 @@ footer {
     }
 }
 
-.vega-embed {
-    width: 100%; 
-    display: flex !important;
-    justify-content: center !important; 
-    align-items: center !important;
+/* Source & Reference Links */
+.source-link {
+    color: var(--deep-green);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.source-link:hover {
+    color: var(--terracotta);
+    border-bottom-color: var(--terracotta);
+    text-decoration: none;
+}
+
+.source-link::after {
+    font-size: 0.85em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.source-link:hover::after {
+    opacity: 1;
 }
 
 .vega-embed canvas,
@@ -870,6 +895,20 @@ footer {
 .vega-embed details {
     position: relative;
     max-width: 100%; 
+}
+/* Center Vega-Lite parameter bindings (dropdowns, labels) */
+.vega-embed {
+    text-align: center;
+}
+.vega-bindings {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.vega-bindings label {
+    margin-right: 4px;
 }
 /* 强制 Vega-Lite Tooltip 处于最顶层 */
 #vg-tooltip-element {

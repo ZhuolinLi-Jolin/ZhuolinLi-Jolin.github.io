@@ -223,7 +223,7 @@ nav {
 }
 
 .section-subtitle {
-    font-size: 1.05rem;
+    font-size: clamp(0.95rem, 1.6vw, 1.05rem);
     font-weight: 300;
     letter-spacing: 1px;
     color: var(--charcoal);
@@ -258,7 +258,7 @@ nav {
 }
 
 .project-description {
-    font-size: 1.1rem;
+    font-size: clamp(0.98rem, 1.7vw, 1.1rem);
     line-height: 1.9;
     color: var(--charcoal);
     font-weight: 300;
@@ -276,7 +276,7 @@ nav {
 }
 
 .project-description-preview {
-    font-size: 1.1rem;
+    font-size: clamp(0.98rem, 1.7vw, 1.1rem);
     line-height: 1.6;
     color: var(--charcoal);
     font-weight: 300;
@@ -305,7 +305,7 @@ nav {
 }
 
 .background-text {
-    font-size: 1rem;
+    font-size: clamp(0.95rem, 1.6vw, 1rem);
     line-height: 1.8;
     color: var(--charcoal);
     font-weight: 300;
@@ -367,13 +367,13 @@ nav {
 
 .chart-title {
     font-family: var(--serif);
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2.6vw, 1.5rem);
     color: var(--charcoal);
     margin-bottom: 0.75rem;
 }
 
 .chart-description {
-    font-size: 0.95rem;
+    font-size: clamp(0.9rem, 1.5vw, 0.95rem);
     color: var(--charcoal);
     opacity: 0.7;
     line-height: 1.6;
@@ -382,12 +382,12 @@ nav {
 .chart-placeholder {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 1.5rem auto;
     border: none;
-    display: flex;              
-    justify-content: center;    
-    align-items: center;
-    overflow: hidden;
+}
+
+.chart-placeholder > div {
+    margin: 0 auto;
 }
 
 .chart-placeholder > div,

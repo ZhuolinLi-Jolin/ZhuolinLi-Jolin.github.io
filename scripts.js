@@ -80,18 +80,30 @@ fetch(plotFileName)
 
 // Pre-Figure charts on project page
 vegaEmbed('#vis-chart01', 'project/chart_01.json', {actions: false, renderer: 'svg'}).then(result => {
-    result.view.width(document.getElementById('vis-chart01').offsetWidth).run();
+    const container = document.getElementById('vis-chart01');
+    const maxWidth = 800;
+    const containerWidth = Math.min(container.offsetWidth, maxWidth);
+    result.view.width(containerWidth).run();
 }).catch(console.error);
 vegaEmbed('#vis-chart02', 'project/chart_02.json', {actions: false, renderer: 'svg'}).then(result => {
-    result.view.width(document.getElementById('vis-chart02').offsetWidth).run();
+    const container = document.getElementById('vis-chart02');
+    const maxWidth = 800;
+    const containerWidth = Math.min(container.offsetWidth, maxWidth);
+    result.view.width(containerWidth).run();
 }).catch(console.error);
 
 
-vegaEmbed('#vis3', 'project/chart_3.json', {actions: false, renderer: 'svg'}).then(result => {
-    result.view.width(document.getElementById('vis3').offsetWidth).run();
-}).catch(console.error);
 vegaEmbed('#vis2', 'project/chart_2.json', {actions: false, renderer: 'svg'}).then(result => {
-    result.view.width(document.getElementById('vis2').offsetWidth).run();
+    const container = document.getElementById('vis2');
+    const maxWidth = 800;
+    const containerWidth = Math.min(container.offsetWidth, maxWidth);
+    result.view.width(containerWidth).run();
+}).catch(console.error);
+vegaEmbed('#vis3', 'project/chart_3.json', {actions: false, renderer: 'svg'}).then(result => {
+    const container = document.getElementById('vis3');
+    const maxWidth = 800;
+    const containerWidth = Math.min(container.offsetWidth, maxWidth);
+    result.view.width(containerWidth).run();
 }).catch(console.error);
 
 // Portfolio charts with responsive width
